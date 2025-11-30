@@ -1,0 +1,45 @@
+---
+- name: Setup Nginx Web Server
+  hosts: all
+  become: yes
+  vars:
+    nginx_port: 80
+    
+  tasks:
+    - name: Install Nginx
+      package:
+        name: nginx
+        state: present
+    
+    - name: Start and Enable Nginx Service
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+        
+    - name: Create a custom index.html
+      copy:
+        dest: /var/www/html/index.html
+        content: |
+          <!DOCTYPE html>
+          <html>
+          <head>
+              <title>Welcome to Ansible Nginx</title>
+              <style>
+                  body { font-family: sans-serif; text-align: center; padding: 50px; }
+                  h1 { color: #2c3e50; }
+              </style>
+          </head>
+          <body>
+              <h1>Deployed via Ansible! 🚀</h1>
+              <p>This server was configured automatically.</p>
+          </body>
+          </html>
+        mode: '0644'
+      notify: Restart Nginx
+
+  handlers:
+    - name: Restart Nginx
+      service:
+        name: nginx
+        state: restarted

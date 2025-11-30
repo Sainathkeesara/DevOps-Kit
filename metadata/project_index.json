@@ -1,0 +1,4308 @@
+{
+  "tools": [
+    "ansible",
+    "python"
+  ],
+  "projects": [
+    {
+      "id": "ansible_001",
+      "tool": "ansible",
+      "path": "ansible/project_001",
+      "title": "Nginx Web Server Setup",
+      "description": "A real-world Ansible project to implement Nginx Web Server Setup. Focuses on Web best practices.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "web",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_002",
+      "tool": "ansible",
+      "path": "ansible/project_002",
+      "title": "Apache Web Server Setup",
+      "description": "A real-world Ansible project to implement Apache Web Server Setup. Focuses on Database best practices.",
+      "category": [
+        "Database"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "database",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_003",
+      "tool": "ansible",
+      "path": "ansible/project_003",
+      "title": "MySQL Database Deployment",
+      "description": "A real-world Ansible project to implement MySQL Database Deployment. Focuses on DevOps best practices.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "devops",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_004",
+      "tool": "ansible",
+      "path": "ansible/project_004",
+      "title": "PostgreSQL Database Setup",
+      "description": "A real-world Ansible project to implement PostgreSQL Database Setup. Focuses on Security best practices.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "security",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_005",
+      "tool": "ansible",
+      "path": "ansible/project_005",
+      "title": "MongoDB Cluster Setup",
+      "description": "A real-world Ansible project to implement MongoDB Cluster Setup. Focuses on Network best practices.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "network",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_006",
+      "tool": "ansible",
+      "path": "ansible/project_006",
+      "title": "Redis Cache Setup",
+      "description": "A real-world Ansible project to implement Redis Cache Setup. Focuses on Monitoring best practices.",
+      "category": [
+        "Monitoring"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "monitoring",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_007",
+      "tool": "ansible",
+      "path": "ansible/project_007",
+      "title": "Memcached Installation",
+      "description": "A real-world Ansible project to implement Memcached Installation. Focuses on System best practices.",
+      "category": [
+        "System"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "system",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_008",
+      "tool": "ansible",
+      "path": "ansible/project_008",
+      "title": "Jenkins CI Server",
+      "description": "A real-world Ansible project to implement Jenkins CI Server. Focuses on Cloud best practices.",
+      "category": [
+        "Cloud"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "cloud",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_009",
+      "tool": "ansible",
+      "path": "ansible/project_009",
+      "title": "GitLab Runner Setup",
+      "description": "A real-world Ansible project to implement GitLab Runner Setup. Focuses on Web best practices.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "web",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_010",
+      "tool": "ansible",
+      "path": "ansible/project_010",
+      "title": "Docker Engine Installation",
+      "description": "A real-world Ansible project to implement Docker Engine Installation. Focuses on Database best practices.",
+      "category": [
+        "Database"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "database",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_011",
+      "tool": "ansible",
+      "path": "ansible/project_011",
+      "title": "Kubernetes Cluster Bootstrap",
+      "description": "A real-world Ansible project to implement Kubernetes Cluster Bootstrap. Focuses on DevOps best practices.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "devops",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_012",
+      "tool": "ansible",
+      "path": "ansible/project_012",
+      "title": "Prometheus Monitoring Stack",
+      "description": "A real-world Ansible project to implement Prometheus Monitoring Stack. Focuses on Security best practices.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "security",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_013",
+      "tool": "ansible",
+      "path": "ansible/project_013",
+      "title": "Grafana Dashboard Setup",
+      "description": "A real-world Ansible project to implement Grafana Dashboard Setup. Focuses on Network best practices.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "network",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_014",
+      "tool": "ansible",
+      "path": "ansible/project_014",
+      "title": "ELK Stack Deployment",
+      "description": "A real-world Ansible project to implement ELK Stack Deployment. Focuses on Monitoring best practices.",
+      "category": [
+        "Monitoring"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "monitoring",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_015",
+      "tool": "ansible",
+      "path": "ansible/project_015",
+      "title": "Node.js Environment Setup",
+      "description": "A real-world Ansible project to implement Node.js Environment Setup. Focuses on System best practices.",
+      "category": [
+        "System"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "system",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_016",
+      "tool": "ansible",
+      "path": "ansible/project_016",
+      "title": "Python Development Env",
+      "description": "A real-world Ansible project to implement Python Development Env. Focuses on Cloud best practices.",
+      "category": [
+        "Cloud"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "cloud",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_017",
+      "tool": "ansible",
+      "path": "ansible/project_017",
+      "title": "Java OpenJDK Setup",
+      "description": "A real-world Ansible project to implement Java OpenJDK Setup. Focuses on Web best practices.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "web",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_018",
+      "tool": "ansible",
+      "path": "ansible/project_018",
+      "title": "GoLang Environment",
+      "description": "A real-world Ansible project to implement GoLang Environment. Focuses on Database best practices.",
+      "category": [
+        "Database"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "database",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_019",
+      "tool": "ansible",
+      "path": "ansible/project_019",
+      "title": "Rust Development Env",
+      "description": "A real-world Ansible project to implement Rust Development Env. Focuses on DevOps best practices.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "devops",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_020",
+      "tool": "ansible",
+      "path": "ansible/project_020",
+      "title": "PHP-FPM Configuration",
+      "description": "A real-world Ansible project to implement PHP-FPM Configuration. Focuses on Security best practices.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "security",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_021",
+      "tool": "ansible",
+      "path": "ansible/project_021",
+      "title": "HAProxy Load Balancer",
+      "description": "A real-world Ansible project to implement HAProxy Load Balancer. Focuses on Network best practices.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "network",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_022",
+      "tool": "ansible",
+      "path": "ansible/project_022",
+      "title": "Keepalived High Availability",
+      "description": "A real-world Ansible project to implement Keepalived High Availability. Focuses on Monitoring best practices.",
+      "category": [
+        "Monitoring"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "monitoring",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_023",
+      "tool": "ansible",
+      "path": "ansible/project_023",
+      "title": "NFS Server Configuration",
+      "description": "A real-world Ansible project to implement NFS Server Configuration. Focuses on System best practices.",
+      "category": [
+        "System"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "system",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_024",
+      "tool": "ansible",
+      "path": "ansible/project_024",
+      "title": "Samba File Server",
+      "description": "A real-world Ansible project to implement Samba File Server. Focuses on Cloud best practices.",
+      "category": [
+        "Cloud"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "cloud",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_025",
+      "tool": "ansible",
+      "path": "ansible/project_025",
+      "title": "VSFTPD FTP Server",
+      "description": "A real-world Ansible project to implement VSFTPD FTP Server. Focuses on Web best practices.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "web",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_026",
+      "tool": "ansible",
+      "path": "ansible/project_026",
+      "title": "Bind9 DNS Server",
+      "description": "A real-world Ansible project to implement Bind9 DNS Server. Focuses on Database best practices.",
+      "category": [
+        "Database"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "database",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_027",
+      "tool": "ansible",
+      "path": "ansible/project_027",
+      "title": "ISC-DHCP Server",
+      "description": "A real-world Ansible project to implement ISC-DHCP Server. Focuses on DevOps best practices.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "devops",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_028",
+      "tool": "ansible",
+      "path": "ansible/project_028",
+      "title": "Chrony NTP Server",
+      "description": "A real-world Ansible project to implement Chrony NTP Server. Focuses on Security best practices.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "security",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_029",
+      "tool": "ansible",
+      "path": "ansible/project_029",
+      "title": "SSH Hardening Config",
+      "description": "A real-world Ansible project to implement SSH Hardening Config. Focuses on Network best practices.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "network",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_030",
+      "tool": "ansible",
+      "path": "ansible/project_030",
+      "title": "UFW Firewall Setup",
+      "description": "A real-world Ansible project to implement UFW Firewall Setup. Focuses on Monitoring best practices.",
+      "category": [
+        "Monitoring"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "monitoring",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_031",
+      "tool": "ansible",
+      "path": "ansible/project_031",
+      "title": "Fail2Ban Intrusion Prevention",
+      "description": "A real-world Ansible project to implement Fail2Ban Intrusion Prevention. Focuses on System best practices.",
+      "category": [
+        "System"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "system",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_032",
+      "tool": "ansible",
+      "path": "ansible/project_032",
+      "title": "SELinux Policy Management",
+      "description": "A real-world Ansible project to implement SELinux Policy Management. Focuses on Cloud best practices.",
+      "category": [
+        "Cloud"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "cloud",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_033",
+      "tool": "ansible",
+      "path": "ansible/project_033",
+      "title": "AppArmor Profile Config",
+      "description": "A real-world Ansible project to implement AppArmor Profile Config. Focuses on Web best practices.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "web",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_034",
+      "tool": "ansible",
+      "path": "ansible/project_034",
+      "title": "User Account Management",
+      "description": "A real-world Ansible project to implement User Account Management. Focuses on Database best practices.",
+      "category": [
+        "Database"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "database",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_035",
+      "tool": "ansible",
+      "path": "ansible/project_035",
+      "title": "Group Management",
+      "description": "A real-world Ansible project to implement Group Management. Focuses on DevOps best practices.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "devops",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_036",
+      "tool": "ansible",
+      "path": "ansible/project_036",
+      "title": "Sudoers Configuration",
+      "description": "A real-world Ansible project to implement Sudoers Configuration. Focuses on Security best practices.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "security",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_037",
+      "tool": "ansible",
+      "path": "ansible/project_037",
+      "title": "Cron Job Automation",
+      "description": "A real-world Ansible project to implement Cron Job Automation. Focuses on Network best practices.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "network",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_038",
+      "tool": "ansible",
+      "path": "ansible/project_038",
+      "title": "Log Rotation Policy",
+      "description": "A real-world Ansible project to implement Log Rotation Policy. Focuses on Monitoring best practices.",
+      "category": [
+        "Monitoring"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "monitoring",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_039",
+      "tool": "ansible",
+      "path": "ansible/project_039",
+      "title": "System Package Updates",
+      "description": "A real-world Ansible project to implement System Package Updates. Focuses on System best practices.",
+      "category": [
+        "System"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "system",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_040",
+      "tool": "ansible",
+      "path": "ansible/project_040",
+      "title": "Kernel Parameter Tuning",
+      "description": "A real-world Ansible project to implement Kernel Parameter Tuning. Focuses on Cloud best practices.",
+      "category": [
+        "Cloud"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "cloud",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_041",
+      "tool": "ansible",
+      "path": "ansible/project_041",
+      "title": "Hostname Configuration",
+      "description": "A real-world Ansible project to implement Hostname Configuration. Focuses on Web best practices.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "web",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_042",
+      "tool": "ansible",
+      "path": "ansible/project_042",
+      "title": "Timezone Setting",
+      "description": "A real-world Ansible project to implement Timezone Setting. Focuses on Database best practices.",
+      "category": [
+        "Database"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "database",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_043",
+      "tool": "ansible",
+      "path": "ansible/project_043",
+      "title": "Locale Configuration",
+      "description": "A real-world Ansible project to implement Locale Configuration. Focuses on DevOps best practices.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "devops",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_044",
+      "tool": "ansible",
+      "path": "ansible/project_044",
+      "title": "Network Interface Config",
+      "description": "A real-world Ansible project to implement Network Interface Config. Focuses on Security best practices.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "security",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_045",
+      "tool": "ansible",
+      "path": "ansible/project_045",
+      "title": "Static Route Setup",
+      "description": "A real-world Ansible project to implement Static Route Setup. Focuses on Network best practices.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "network",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_046",
+      "tool": "ansible",
+      "path": "ansible/project_046",
+      "title": "OpenVPN Server Setup",
+      "description": "A real-world Ansible project to implement OpenVPN Server Setup. Focuses on Monitoring best practices.",
+      "category": [
+        "Monitoring"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "monitoring",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_047",
+      "tool": "ansible",
+      "path": "ansible/project_047",
+      "title": "WireGuard VPN Setup",
+      "description": "A real-world Ansible project to implement WireGuard VPN Setup. Focuses on System best practices.",
+      "category": [
+        "System"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "system",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_048",
+      "tool": "ansible",
+      "path": "ansible/project_048",
+      "title": "Squid Proxy Server",
+      "description": "A real-world Ansible project to implement Squid Proxy Server. Focuses on Cloud best practices.",
+      "category": [
+        "Cloud"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "cloud",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_049",
+      "tool": "ansible",
+      "path": "ansible/project_049",
+      "title": "Varnish Cache Setup",
+      "description": "A real-world Ansible project to implement Varnish Cache Setup. Focuses on Web best practices.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "web",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_050",
+      "tool": "ansible",
+      "path": "ansible/project_050",
+      "title": "Tomcat App Server",
+      "description": "A real-world Ansible project to implement Tomcat App Server. Focuses on Database best practices.",
+      "category": [
+        "Database"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "database",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_051",
+      "tool": "ansible",
+      "path": "ansible/project_051",
+      "title": "Wildfly App Server",
+      "description": "A real-world Ansible project to implement Wildfly App Server. Focuses on DevOps best practices.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "devops",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_052",
+      "tool": "ansible",
+      "path": "ansible/project_052",
+      "title": "RabbitMQ Cluster",
+      "description": "A real-world Ansible project to implement RabbitMQ Cluster. Focuses on Security best practices.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "security",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_053",
+      "tool": "ansible",
+      "path": "ansible/project_053",
+      "title": "Kafka Event Streaming",
+      "description": "A real-world Ansible project to implement Kafka Event Streaming. Focuses on Network best practices.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "network",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_054",
+      "tool": "ansible",
+      "path": "ansible/project_054",
+      "title": "Zookeeper Cluster",
+      "description": "A real-world Ansible project to implement Zookeeper Cluster. Focuses on Monitoring best practices.",
+      "category": [
+        "Monitoring"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "monitoring",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_055",
+      "tool": "ansible",
+      "path": "ansible/project_055",
+      "title": "Consul Service Discovery",
+      "description": "A real-world Ansible project to implement Consul Service Discovery. Focuses on System best practices.",
+      "category": [
+        "System"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "system",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_056",
+      "tool": "ansible",
+      "path": "ansible/project_056",
+      "title": "Vault Secret Management",
+      "description": "A real-world Ansible project to implement Vault Secret Management. Focuses on Cloud best practices.",
+      "category": [
+        "Cloud"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "cloud",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_057",
+      "tool": "ansible",
+      "path": "ansible/project_057",
+      "title": "Terraform Installation",
+      "description": "A real-world Ansible project to implement Terraform Installation. Focuses on Web best practices.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "web",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_058",
+      "tool": "ansible",
+      "path": "ansible/project_058",
+      "title": "Packer Tool Setup",
+      "description": "A real-world Ansible project to implement Packer Tool Setup. Focuses on Database best practices.",
+      "category": [
+        "Database"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "database",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_059",
+      "tool": "ansible",
+      "path": "ansible/project_059",
+      "title": "Minikube Local Cluster",
+      "description": "A real-world Ansible project to implement Minikube Local Cluster. Focuses on DevOps best practices.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "devops",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_060",
+      "tool": "ansible",
+      "path": "ansible/project_060",
+      "title": "Kind Cluster Setup",
+      "description": "A real-world Ansible project to implement Kind Cluster Setup. Focuses on Security best practices.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "security",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_061",
+      "tool": "ansible",
+      "path": "ansible/project_061",
+      "title": "MicroK8s Installation",
+      "description": "A real-world Ansible project to implement MicroK8s Installation. Focuses on Network best practices.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "network",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_062",
+      "tool": "ansible",
+      "path": "ansible/project_062",
+      "title": "K3s Lightweight K8s",
+      "description": "A real-world Ansible project to implement K3s Lightweight K8s. Focuses on Monitoring best practices.",
+      "category": [
+        "Monitoring"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "monitoring",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_063",
+      "tool": "ansible",
+      "path": "ansible/project_063",
+      "title": "Helm Package Manager",
+      "description": "A real-world Ansible project to implement Helm Package Manager. Focuses on System best practices.",
+      "category": [
+        "System"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "system",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_064",
+      "tool": "ansible",
+      "path": "ansible/project_064",
+      "title": "ArgoCD GitOps Setup",
+      "description": "A real-world Ansible project to implement ArgoCD GitOps Setup. Focuses on Cloud best practices.",
+      "category": [
+        "Cloud"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "cloud",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_065",
+      "tool": "ansible",
+      "path": "ansible/project_065",
+      "title": "Istio Service Mesh",
+      "description": "A real-world Ansible project to implement Istio Service Mesh. Focuses on Web best practices.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "web",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_066",
+      "tool": "ansible",
+      "path": "ansible/project_066",
+      "title": "Linkerd Service Mesh",
+      "description": "A real-world Ansible project to implement Linkerd Service Mesh. Focuses on Database best practices.",
+      "category": [
+        "Database"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "database",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_067",
+      "tool": "ansible",
+      "path": "ansible/project_067",
+      "title": "Traefik Ingress Controller",
+      "description": "A real-world Ansible project to implement Traefik Ingress Controller. Focuses on DevOps best practices.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "devops",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_068",
+      "tool": "ansible",
+      "path": "ansible/project_068",
+      "title": "Cert-Manager Setup",
+      "description": "A real-world Ansible project to implement Cert-Manager Setup. Focuses on Security best practices.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "security",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_069",
+      "tool": "ansible",
+      "path": "ansible/project_069",
+      "title": "Lets Encrypt SSL Certs",
+      "description": "A real-world Ansible project to implement Lets Encrypt SSL Certs. Focuses on Network best practices.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "network",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_070",
+      "tool": "ansible",
+      "path": "ansible/project_070",
+      "title": "Self-Signed SSL Certs",
+      "description": "A real-world Ansible project to implement Self-Signed SSL Certs. Focuses on Monitoring best practices.",
+      "category": [
+        "Monitoring"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "monitoring",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_071",
+      "tool": "ansible",
+      "path": "ansible/project_071",
+      "title": "OpenLDAP Directory Server",
+      "description": "A real-world Ansible project to implement OpenLDAP Directory Server. Focuses on System best practices.",
+      "category": [
+        "System"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "system",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_072",
+      "tool": "ansible",
+      "path": "ansible/project_072",
+      "title": "FreeIPA Client Setup",
+      "description": "A real-world Ansible project to implement FreeIPA Client Setup. Focuses on Cloud best practices.",
+      "category": [
+        "Cloud"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "cloud",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_073",
+      "tool": "ansible",
+      "path": "ansible/project_073",
+      "title": "SSSD Authentication",
+      "description": "A real-world Ansible project to implement SSSD Authentication. Focuses on Web best practices.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "web",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_074",
+      "tool": "ansible",
+      "path": "ansible/project_074",
+      "title": "Kerberos Client Config",
+      "description": "A real-world Ansible project to implement Kerberos Client Config. Focuses on Database best practices.",
+      "category": [
+        "Database"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "database",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_075",
+      "tool": "ansible",
+      "path": "ansible/project_075",
+      "title": "Postfix Mail Server",
+      "description": "A real-world Ansible project to implement Postfix Mail Server. Focuses on DevOps best practices.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "devops",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_076",
+      "tool": "ansible",
+      "path": "ansible/project_076",
+      "title": "Dovecot IMAP Server",
+      "description": "A real-world Ansible project to implement Dovecot IMAP Server. Focuses on Security best practices.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "security",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_077",
+      "tool": "ansible",
+      "path": "ansible/project_077",
+      "title": "SpamAssassin Setup",
+      "description": "A real-world Ansible project to implement SpamAssassin Setup. Focuses on Network best practices.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "network",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_078",
+      "tool": "ansible",
+      "path": "ansible/project_078",
+      "title": "ClamAV Antivirus",
+      "description": "A real-world Ansible project to implement ClamAV Antivirus. Focuses on Monitoring best practices.",
+      "category": [
+        "Monitoring"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "monitoring",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_079",
+      "tool": "ansible",
+      "path": "ansible/project_079",
+      "title": "Rkhunter Rootkit Check",
+      "description": "A real-world Ansible project to implement Rkhunter Rootkit Check. Focuses on System best practices.",
+      "category": [
+        "System"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "system",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_080",
+      "tool": "ansible",
+      "path": "ansible/project_080",
+      "title": "Lynis Security Audit",
+      "description": "A real-world Ansible project to implement Lynis Security Audit. Focuses on Cloud best practices.",
+      "category": [
+        "Cloud"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "cloud",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_081",
+      "tool": "ansible",
+      "path": "ansible/project_081",
+      "title": "OpenSCAP Compliance Scan",
+      "description": "A real-world Ansible project to implement OpenSCAP Compliance Scan. Focuses on Web best practices.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "web",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_082",
+      "tool": "ansible",
+      "path": "ansible/project_082",
+      "title": "Auditd System Auditing",
+      "description": "A real-world Ansible project to implement Auditd System Auditing. Focuses on Database best practices.",
+      "category": [
+        "Database"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "database",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_083",
+      "tool": "ansible",
+      "path": "ansible/project_083",
+      "title": "Syslog-NG Log Server",
+      "description": "A real-world Ansible project to implement Syslog-NG Log Server. Focuses on DevOps best practices.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "devops",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_084",
+      "tool": "ansible",
+      "path": "ansible/project_084",
+      "title": "Rsyslog Configuration",
+      "description": "A real-world Ansible project to implement Rsyslog Configuration. Focuses on Security best practices.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "security",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_085",
+      "tool": "ansible",
+      "path": "ansible/project_085",
+      "title": "Logwatch Report Setup",
+      "description": "A real-world Ansible project to implement Logwatch Report Setup. Focuses on Network best practices.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "network",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_086",
+      "tool": "ansible",
+      "path": "ansible/project_086",
+      "title": "Monit Service Monitoring",
+      "description": "A real-world Ansible project to implement Monit Service Monitoring. Focuses on Monitoring best practices.",
+      "category": [
+        "Monitoring"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "monitoring",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_087",
+      "tool": "ansible",
+      "path": "ansible/project_087",
+      "title": "Nagios Core Monitoring",
+      "description": "A real-world Ansible project to implement Nagios Core Monitoring. Focuses on System best practices.",
+      "category": [
+        "System"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "system",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_088",
+      "tool": "ansible",
+      "path": "ansible/project_088",
+      "title": "Zabbix Agent Install",
+      "description": "A real-world Ansible project to implement Zabbix Agent Install. Focuses on Cloud best practices.",
+      "category": [
+        "Cloud"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "cloud",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_089",
+      "tool": "ansible",
+      "path": "ansible/project_089",
+      "title": "Datadog Agent Install",
+      "description": "A real-world Ansible project to implement Datadog Agent Install. Focuses on Web best practices.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "web",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_090",
+      "tool": "ansible",
+      "path": "ansible/project_090",
+      "title": "New Relic Agent Install",
+      "description": "A real-world Ansible project to implement New Relic Agent Install. Focuses on Database best practices.",
+      "category": [
+        "Database"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "database",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_091",
+      "tool": "ansible",
+      "path": "ansible/project_091",
+      "title": "Splunk Forwarder Setup",
+      "description": "A real-world Ansible project to implement Splunk Forwarder Setup. Focuses on DevOps best practices.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "devops",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_092",
+      "tool": "ansible",
+      "path": "ansible/project_092",
+      "title": "Filebeat Log Shipper",
+      "description": "A real-world Ansible project to implement Filebeat Log Shipper. Focuses on Security best practices.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "security",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_093",
+      "tool": "ansible",
+      "path": "ansible/project_093",
+      "title": "Metricbeat Metric Shipper",
+      "description": "A real-world Ansible project to implement Metricbeat Metric Shipper. Focuses on Network best practices.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "network",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_094",
+      "tool": "ansible",
+      "path": "ansible/project_094",
+      "title": "Heartbeat Uptime Monitor",
+      "description": "A real-world Ansible project to implement Heartbeat Uptime Monitor. Focuses on Monitoring best practices.",
+      "category": [
+        "Monitoring"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "monitoring",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_095",
+      "tool": "ansible",
+      "path": "ansible/project_095",
+      "title": "Packetbeat Network Monitor",
+      "description": "A real-world Ansible project to implement Packetbeat Network Monitor. Focuses on System best practices.",
+      "category": [
+        "System"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "system",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_096",
+      "tool": "ansible",
+      "path": "ansible/project_096",
+      "title": "Auditbeat Audit Shipper",
+      "description": "A real-world Ansible project to implement Auditbeat Audit Shipper. Focuses on Cloud best practices.",
+      "category": [
+        "Cloud"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "cloud",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_097",
+      "tool": "ansible",
+      "path": "ansible/project_097",
+      "title": "Journalbeat Shipper",
+      "description": "A real-world Ansible project to implement Journalbeat Shipper. Focuses on Web best practices.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "web",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_098",
+      "tool": "ansible",
+      "path": "ansible/project_098",
+      "title": "Functionbeat Serverless",
+      "description": "A real-world Ansible project to implement Functionbeat Serverless. Focuses on Database best practices.",
+      "category": [
+        "Database"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "ansible",
+        "database",
+        "intermediate"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_099",
+      "tool": "ansible",
+      "path": "ansible/project_099",
+      "title": "Ansible Tower Installation",
+      "description": "A real-world Ansible project to implement Ansible Tower Installation. Focuses on DevOps best practices.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "ansible",
+        "devops",
+        "advanced"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "ansible_100",
+      "tool": "ansible",
+      "path": "ansible/project_100",
+      "title": "Rundeck Job Scheduler",
+      "description": "A real-world Ansible project to implement Rundeck Job Scheduler. Focuses on Security best practices.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "ansible",
+        "security",
+        "beginner"
+      ],
+      "dependencies": [
+        "ansible>=2.9"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_001",
+      "tool": "python",
+      "path": "python-devops/project_001",
+      "title": "System Resource Monitor",
+      "description": "A Python DevOps script to implement System Resource Monitor. Useful for Automation.",
+      "category": [
+        "Automation"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "automation",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_002",
+      "tool": "python",
+      "path": "python-devops/project_002",
+      "title": "Disk Usage Analyzer",
+      "description": "A Python DevOps script to implement Disk Usage Analyzer. Useful for Data.",
+      "category": [
+        "Data"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "data",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_003",
+      "tool": "python",
+      "path": "python-devops/project_003",
+      "title": "Log File Parser",
+      "description": "A Python DevOps script to implement Log File Parser. Useful for Network.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "network",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_004",
+      "tool": "python",
+      "path": "python-devops/project_004",
+      "title": "Backup Rotation Script",
+      "description": "A Python DevOps script to implement Backup Rotation Script. Useful for Security.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "security",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_005",
+      "tool": "python",
+      "path": "python-devops/project_005",
+      "title": "File Deduplicator",
+      "description": "A Python DevOps script to implement File Deduplicator. Useful for Cloud.",
+      "category": [
+        "Cloud"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "cloud",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_006",
+      "tool": "python",
+      "path": "python-devops/project_006",
+      "title": "Directory Cleaner",
+      "description": "A Python DevOps script to implement Directory Cleaner. Useful for DevOps.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "devops",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_007",
+      "tool": "python",
+      "path": "python-devops/project_007",
+      "title": "Old File Archiver",
+      "description": "A Python DevOps script to implement Old File Archiver. Useful for Web.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "web",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_008",
+      "tool": "python",
+      "path": "python-devops/project_008",
+      "title": "Process Monitor",
+      "description": "A Python DevOps script to implement Process Monitor. Useful for Utility.",
+      "category": [
+        "Utility"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "utility",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_009",
+      "tool": "python",
+      "path": "python-devops/project_009",
+      "title": "Memory Leak Detector",
+      "description": "A Python DevOps script to implement Memory Leak Detector. Useful for Automation.",
+      "category": [
+        "Automation"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "automation",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_010",
+      "tool": "python",
+      "path": "python-devops/project_010",
+      "title": "CPU Stress Tester",
+      "description": "A Python DevOps script to implement CPU Stress Tester. Useful for Data.",
+      "category": [
+        "Data"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "data",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_011",
+      "tool": "python",
+      "path": "python-devops/project_011",
+      "title": "Network Port Scanner",
+      "description": "A Python DevOps script to implement Network Port Scanner. Useful for Network.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "network",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_012",
+      "tool": "python",
+      "path": "python-devops/project_012",
+      "title": "IP Address Tracker",
+      "description": "A Python DevOps script to implement IP Address Tracker. Useful for Security.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "security",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_013",
+      "tool": "python",
+      "path": "python-devops/project_013",
+      "title": "Subnet Calculator",
+      "description": "A Python DevOps script to implement Subnet Calculator. Useful for Cloud.",
+      "category": [
+        "Cloud"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "cloud",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_014",
+      "tool": "python",
+      "path": "python-devops/project_014",
+      "title": "DNS Propagation Checker",
+      "description": "A Python DevOps script to implement DNS Propagation Checker. Useful for DevOps.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "devops",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_015",
+      "tool": "python",
+      "path": "python-devops/project_015",
+      "title": "SSL Cert Expiry Checker",
+      "description": "A Python DevOps script to implement SSL Cert Expiry Checker. Useful for Web.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "web",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_016",
+      "tool": "python",
+      "path": "python-devops/project_016",
+      "title": "Website Uptime Monitor",
+      "description": "A Python DevOps script to implement Website Uptime Monitor. Useful for Utility.",
+      "category": [
+        "Utility"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "utility",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_017",
+      "tool": "python",
+      "path": "python-devops/project_017",
+      "title": "HTTP Header Inspector",
+      "description": "A Python DevOps script to implement HTTP Header Inspector. Useful for Automation.",
+      "category": [
+        "Automation"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "automation",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_018",
+      "tool": "python",
+      "path": "python-devops/project_018",
+      "title": "API Response Tester",
+      "description": "A Python DevOps script to implement API Response Tester. Useful for Data.",
+      "category": [
+        "Data"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "data",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_019",
+      "tool": "python",
+      "path": "python-devops/project_019",
+      "title": "JSON Schema Validator",
+      "description": "A Python DevOps script to implement JSON Schema Validator. Useful for Network.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "network",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_020",
+      "tool": "python",
+      "path": "python-devops/project_020",
+      "title": "XML Syntax Validator",
+      "description": "A Python DevOps script to implement XML Syntax Validator. Useful for Security.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "security",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_021",
+      "tool": "python",
+      "path": "python-devops/project_021",
+      "title": "YAML Syntax Validator",
+      "description": "A Python DevOps script to implement YAML Syntax Validator. Useful for Cloud.",
+      "category": [
+        "Cloud"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "cloud",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_022",
+      "tool": "python",
+      "path": "python-devops/project_022",
+      "title": "CSV to JSON Converter",
+      "description": "A Python DevOps script to implement CSV to JSON Converter. Useful for DevOps.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "devops",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_023",
+      "tool": "python",
+      "path": "python-devops/project_023",
+      "title": "JSON to CSV Converter",
+      "description": "A Python DevOps script to implement JSON to CSV Converter. Useful for Web.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "web",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_024",
+      "tool": "python",
+      "path": "python-devops/project_024",
+      "title": "Excel to CSV Converter",
+      "description": "A Python DevOps script to implement Excel to CSV Converter. Useful for Utility.",
+      "category": [
+        "Utility"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "utility",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_025",
+      "tool": "python",
+      "path": "python-devops/project_025",
+      "title": "PDF Text Extractor",
+      "description": "A Python DevOps script to implement PDF Text Extractor. Useful for Automation.",
+      "category": [
+        "Automation"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "automation",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_026",
+      "tool": "python",
+      "path": "python-devops/project_026",
+      "title": "PDF Merger Tool",
+      "description": "A Python DevOps script to implement PDF Merger Tool. Useful for Data.",
+      "category": [
+        "Data"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "data",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_027",
+      "tool": "python",
+      "path": "python-devops/project_027",
+      "title": "Image Resizer Tool",
+      "description": "A Python DevOps script to implement Image Resizer Tool. Useful for Network.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "network",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_028",
+      "tool": "python",
+      "path": "python-devops/project_028",
+      "title": "Image Format Converter",
+      "description": "A Python DevOps script to implement Image Format Converter. Useful for Security.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "security",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_029",
+      "tool": "python",
+      "path": "python-devops/project_029",
+      "title": "Watermark Adder",
+      "description": "A Python DevOps script to implement Watermark Adder. Useful for Cloud.",
+      "category": [
+        "Cloud"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "cloud",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_030",
+      "tool": "python",
+      "path": "python-devops/project_030",
+      "title": "QR Code Generator",
+      "description": "A Python DevOps script to implement QR Code Generator. Useful for DevOps.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "devops",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_031",
+      "tool": "python",
+      "path": "python-devops/project_031",
+      "title": "Barcode Generator",
+      "description": "A Python DevOps script to implement Barcode Generator. Useful for Web.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "web",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_032",
+      "tool": "python",
+      "path": "python-devops/project_032",
+      "title": "Password Generator",
+      "description": "A Python DevOps script to implement Password Generator. Useful for Utility.",
+      "category": [
+        "Utility"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "utility",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_033",
+      "tool": "python",
+      "path": "python-devops/project_033",
+      "title": "SSH Key Rotator",
+      "description": "A Python DevOps script to implement SSH Key Rotator. Useful for Automation.",
+      "category": [
+        "Automation"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "automation",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_034",
+      "tool": "python",
+      "path": "python-devops/project_034",
+      "title": "File Encryption Tool",
+      "description": "A Python DevOps script to implement File Encryption Tool. Useful for Data.",
+      "category": [
+        "Data"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "data",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_035",
+      "tool": "python",
+      "path": "python-devops/project_035",
+      "title": "File Hash Calculator",
+      "description": "A Python DevOps script to implement File Hash Calculator. Useful for Network.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "network",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_036",
+      "tool": "python",
+      "path": "python-devops/project_036",
+      "title": "S3 Bucket Lister",
+      "description": "A Python DevOps script to implement S3 Bucket Lister. Useful for Security.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "security",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_037",
+      "tool": "python",
+      "path": "python-devops/project_037",
+      "title": "S3 File Uploader",
+      "description": "A Python DevOps script to implement S3 File Uploader. Useful for Cloud.",
+      "category": [
+        "Cloud"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "cloud",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_038",
+      "tool": "python",
+      "path": "python-devops/project_038",
+      "title": "EC2 Instance Manager",
+      "description": "A Python DevOps script to implement EC2 Instance Manager. Useful for DevOps.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "devops",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_039",
+      "tool": "python",
+      "path": "python-devops/project_039",
+      "title": "RDS Snapshot Manager",
+      "description": "A Python DevOps script to implement RDS Snapshot Manager. Useful for Web.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "web",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_040",
+      "tool": "python",
+      "path": "python-devops/project_040",
+      "title": "Lambda Function Deployer",
+      "description": "A Python DevOps script to implement Lambda Function Deployer. Useful for Utility.",
+      "category": [
+        "Utility"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "utility",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_041",
+      "tool": "python",
+      "path": "python-devops/project_041",
+      "title": "CloudWatch Log Tailer",
+      "description": "A Python DevOps script to implement CloudWatch Log Tailer. Useful for Automation.",
+      "category": [
+        "Automation"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "automation",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_042",
+      "tool": "python",
+      "path": "python-devops/project_042",
+      "title": "IAM User Auditor",
+      "description": "A Python DevOps script to implement IAM User Auditor. Useful for Data.",
+      "category": [
+        "Data"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "data",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_043",
+      "tool": "python",
+      "path": "python-devops/project_043",
+      "title": "Security Group Auditor",
+      "description": "A Python DevOps script to implement Security Group Auditor. Useful for Network.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "network",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_044",
+      "tool": "python",
+      "path": "python-devops/project_044",
+      "title": "Route53 Record Manager",
+      "description": "A Python DevOps script to implement Route53 Record Manager. Useful for Security.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "security",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_045",
+      "tool": "python",
+      "path": "python-devops/project_045",
+      "title": "Kubernetes Pod Lister",
+      "description": "A Python DevOps script to implement Kubernetes Pod Lister. Useful for Cloud.",
+      "category": [
+        "Cloud"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "cloud",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_046",
+      "tool": "python",
+      "path": "python-devops/project_046",
+      "title": "Kubernetes Log Streamer",
+      "description": "A Python DevOps script to implement Kubernetes Log Streamer. Useful for DevOps.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "devops",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_047",
+      "tool": "python",
+      "path": "python-devops/project_047",
+      "title": "Docker Container Manager",
+      "description": "A Python DevOps script to implement Docker Container Manager. Useful for Web.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "web",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_048",
+      "tool": "python",
+      "path": "python-devops/project_048",
+      "title": "Docker Image Cleaner",
+      "description": "A Python DevOps script to implement Docker Image Cleaner. Useful for Utility.",
+      "category": [
+        "Utility"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "utility",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_049",
+      "tool": "python",
+      "path": "python-devops/project_049",
+      "title": "Git Repo Cloner",
+      "description": "A Python DevOps script to implement Git Repo Cloner. Useful for Automation.",
+      "category": [
+        "Automation"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "automation",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_050",
+      "tool": "python",
+      "path": "python-devops/project_050",
+      "title": "Git Branch Cleaner",
+      "description": "A Python DevOps script to implement Git Branch Cleaner. Useful for Data.",
+      "category": [
+        "Data"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "data",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_051",
+      "tool": "python",
+      "path": "python-devops/project_051",
+      "title": "Commit Message Linter",
+      "description": "A Python DevOps script to implement Commit Message Linter. Useful for Network.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "network",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_052",
+      "tool": "python",
+      "path": "python-devops/project_052",
+      "title": "Code Complexity Checker",
+      "description": "A Python DevOps script to implement Code Complexity Checker. Useful for Security.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "security",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_053",
+      "tool": "python",
+      "path": "python-devops/project_053",
+      "title": "Todo List CLI",
+      "description": "A Python DevOps script to implement Todo List CLI. Useful for Cloud.",
+      "category": [
+        "Cloud"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "cloud",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_054",
+      "tool": "python",
+      "path": "python-devops/project_054",
+      "title": "Note Taking CLI",
+      "description": "A Python DevOps script to implement Note Taking CLI. Useful for DevOps.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "devops",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_055",
+      "tool": "python",
+      "path": "python-devops/project_055",
+      "title": "Journal Entry CLI",
+      "description": "A Python DevOps script to implement Journal Entry CLI. Useful for Web.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "web",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_056",
+      "tool": "python",
+      "path": "python-devops/project_056",
+      "title": "Timer and Stopwatch",
+      "description": "A Python DevOps script to implement Timer and Stopwatch. Useful for Utility.",
+      "category": [
+        "Utility"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "utility",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_057",
+      "tool": "python",
+      "path": "python-devops/project_057",
+      "title": "Unit Converter CLI",
+      "description": "A Python DevOps script to implement Unit Converter CLI. Useful for Automation.",
+      "category": [
+        "Automation"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "automation",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_058",
+      "tool": "python",
+      "path": "python-devops/project_058",
+      "title": "Currency Converter",
+      "description": "A Python DevOps script to implement Currency Converter. Useful for Data.",
+      "category": [
+        "Data"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "data",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_059",
+      "tool": "python",
+      "path": "python-devops/project_059",
+      "title": "Stock Price Checker",
+      "description": "A Python DevOps script to implement Stock Price Checker. Useful for Network.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "network",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_060",
+      "tool": "python",
+      "path": "python-devops/project_060",
+      "title": "Crypto Price Tracker",
+      "description": "A Python DevOps script to implement Crypto Price Tracker. Useful for Security.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "security",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_061",
+      "tool": "python",
+      "path": "python-devops/project_061",
+      "title": "Weather Forecast App",
+      "description": "A Python DevOps script to implement Weather Forecast App. Useful for Cloud.",
+      "category": [
+        "Cloud"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "cloud",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_062",
+      "tool": "python",
+      "path": "python-devops/project_062",
+      "title": "News Headlines Fetcher",
+      "description": "A Python DevOps script to implement News Headlines Fetcher. Useful for DevOps.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "devops",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_063",
+      "tool": "python",
+      "path": "python-devops/project_063",
+      "title": "Email Sender SMTP",
+      "description": "A Python DevOps script to implement Email Sender SMTP. Useful for Web.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "web",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_064",
+      "tool": "python",
+      "path": "python-devops/project_064",
+      "title": "SMS Sender Twilio",
+      "description": "A Python DevOps script to implement SMS Sender Twilio. Useful for Utility.",
+      "category": [
+        "Utility"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "utility",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_065",
+      "tool": "python",
+      "path": "python-devops/project_065",
+      "title": "Slack Notification Bot",
+      "description": "A Python DevOps script to implement Slack Notification Bot. Useful for Automation.",
+      "category": [
+        "Automation"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "automation",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_066",
+      "tool": "python",
+      "path": "python-devops/project_066",
+      "title": "Discord Webhook Bot",
+      "description": "A Python DevOps script to implement Discord Webhook Bot. Useful for Data.",
+      "category": [
+        "Data"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "data",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_067",
+      "tool": "python",
+      "path": "python-devops/project_067",
+      "title": "Telegram Chat Bot",
+      "description": "A Python DevOps script to implement Telegram Chat Bot. Useful for Network.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "network",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_068",
+      "tool": "python",
+      "path": "python-devops/project_068",
+      "title": "Web Scraper BeautifulSoup",
+      "description": "A Python DevOps script to implement Web Scraper BeautifulSoup. Useful for Security.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "security",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_069",
+      "tool": "python",
+      "path": "python-devops/project_069",
+      "title": "Selenium Automator",
+      "description": "A Python DevOps script to implement Selenium Automator. Useful for Cloud.",
+      "category": [
+        "Cloud"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "cloud",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_070",
+      "tool": "python",
+      "path": "python-devops/project_070",
+      "title": "Headless Browser Script",
+      "description": "A Python DevOps script to implement Headless Browser Script. Useful for DevOps.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "devops",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_071",
+      "tool": "python",
+      "path": "python-devops/project_071",
+      "title": "Screen Capture Tool",
+      "description": "A Python DevOps script to implement Screen Capture Tool. Useful for Web.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "web",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_072",
+      "tool": "python",
+      "path": "python-devops/project_072",
+      "title": "YouTube Video Downloader",
+      "description": "A Python DevOps script to implement YouTube Video Downloader. Useful for Utility.",
+      "category": [
+        "Utility"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "utility",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_073",
+      "tool": "python",
+      "path": "python-devops/project_073",
+      "title": "File Organizer Script",
+      "description": "A Python DevOps script to implement File Organizer Script. Useful for Automation.",
+      "category": [
+        "Automation"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "automation",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_074",
+      "tool": "python",
+      "path": "python-devops/project_074",
+      "title": "Bulk File Renamer",
+      "description": "A Python DevOps script to implement Bulk File Renamer. Useful for Data.",
+      "category": [
+        "Data"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "data",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_075",
+      "tool": "python",
+      "path": "python-devops/project_075",
+      "title": "Regex Testing Tool",
+      "description": "A Python DevOps script to implement Regex Testing Tool. Useful for Network.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "network",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_076",
+      "tool": "python",
+      "path": "python-devops/project_076",
+      "title": "Markdown to HTML",
+      "description": "A Python DevOps script to implement Markdown to HTML. Useful for Security.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "security",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_077",
+      "tool": "python",
+      "path": "python-devops/project_077",
+      "title": "HTML to Markdown",
+      "description": "A Python DevOps script to implement HTML to Markdown. Useful for Cloud.",
+      "category": [
+        "Cloud"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "cloud",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_078",
+      "tool": "python",
+      "path": "python-devops/project_078",
+      "title": "Static Site Generator",
+      "description": "A Python DevOps script to implement Static Site Generator. Useful for DevOps.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "devops",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_079",
+      "tool": "python",
+      "path": "python-devops/project_079",
+      "title": "Broken Link Checker",
+      "description": "A Python DevOps script to implement Broken Link Checker. Useful for Web.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "web",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_080",
+      "tool": "python",
+      "path": "python-devops/project_080",
+      "title": "Broken Image Checker",
+      "description": "A Python DevOps script to implement Broken Image Checker. Useful for Utility.",
+      "category": [
+        "Utility"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "utility",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_081",
+      "tool": "python",
+      "path": "python-devops/project_081",
+      "title": "Sitemap Generator",
+      "description": "A Python DevOps script to implement Sitemap Generator. Useful for Automation.",
+      "category": [
+        "Automation"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "automation",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_082",
+      "tool": "python",
+      "path": "python-devops/project_082",
+      "title": "Robots.txt Generator",
+      "description": "A Python DevOps script to implement Robots.txt Generator. Useful for Data.",
+      "category": [
+        "Data"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "data",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_083",
+      "tool": "python",
+      "path": "python-devops/project_083",
+      "title": "Whois Domain Lookup",
+      "description": "A Python DevOps script to implement Whois Domain Lookup. Useful for Network.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "network",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_084",
+      "tool": "python",
+      "path": "python-devops/project_084",
+      "title": "GeoIP Location Lookup",
+      "description": "A Python DevOps script to implement GeoIP Location Lookup. Useful for Security.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "security",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_085",
+      "tool": "python",
+      "path": "python-devops/project_085",
+      "title": "Mac Address Vendor",
+      "description": "A Python DevOps script to implement Mac Address Vendor. Useful for Cloud.",
+      "category": [
+        "Cloud"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "cloud",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_086",
+      "tool": "python",
+      "path": "python-devops/project_086",
+      "title": "User Agent Parser",
+      "description": "A Python DevOps script to implement User Agent Parser. Useful for DevOps.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "devops",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_087",
+      "tool": "python",
+      "path": "python-devops/project_087",
+      "title": "Crontab Generator",
+      "description": "A Python DevOps script to implement Crontab Generator. Useful for Web.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "web",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_088",
+      "tool": "python",
+      "path": "python-devops/project_088",
+      "title": "System Info Dumper",
+      "description": "A Python DevOps script to implement System Info Dumper. Useful for Utility.",
+      "category": [
+        "Utility"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "utility",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_089",
+      "tool": "python",
+      "path": "python-devops/project_089",
+      "title": "Env Variable Dumper",
+      "description": "A Python DevOps script to implement Env Variable Dumper. Useful for Automation.",
+      "category": [
+        "Automation"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "automation",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_090",
+      "tool": "python",
+      "path": "python-devops/project_090",
+      "title": "Path Variable Fixer",
+      "description": "A Python DevOps script to implement Path Variable Fixer. Useful for Data.",
+      "category": [
+        "Data"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "data",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_091",
+      "tool": "python",
+      "path": "python-devops/project_091",
+      "title": "Duplicate Line Remover",
+      "description": "A Python DevOps script to implement Duplicate Line Remover. Useful for Network.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "network",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_092",
+      "tool": "python",
+      "path": "python-devops/project_092",
+      "title": "Text Case Converter",
+      "description": "A Python DevOps script to implement Text Case Converter. Useful for Security.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "security",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_093",
+      "tool": "python",
+      "path": "python-devops/project_093",
+      "title": "Word Count Tool",
+      "description": "A Python DevOps script to implement Word Count Tool. Useful for Cloud.",
+      "category": [
+        "Cloud"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "cloud",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_094",
+      "tool": "python",
+      "path": "python-devops/project_094",
+      "title": "Character Count Tool",
+      "description": "A Python DevOps script to implement Character Count Tool. Useful for DevOps.",
+      "category": [
+        "DevOps"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "devops",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_095",
+      "tool": "python",
+      "path": "python-devops/project_095",
+      "title": "Line Count Tool",
+      "description": "A Python DevOps script to implement Line Count Tool. Useful for Web.",
+      "category": [
+        "Web"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "web",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_096",
+      "tool": "python",
+      "path": "python-devops/project_096",
+      "title": "File Permission Fixer",
+      "description": "A Python DevOps script to implement File Permission Fixer. Useful for Utility.",
+      "category": [
+        "Utility"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "utility",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_097",
+      "tool": "python",
+      "path": "python-devops/project_097",
+      "title": "Empty Directory Remover",
+      "description": "A Python DevOps script to implement Empty Directory Remover. Useful for Automation.",
+      "category": [
+        "Automation"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "automation",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_098",
+      "tool": "python",
+      "path": "python-devops/project_098",
+      "title": "Temp File Cleaner",
+      "description": "A Python DevOps script to implement Temp File Cleaner. Useful for Data.",
+      "category": [
+        "Data"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "python",
+        "devops",
+        "data",
+        "intermediate"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_099",
+      "tool": "python",
+      "path": "python-devops/project_099",
+      "title": "Browser Cache Cleaner",
+      "description": "A Python DevOps script to implement Browser Cache Cleaner. Useful for Network.",
+      "category": [
+        "Network"
+      ],
+      "difficulty": "advanced",
+      "tags": [
+        "python",
+        "devops",
+        "network",
+        "advanced"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    },
+    {
+      "id": "python_100",
+      "tool": "python",
+      "path": "python-devops/project_100",
+      "title": "Shell History Cleaner",
+      "description": "A Python DevOps script to implement Shell History Cleaner. Useful for Security.",
+      "category": [
+        "Security"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "devops",
+        "security",
+        "beginner"
+      ],
+      "dependencies": [
+        "python>=3.8"
+      ],
+      "related_projects": [],
+      "version": "1.0"
+    }
+  ]
+}

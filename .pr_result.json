@@ -1,0 +1,6 @@
+{
+  "status": "FAILED",
+  "run_id": "ai-run-1",
+  "stage": "pr_create",
+  "error": "No remote configured or GH CLI not authenticated"
+}

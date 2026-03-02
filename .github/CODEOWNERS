@@ -1,0 +1,28 @@
+# Codeowners
+
+# Global maintainers (review all changes)
+* @sainath @maintainers
+
+# Kubernetes related files
+/docs/how-to/k8s_toolkit.md @sainath
+/docs/troubleshooting/k8s-*.md @sainath
+/scripts/bash/k8s_toolkit/ @sainath
+/snippets/kubectl*.md @sainath
+/templates/k8s/ @sainath
+
+# Scripts in general
+/scripts/bash/ @sainath
+/scripts/python/ @sainath
+/scripts/powershell/ @sainath
+/scripts/lib/ @sainath
+
+# Documentation
+/docs/ @sainath
+/snippets/ @sainath
+/00_index/ @sainath
+
+# Templates and starters
+/templates/ @sainath
+
+# CI/CD configurations
+/.github/workflows/ @sainath

@@ -1,7 +1,10 @@
 {
-  "pull_request": {
-    "title": "[devops-kit][RUN_ID:<RUN_ID>] <tool_name>: <short summary>",
-    "body": "RUN_ID: <RUN_ID>\nBASE_BRANCH: master\nTOOL: <tool_name>\n\nSUMMARY:\n\n* <bullet summary>\n\nVALIDATION:\n\n* <checks run or why not>",
-    "draft": false
-  }
+  "status": "DONE",
+  "run_id": "run-20260302-0820",
+  "tool_name": "k8s_toolkit",
+  "base_branch": "master",
+  "head_branch": "sainath-2026-03-02-0820",
+  "pr_url": "https://github.com/Sainathkeesara/DevOps-Kit/pull/3",
+  "pr_number": 3,
+  "timestamp_utc": "2026-03-02T02:51:21Z"
 }

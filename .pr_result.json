@@ -1,0 +1,7 @@
+{
+  "pull_request": {
+    "title": "[devops-kit][RUN_ID:<RUN_ID>] <tool_name>: <short summary>",
+    "body": "RUN_ID: <RUN_ID>\nBASE_BRANCH: master\nTOOL: <tool_name>\n\nSUMMARY:\n\n* <bullet summary>\n\nVALIDATION:\n\n* <checks run or why not>",
+    "draft": false
+  }
+}

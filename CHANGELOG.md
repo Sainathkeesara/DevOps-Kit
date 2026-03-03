@@ -17,8 +17,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - `scripts/bash/k8s_toolkit/report/namespace-report.sh`: Generate namespace resource report
 - Documentation: `docs/how-to/k8s_toolkit.md` - Complete usage guide
 - Snippets: `snippets/kubectl-cheatsheet.md` - Quick kubectl reference
-- Template updates: `templates/k8s/deployment-monitor.sh`
-- Bootstrap files: README, CHANGELOG, index files, PR template, CODEOWNERS
+ - Template updates: `templates/k8s/deployment-monitor.sh`
+ - Bootstrap files: README, CHANGELOG, index files, PR template, CODEOWNERS
+ - oci_registry_toolkit: OCI registry helper scripts
+   - `scripts/bash/oci_registry_toolkit/registry/list-repos.sh`: List repositories in a registry
+   - `scripts/bash/oci_registry_toolkit/registry/list-tags.sh`: List tags for a repository
+   - `scripts/bash/oci_registry_toolkit/tags/find-old-tags.sh`: Find old/unused tags based on age or pattern
+   - `scripts/bash/oci_registry_toolkit/tools/keepalive-pull-plan.sh`: Generate script to pull artifacts for offline/keepalive
+   - `scripts/bash/oci_registry_toolkit/auth/check-auth.sh`: Diagnose registry authentication issues
+ - Documentation: `docs/how-to/oci_registry_toolkit.md` - Complete usage guide
+ - Snippets: `snippets/oci-registry-cheatsheet.md` - OCI registry quick reference
+ - Index updates: `00_index/quick-links.md` - Added OCI/Container Registries section
 
 ### Changed
 - N/A (initial release)
@@ -31,6 +40,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Security
 - N/A
+
+### Completed
+- oci_registry_toolkit: Implementation complete, all scripts include dry-run modes, safety notes, and follow established standards.
 
 ## [2026-03-02] - Initial Bootstrap
 

@@ -6,12 +6,23 @@
 
 ## Tools
 - [k8s_toolkit](how-to/k8s_toolkit.md) - Safe kubectl helper scripts (drain, rollout, restart with dry-run, logs, exec, debug, report)
+- [kafka_toolkit](how-to/kafka_toolkit.md) - Kafka helper scripts (topic management, consumer lag, diagnostics)
 - [oci_registry_toolkit](how-to/oci_registry_toolkit.md) - OCI registry helpers (list repos/tags, find old tags, keepalive plans, auth diagnostics)
 
 ## Topics
+- [Kafka](#kafka)
 - [Kubernetes](#kubernetes)
 - [Scripting](#scripting)
 - [Troubleshooting](#troubleshooting)
+
+## Kafka
+- [kafka_toolkit Usage](how-to/kafka_toolkit.md)
+- [Kafka Cheatsheet](../snippets/kafka-cheatsheet.md)
+- [List Topics](../scripts/bash/kafka_toolkit/topics/list-topics.sh)
+- [Describe Topic](../scripts/bash/kafka_toolkit/topics/describe-topic.sh)
+- [Create Topic](../scripts/bash/kafka_toolkit/topics/topic-create.sh)
+- [Consumer Lag Check](../scripts/bash/kafka_toolkit/consumers/consumer-lag-check.sh)
+- [Test Produce/Consume](../scripts/bash/kafka_toolkit/diagnostics/test-produce-consume.sh)
 
 ## Kubernetes
 - [k8s_toolkit Usage](how-to/k8s_toolkit.md)

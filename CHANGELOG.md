@@ -28,6 +28,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
  - Documentation: `docs/how-to/oci_registry_toolkit.md` - Complete usage guide
  - Snippets: `snippets/oci-registry-cheatsheet.md` - OCI registry quick reference
  - Index updates: `00_index/quick-links.md` - Added OCI/Container Registries section
+ - kafka_toolkit: Apache Kafka helper scripts for topic and consumer management
+   - `scripts/bash/kafka_toolkit/topics/list-topics.sh`: List topics with optional detailed view and under-replicated filter
+   - `scripts/bash/kafka_toolkit/topics/describe-topic.sh`: Get detailed topic information with partition/replica status
+   - `scripts/bash/kafka_toolkit/topics/topic-create.sh`: Create topics with validation and safe defaults
+   - `scripts/bash/kafka_toolkit/consumers/consumer-lag-check.sh`: Check consumer group lag and offsets
+   - `scripts/bash/kafka_toolkit/diagnostics/test-produce-consume.sh`: Verify connectivity with test messages
+ - Documentation: `docs/how-to/kafka_toolkit.md` - Complete usage guide following DOC STANDARD
+ - Snippets: `snippets/kafka-cheatsheet.md` - Quick reference for Kafka CLI commands
+ - Index updates: `00_index/quick-links.md` - Added Kafka section with all tool links
 
 ### Changed
 - N/A (initial release)

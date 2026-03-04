@@ -41,8 +41,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Security
 - N/A
 
+- ci_cd_toolkit: CI/CD pipeline helpers for GitHub Actions
+  - `scripts/bash/ci_cd_toolkit/github/lint-workflows.sh`: Validate workflows using actionlint
+  - `scripts/bash/ci_cd_toolkit/github/validate-workflow.sh`: Syntax and structure validation
+  - `scripts/bash/ci_cd_toolkit/github/pipeline-health.sh`: Check workflow run status and health
+  - `scripts/bash/ci_cd_toolkit/github/check-action-updates.sh`: Detect outdated GitHub Actions
+  - `scripts/bash/ci_cd_toolkit/github/generate-workflow.sh`: Generate starter workflow files
+- Documentation: `docs/how-to/ci_cd_toolkit.md` - Complete usage guide
+- Snippets: `snippets/ci-cd-cheatsheet.md` - CI/CD quick reference
+
 ### Completed
 - oci_registry_toolkit: Implementation complete, all scripts include dry-run modes, safety notes, and follow established standards.
+- ci_cd_toolkit: Implementation complete with GitHub Actions helpers for linting, validation, health checks, and workflow generation.
 
 ## [2026-03-02] - Initial Bootstrap
 

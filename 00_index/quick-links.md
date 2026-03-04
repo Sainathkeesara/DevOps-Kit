@@ -7,6 +7,7 @@
 ## Tools
 - [k8s_toolkit](how-to/k8s_toolkit.md) - Safe kubectl helper scripts (drain, rollout, restart with dry-run, logs, exec, debug, report)
 - [oci_registry_toolkit](how-to/oci_registry_toolkit.md) - OCI registry helpers (list repos/tags, find old tags, keepalive plans, auth diagnostics)
+- [ci_cd_toolkit](how-to/ci_cd_toolkit.md) - CI/CD pipeline helpers (workflow linting, health checks, action updates, workflow generation)
 
 ## Topics
 - [Kubernetes](#kubernetes)
@@ -33,6 +34,15 @@
 - [Find Old Tags](../scripts/bash/oci_registry_toolkit/tags/find-old-tags.sh)
 - [Keepalive Pull Plan](../scripts/bash/oci_registry_toolkit/tools/keepalive-pull-plan.sh)
 - [Auth Diagnostics](../scripts/bash/oci_registry_toolkit/auth/check-auth.sh)
+
+## CI/CD
+- [ci_cd_toolkit Usage](how-to/ci_cd_toolkit.md)
+- [CI/CD Cheatsheet](../snippets/ci-cd-cheatsheet.md)
+- [Lint Workflows](../scripts/bash/ci_cd_toolkit/github/lint-workflows.sh)
+- [Validate Workflow](../scripts/bash/ci_cd_toolkit/github/validate-workflow.sh)
+- [Pipeline Health](../scripts/bash/ci_cd_toolkit/github/pipeline-health.sh)
+- [Check Action Updates](../scripts/bash/ci_cd_toolkit/github/check-action-updates.sh)
+- [Generate Workflow](../scripts/bash/ci_cd_toolkit/github/generate-workflow.sh)
 
 ## Scripting
 - [Bash Scripts](../scripts/bash/)

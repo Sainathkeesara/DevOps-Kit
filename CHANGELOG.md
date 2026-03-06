@@ -28,6 +28,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
  - Documentation: `docs/how-to/oci_registry_toolkit.md` - Complete usage guide
  - Snippets: `snippets/oci-registry-cheatsheet.md` - OCI registry quick reference
  - Index updates: `00_index/quick-links.md` - Added OCI/Container Registries section
+- observability_toolkit: Prometheus, Grafana, Loki, Jaeger, OpenTelemetry scripts
+  - `scripts/bash/observability_toolkit/prometheus/targets-status.sh`: Check Prometheus scrape targets health
+  - `scripts/bash/observability_toolkit/prometheus/check-alert.sh`: Monitor Prometheus alerts
+  - `scripts/bash/observability_toolkit/prometheus/query-metrics.sh`: Execute PromQL queries
+  - `scripts/bash/observability_toolkit/loki/query-logs.sh`: Query Loki logs with LogQL
+  - `scripts/bash/observability_toolkit/grafana/health-check.sh`: Check Grafana health and datasources
+  - `scripts/bash/observability_toolkit/jaeger/query-traces.sh`: Query Jaeger distributed traces
+  - `scripts/bash/observability_toolkit/otel/collector-health.sh`: Check OTel collector status
+  - `scripts/bash/observability_toolkit/stack-health.sh`: Check all observability stack components
+- Documentation: `docs/how-to/observability_toolkit.md` - Complete usage guide
+- Snippets: `snippets/observability-cheatsheet.md` - PromQL, LogQL, alerting rules, Helm commands
+- Index updates: `00_index/quick-links.md` - Added Observability section
 
 ### Changed
 - N/A (initial release)
@@ -53,6 +65,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Completed
 - oci_registry_toolkit: Implementation complete, all scripts include dry-run modes, safety notes, and follow established standards.
 - ci_cd_toolkit: Implementation complete with GitHub Actions helpers for linting, validation, health checks, and workflow generation.
+- observability_toolkit: Implementation complete with Prometheus, Grafana, Loki, Jaeger, and OTel collector scripts. Includes PromQL and LogQL snippets, alerting rules, and Docker Compose examples.
 
 ## [2026-03-02] - Initial Bootstrap
 

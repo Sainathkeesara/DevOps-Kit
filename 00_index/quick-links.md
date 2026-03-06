@@ -9,6 +9,7 @@
 - [oci_registry_toolkit](how-to/oci_registry_toolkit.md) - OCI registry helpers (list repos/tags, find old tags, keepalive plans, auth diagnostics)
 - [ci_cd_toolkit](how-to/ci_cd_toolkit.md) - CI/CD pipeline helpers (workflow linting, health checks, action updates, workflow generation)
 - [observability_toolkit](how-to/observability_toolkit.md) - Prometheus, Grafana, Loki, Jaeger, OTel query and health scripts
+- [linux_toolkit](how-to/linux_toolkit.md) - Linux system administration scripts (health check, disk usage, service management, network diagnostics)
 
 ## Topics
 - [Kubernetes](#kubernetes)
@@ -57,6 +58,16 @@
 - [Query Traces (Jaeger)](../scripts/bash/observability_toolkit/jaeger/query-traces.sh)
 - [OTel Collector Health](../scripts/bash/observability_toolkit/otel/collector-health.sh)
 - [Stack Health Check](../scripts/bash/observability_toolkit/stack-health.sh)
+
+## Linux Administration
+- [linux_toolkit Usage](how-to/linux_toolkit.md)
+- [Linux Cheatsheet](../snippets/linux-cheatsheet.md)
+- [System Health Check](../scripts/bash/linux_toolkit/system/health-check.sh)
+- [Disk Usage Analysis](../scripts/bash/linux_toolkit/system/disk-usage.sh)
+- [Service Management](../scripts/bash/linux_toolkit/service/manage-services.sh)
+- [Network Diagnostics](../scripts/bash/linux_toolkit/network/net-diag.sh)
+- [Process Manager](../scripts/bash/linux_toolkit/process/process-manager.sh)
+- [Security Check](../scripts/bash/linux_toolkit/security/security-check.sh)
 
 ## Scripting
 - [Bash Scripts](../scripts/bash/)

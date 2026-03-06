@@ -8,11 +8,13 @@
 - [k8s_toolkit](how-to/k8s_toolkit.md) - Safe kubectl helper scripts (drain, rollout, restart with dry-run, logs, exec, debug, report)
 - [oci_registry_toolkit](how-to/oci_registry_toolkit.md) - OCI registry helpers (list repos/tags, find old tags, keepalive plans, auth diagnostics)
 - [ci_cd_toolkit](how-to/ci_cd_toolkit.md) - CI/CD pipeline helpers (workflow linting, health checks, action updates, workflow generation)
+- [observability_toolkit](how-to/observability_toolkit.md) - Prometheus, Grafana, Loki, Jaeger, OTel query and health scripts
 
 ## Topics
 - [Kubernetes](#kubernetes)
 - [Scripting](#scripting)
 - [Troubleshooting](#troubleshooting)
+- [Observability](#observability)
 
 ## Kubernetes
 - [k8s_toolkit Usage](how-to/k8s_toolkit.md)
@@ -43,6 +45,18 @@
 - [Pipeline Health](../scripts/bash/ci_cd_toolkit/github/pipeline-health.sh)
 - [Check Action Updates](../scripts/bash/ci_cd_toolkit/github/check-action-updates.sh)
 - [Generate Workflow](../scripts/bash/ci_cd_toolkit/github/generate-workflow.sh)
+
+## Observability
+- [observability_toolkit Usage](how-to/observability_toolkit.md)
+- [Observability Cheatsheet](../snippets/observability-cheatsheet.md)
+- [Prometheus Targets Status](../scripts/bash/observability_toolkit/prometheus/targets-status.sh)
+- [Check Alert](../scripts/bash/observability_toolkit/prometheus/check-alert.sh)
+- [Query Metrics](../scripts/bash/observability_toolkit/prometheus/query-metrics.sh)
+- [Query Logs (Loki)](../scripts/bash/observability_toolkit/loki/query-logs.sh)
+- [Grafana Health Check](../scripts/bash/observability_toolkit/grafana/health-check.sh)
+- [Query Traces (Jaeger)](../scripts/bash/observability_toolkit/jaeger/query-traces.sh)
+- [OTel Collector Health](../scripts/bash/observability_toolkit/otel/collector-health.sh)
+- [Stack Health Check](../scripts/bash/observability_toolkit/stack-health.sh)
 
 ## Scripting
 - [Bash Scripts](../scripts/bash/)

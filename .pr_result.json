@@ -1,11 +1,5 @@
 {
-  "run_id": "169",
-  "tool_name": "linux_toolkit",
-  "base_branch": "master",
-  "head_branch": "sainath-2026-03-06-0610",
-  "pr_url": "https://github.com/Sainathkeesara/DevOps-Kit/pull/9",
-  "pr_number": 9,
-  "conflicts_found": false,
-  "conflicts_resolved": true,
-  "timestamp_utc": "2026-03-06T06:10:00Z"
+  "run_id": "170",
+  "stage": "pr_create",
+  "error": "Push to remote failed: GitHub authentication not available in this environment. Branch 'sainath-2026-03-06-0755' created locally with commit eef7b3b. Manual push required: git push -u origin sainath-2026-03-06-0755"
 }

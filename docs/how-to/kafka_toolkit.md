@@ -164,6 +164,129 @@ Verify cluster health and broker status.
 ./scripts/bash/kafka_toolkit/admin/cluster-health.sh -v
 ```
 
+### ACL Management
+
+#### manage-acls.sh
+
+Manage Kafka ACLs: list, add, and remove access control rules.
+
+```bash
+# List all ACLs
+./scripts/bash/kafka_toolkit/acl/manage-acls.sh --list
+
+# Allow user to read from a topic
+./scripts/bash/kafka_toolkit/acl/manage-acls.sh \
+  --add \
+  --principal User:app-user \
+  --host "*" \
+  --operation Read \
+  --resource-type Topic \
+  --resource-name events \
+  -e
+
+# Allow user to write to a topic
+./scripts/bash/kafka_toolkit/acl/manage-acls.sh \
+  --add \
+  --principal User:producer \
+  --host "10.0.0.*" \
+  --operation Write \
+  --resource-type Topic \
+  --resource-name events \
+  -e
+
+# Allow consumer group access
+./scripts/bash/kafka_toolkit/acl/manage-acls.sh \
+  --add \
+  --principal User:app-user \
+  --host "*" \
+  --operation Read \
+  --resource-type Group \
+  --resource-name app-consumer \
+  -e
+
+# Remove an ACL (dry-run first)
+./scripts/bash/kafka_toolkit/acl/manage-acls.sh \
+  --remove \
+  --principal User:old-user \
+  --operation Read \
+  --resource-type Topic \
+  --resource-name events
+```
+
+### Monitoring
+
+#### consumer-lag.sh
+
+Monitor Kafka consumer lag across groups and topics with alerting.
+
+```bash
+# Check all consumer groups
+./scripts/bash/kafka_toolkit/monitoring/consumer-lag.sh
+
+# Check specific group
+./scripts/bash/kafka_toolkit/monitoring/consumer-lag.sh -g order-processor
+
+# Check specific topic across all groups
+./scripts/bash/kafka_toolkit/monitoring/consumer-lag.sh -t events
+
+# Alert on lower threshold
+./scripts/bash/kafka_toolkit/monitoring/consumer-lag.sh -T 5000
+
+# JSON output for automation
+./scripts/bash/kafka_toolkit/monitoring/consumer-lag.sh -f json
+
+# Sort by group name
+./scripts/bash/kafka_toolkit/monitoring/consumer-lag.sh -s group
+```
+
+#### throughput-check.sh
+
+Monitor Kafka topic throughput and message rates.
+
+```bash
+# Check throughput for all topics (sample)
+./scripts/bash/kafka_toolkit/monitoring/throughput-check.sh -d 5
+
+# Check specific topic
+./scripts/bash/kafka_toolkit/monitoring/throughput-check.sh -t events -d 10
+
+# Longer sampling for accurate baseline
+./scripts/bash/kafka_toolkit/monitoring/throughput-check.sh \
+  -t high-volume-topic -d 30 -i 5
+```
+
+### Partition Reassignment
+
+#### partition-reassign.sh
+
+Generate, execute, and verify Kafka partition reassignment plans.
+
+```bash
+# Generate plan for specific topics
+./scripts/bash/kafka_toolkit/partitions/partition-reassign.sh \
+  --generate -t events,orders -B 1,2,3
+
+# Generate plan for all topics with throttle
+./scripts/bash/kafka_toolkit/partitions/partition-reassign.sh \
+  --generate -B 4,5,6 -T 50
+
+# Execute reassignment from file
+./scripts/bash/kafka_toolkit/partitions/partition-reassign.sh \
+  --execute -f reassignment.json
+
+# Verify reassignment progress
+./scripts/bash/kafka_toolkit/partitions/partition-reassign.sh \
+  --verify -f reassignment.json
+
+# Cancel ongoing reassignment
+./scripts/bash/kafka_toolkit/partitions/partition-reassign.sh \
+  --cancel -f reassignment.json
+
+# Dry-run first (recommended)
+./scripts/bash/kafka_toolkit/partitions/partition-reassign.sh \
+  --generate -t events -B 1,2,3
+```
+
 ## Verify
 
 Verify scripts are executable:
@@ -213,6 +336,9 @@ kafka-consumer-groups.sh --bootstrap-server $KAFKA_BOOTSTRAP_SERVER \
 | `Consumer group still active` | Members connected | Stop consumers before offset reset |
 | `No brokers available` | All brokers down | Check cluster health, network connectivity |
 | `Leader not available` | Partition leader election | Wait for election or check broker logs |
+| `ACL operation not permitted` | Missing ACL permissions | Contact admin to grant ACL access |
+| `Reassignment already in progress` | Concurrent reassignment | Wait for current reassignment to complete |
+| `Throttle not specified` | Large reassignment without throttle | Add `--throttle` to limit replication I/O |
 
 ## References
 

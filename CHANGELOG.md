@@ -71,12 +71,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - `scripts/bash/ci_cd_toolkit/github/generate-workflow.sh`: Generate starter workflow files
 - Documentation: `docs/how-to/ci_cd_toolkit.md` - Complete usage guide
 - Snippets: `snippets/ci-cd-cheatsheet.md` - CI/CD quick reference
+- kafka_toolkit: ACL management, monitoring, and partition reassignment scripts
+  - `scripts/bash/kafka_toolkit/acl/manage-acls.sh`: Manage Kafka ACLs (list, add, remove) with dry-run
+  - `scripts/bash/kafka_toolkit/monitoring/consumer-lag.sh`: Monitor consumer lag with alerting thresholds
+  - `scripts/bash/kafka_toolkit/monitoring/throughput-check.sh`: Measure topic throughput and message rates
+  - `scripts/bash/kafka_toolkit/partitions/partition-reassign.sh`: Generate/execute/verify partition reassignment plans
+- Documentation: Extended `docs/how-to/kafka_toolkit.md` with ACL, monitoring, and reassignment sections
+- Snippets: Extended `snippets/kafka-cheatsheet.md` with ACL operations, monitoring commands, reassignment examples
+- Index updates: `00_index/quick-links.md` - Added Kafka section with all toolkit links
 
 ### Completed
 - oci_registry_toolkit: Implementation complete, all scripts include dry-run modes, safety notes, and follow established standards.
 - ci_cd_toolkit: Implementation complete with GitHub Actions helpers for linting, validation, health checks, and workflow generation.
 - observability_toolkit: Implementation complete with Prometheus, Grafana, Loki, Jaeger, and OTel collector scripts. Includes PromQL and LogQL snippets, alerting rules, and Docker Compose examples.
 - linux_toolkit: Implementation complete with system health monitoring, disk analysis, service management, network diagnostics, process management, and security audit scripts.
+- kafka_toolkit: Implementation complete with ACL management, consumer lag monitoring, throughput checks, and partition reassignment helpers. All scripts include dry-run modes and safety guardrails.
 
 ## [2026-03-02] - Initial Bootstrap
 

@@ -11,6 +11,18 @@
 - [observability_toolkit](how-to/observability_toolkit.md) - Prometheus, Grafana, Loki, Jaeger, OTel query and health scripts
 - [linux_toolkit](how-to/linux_toolkit.md) - Linux system administration scripts (health check, disk usage, service management, network diagnostics)
 
+## Kafka
+- [kafka_toolkit Usage](how-to/kafka_toolkit.md)
+- [Kafka Cheatsheet](../snippets/kafka-cheatsheet.md)
+- [Topic Management](../scripts/bash/kafka_toolkit/topics/topic-list.sh)
+- [Consumer Groups](../scripts/bash/kafka_toolkit/consumers/consumer-groups.sh)
+- [Message Produce/Consume](../scripts/bash/kafka_toolkit/messaging/produce-message.sh)
+- [Cluster Health](../scripts/bash/kafka_toolkit/admin/cluster-health.sh)
+- [ACL Management](../scripts/bash/kafka_toolkit/acl/manage-acls.sh)
+- [Consumer Lag Monitoring](../scripts/bash/kafka_toolkit/monitoring/consumer-lag.sh)
+- [Throughput Check](../scripts/bash/kafka_toolkit/monitoring/throughput-check.sh)
+- [Partition Reassignment](../scripts/bash/kafka_toolkit/partitions/partition-reassign.sh)
+
 ## Topics
 - [Kubernetes](#kubernetes)
 - [Scripting](#scripting)

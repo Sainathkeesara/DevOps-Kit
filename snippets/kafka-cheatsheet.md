@@ -180,6 +180,137 @@ kafka-acls.sh --bootstrap-server $KAFKA_BOOTSTRAP_SERVER \
   --operation Read --topic events
 ```
 
+### Add Write ACL
+```bash
+kafka-acls.sh --bootstrap-server $KAFKA_BOOTSTRAP_SERVER \
+  --add --allow-principal User:producer \
+  --host "10.0.0.*" \
+  --operation Write --topic events
+```
+
+### Add Consumer Group ACL
+```bash
+kafka-acls.sh --bootstrap-server $KAFKA_BOOTSTRAP_SERVER \
+  --add --allow-principal User:app-user \
+  --operation Read --group app-consumer
+```
+
+### Remove ACL
+```bash
+kafka-acls.sh --bootstrap-server $KAFKA_BOOTSTRAP_SERVER \
+  --remove --allow-principal User:old-user \
+  --operation Read --topic events
+```
+
+### ACL Operations
+- `Read` - Read from topic, consume from group
+- `Write` - Write to topic
+- `Create` - Create topic
+- `Delete` - Delete topic
+- `Alter` - Modify topic config/partitions
+- `Describe` - View topic metadata
+- `ClusterAction` - Cluster-level operations
+- `All` - All operations
+
+### ACL Pattern Types
+- `LITERAL` - Exact name match
+- `PREFIXED` - Prefix match
+- `WILDCARD` - Wildcard match
+
+## Monitoring
+
+### Consumer Lag Check
+```bash
+kafka-consumer-groups.sh --bootstrap-server $KAFKA_BOOTSTRAP_SERVER \
+  --describe --group order-processor
+```
+
+### Calculate Total Lag
+```bash
+kafka-consumer-groups.sh --bootstrap-server $KAFKA_BOOTSTRAP_SERVER \
+  --describe --group <group> | awk '{print $0; lag+=$5} END {print "\nTotal Lag:", lag}'
+```
+
+### Consumer Lag with State
+```bash
+kafka-consumer-groups.sh --bootstrap-server $KAFKA_BOOTSTRAP_SERVER \
+  --describe --group <group> --members --verbose
+```
+
+### Throughput Test (Producer)
+```bash
+kafka-producer-perf-test.sh \
+  --topic events \
+  --num-records 100000 \
+  --record-size 1000 \
+  --throughput 1000 \
+  --producer-props bootstrap.servers=$KAFKA_BOOTSTRAP_SERVER
+```
+
+### Throughput Test (Consumer)
+```bash
+kafka-consumer-perf-test.sh \
+  --topic events \
+  --messages 100000 \
+  --bootstrap-server $KAFKA_BOOTSTRAP_SERVER
+```
+
+### Partition Distribution
+```bash
+kafka-topics.sh --bootstrap-server $KAFKA_BOOTSTRAP_SERVER \
+  --describe --topic events | grep -E "Leader|Replicas"
+```
+
+### Under-Replicated Partitions
+```bash
+kafka-topics.sh --bootstrap-server $KAFKA_BOOTSTRAP_SERVER \
+  --describe --under-replicated-partitions
+```
+
+### Offline Partitions
+```bash
+kafka-topics.sh --bootstrap-server $KAFKA_BOOTSTRAP_SERVER \
+  --describe --unavailable-partitions
+```
+
+## Partition Reassignment
+
+### Generate Reassignment Plan
+```bash
+kafka-reassign-partitions.sh --bootstrap-server $KAFKA_BOOTSTRAP_SERVER \
+  --generate \
+  --topics-to-move-json-string '{"topics": ["events","orders"]}' \
+  --broker-list "1,2,3"
+```
+
+### Execute Reassignment
+```bash
+kafka-reassign-partitions.sh --bootstrap-server $KAFKA_BOOTSTRAP_SERVER \
+  --execute \
+  --reassignment-json-file reassignment.json \
+  --throttle 52428800
+```
+
+### Verify Reassignment
+```bash
+kafka-reassign-partitions.sh --bootstrap-server $KAFKA_BOOTSTRAP_SERVER \
+  --verify \
+  --reassignment-json-file reassignment.json
+```
+
+### Cancel Reassignment
+```bash
+kafka-reassign-partitions.sh --bootstrap-server $KAFKA_BOOTSTRAP_SERVER \
+  --cancel \
+  --reassignment-json-file reassignment.json
+```
+
+### Throttle Calculation
+```bash
+# 50 MB/s = 52428800 bytes/s
+# 100 MB/s = 104857600 bytes/s
+```
+
 ## Performance Testing
 
 ### Producer Perf Test

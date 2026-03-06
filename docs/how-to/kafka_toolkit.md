@@ -74,6 +74,42 @@ Create topics with validation and dry-run.
   -t events -p 6 -r 3 --if-not-exists
 ```
 
+#### topic-delete.sh
+
+Safely delete Kafka topics with pre-checks and dry-run support.
+
+```bash
+# Dry-run (default) - shows what would be deleted
+./scripts/bash/kafka_toolkit/topics/topic-delete.sh -t old-topic
+
+# Execute deletion
+./scripts/bash/kafka_toolkit/topics/topic-delete.sh -t old-topic --execute
+
+# Force skip consumer check
+./scripts/bash/kafka_toolkit/topics/topic-delete.sh -t temp-topic --force --execute
+
+# With custom bootstrap server
+./scripts/bash/kafka_toolkit/topics/topic-delete.sh -t deprecated -b kafka.example.com:9092 -e
+```
+
+**Options:**
+- `-t, --topic TOPIC` - Topic name to delete
+- `-b, --bootstrap-server` - Kafka bootstrap server
+- `-n, --dry-run` - Show what would be done (default)
+- `-e, --execute` - Actually perform the deletion
+- `-F, --force` - Skip consumer check warnings
+
+**What it does:**
+1. Verifies topic exists
+2. Checks for active consumers with lag (unless --force)
+3. Marks topic for deletion (requires delete.topic.enable=true)
+4. Deletion is asynchronous - may take a few seconds
+
+**Safety:**
+- Default is dry-run mode - no changes made
+- Warns about active consumer groups
+- Topic deletion is permanent
+
 ### Consumer Group Management
 
 #### consumer-groups.sh
@@ -103,6 +139,37 @@ List, describe, and reset consumer group offsets.
   --reset-offsets --group processor \
   --all-topics --to-latest --execute
 ```
+
+#### consumer-lag.sh
+
+Monitor consumer lag with threshold alerts.
+
+```bash
+# Check lag for a consumer group
+./scripts/bash/kafka_toolkit/consumers/consumer-lag.sh --group order-processor
+
+# With alert threshold
+./scripts/bash/kafka_toolkit/consumers/consumer-lag.sh -g my-group -t 1000
+
+# Watch mode with interval
+./scripts/bash/kafka_toolkit/consumers/consumer-lag.sh -g my-group --watch --interval 30
+
+# JSON output
+./scripts/bash/kafka_toolkit/consumers/consumer-lag.sh -g my-group -f json
+```
+
+**Options:**
+- `-g, --group GROUP` - Consumer group name
+- `-t, --threshold N` - Alert threshold for total lag
+- `-w, --watch` - Continuously monitor
+- `-i, --interval SEC` - Watch interval (default: 10s)
+- `-f, --format table|json` - Output format
+
+**Output:**
+- Shows per-partition lag, current offset, log-end-offset
+- Highlights partitions exceeding threshold
+- Total lag summary
+- Exit code 1 if threshold exceeded
 
 ### Messaging
 
@@ -163,6 +230,40 @@ Verify cluster health and broker status.
 # Verbose output
 ./scripts/bash/kafka_toolkit/admin/cluster-health.sh -v
 ```
+
+#### partition-rebalance.sh
+
+Rebalance partition leadership to preferred replicas.
+
+```bash
+# Dry-run for specific topic
+./scripts/bash/kafka_toolkit/partitions/partition-rebalance.sh --topic orders
+
+# Execute rebalancing
+./scripts/bash/kafka_toolkit/partitions/partition-rebalance.sh --topic events --execute
+
+# Rebalance all partitions
+./scripts/bash/kafka_toolkit/partitions/partition-rebalance.sh --all
+
+# Unclean election (allows out-of-sync replicas)
+./scripts/bash/kafka_toolkit/partitions/partition-rebalance.sh --topic metrics -e unclean -x
+```
+
+**Options:**
+- `-t, --topic TOPIC` - Specific topic to rebalance
+- `-a, --all` - Rebalance all topic partitions
+- `-e, --election-type preferred|unclean` - Election type (default: preferred)
+- `-n, --dry-run` - Show what would happen (default)
+- `-x, --execute` - Execute the rebalancing
+
+**What it does:**
+- Preferred election moves leadership to the first replica in the replica list
+- Does not cause data movement, only leadership changes
+- Use before/after broker maintenance or scaling
+
+**Safety:**
+- Default is dry-run - no changes made
+- Unclean election may cause data loss (requires explicit confirmation)
 
 ## Verify
 

@@ -7,7 +7,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
-- Initial repository bootstrap with complete directory structure
+- kafka_toolkit: New operational scripts for Kafka management
+  - `scripts/bash/kafka_toolkit/topics/topic-delete.sh`: Safe topic deletion with dry-run and consumer checks
+  - `scripts/bash/kafka_toolkit/consumers/consumer-lag.sh`: Monitor consumer lag with threshold alerts
+  - `scripts/bash/kafka_toolkit/partitions/partition-rebalance.sh`: Preferred replica election for partition leadership
+  - Documentation: `docs/how-to/kafka_toolkit.md` - Added new script sections
+  - Index updates: `00_index/quick-links.md` - Added Kafka section
+
+### Changed
 - k8s_toolkit: Safe kubectl helper scripts for common operations
   - `scripts/bash/k8s_toolkit/node/drain-node.sh`: Safely drain a Kubernetes node
   - `scripts/bash/k8s_toolkit/node/rollout-status.sh`: Monitor deployment rollout status

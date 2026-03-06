@@ -6,6 +6,7 @@
 
 ## Tools
 - [k8s_toolkit](how-to/k8s_toolkit.md) - Safe kubectl helper scripts (drain, rollout, restart with dry-run, logs, exec, debug, report)
+- [kafka_toolkit](how-to/kafka_toolkit.md) - Kafka helpers (topic create/delete, consumer lag, partition rebalance, cluster health)
 - [oci_registry_toolkit](how-to/oci_registry_toolkit.md) - OCI registry helpers (list repos/tags, find old tags, keepalive plans, auth diagnostics)
 - [ci_cd_toolkit](how-to/ci_cd_toolkit.md) - CI/CD pipeline helpers (workflow linting, health checks, action updates, workflow generation)
 - [observability_toolkit](how-to/observability_toolkit.md) - Prometheus, Grafana, Loki, Jaeger, OTel query and health scripts
@@ -58,6 +59,17 @@
 - [Query Traces (Jaeger)](../scripts/bash/observability_toolkit/jaeger/query-traces.sh)
 - [OTel Collector Health](../scripts/bash/observability_toolkit/otel/collector-health.sh)
 - [Stack Health Check](../scripts/bash/observability_toolkit/stack-health.sh)
+
+## Kafka
+- [kafka_toolkit Usage](how-to/kafka_toolkit.md)
+- [Kafka Cheatsheet](../snippets/kafka-cheatsheet.md)
+- [Topic List](../scripts/bash/kafka_toolkit/topics/topic-list.sh)
+- [Topic Create](../scripts/bash/kafka_toolkit/topics/topic-create.sh)
+- [Topic Delete](../scripts/bash/kafka_toolkit/topics/topic-delete.sh)
+- [Consumer Groups](../scripts/bash/kafka_toolkit/consumers/consumer-groups.sh)
+- [Consumer Lag](../scripts/bash/kafka_toolkit/consumers/consumer-lag.sh)
+- [Cluster Health](../scripts/bash/kafka_toolkit/admin/cluster-health.sh)
+- [Partition Rebalance](../scripts/bash/kafka_toolkit/partitions/partition-rebalance.sh)
 
 ## Linux Administration
 - [linux_toolkit Usage](how-to/linux_toolkit.md)

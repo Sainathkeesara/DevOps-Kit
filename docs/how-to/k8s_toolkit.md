@@ -252,6 +252,116 @@ Generate a comprehensive report of resources in a namespace.
 
 ---
 
+### decode-secret.sh
+
+Decode Kubernetes secrets to view their values (base64 encoded or decoded).
+
+```bash
+# List all keys in a secret
+./scripts/bash/k8s_toolkit/secret/decode-secret.sh my-secret --namespace=prod
+
+# Decode a specific key
+./scripts/bash/k8s_toolkit/secret/decode-secret.sh my-secret --namespace=prod --key=password --decode
+
+# Show all keys with decoded values
+./scripts/bash/k8s_toolkit/secret/decode-secret.sh my-secret --namespace=prod --decode
+```
+
+**Arguments:**
+- `<secret-name>` - Name of the secret
+
+**Options:**
+- `--namespace=<ns>` - Namespace (default: default)
+- `--key=<key>` - Specific key to decode (default: all keys)
+- `--decode` - Decode base64 values (default: shows encoded)
+
+**What it does:**
+- Fetches secret data from Kubernetes
+- Lists all keys or a specific key
+- Optionally decodes base64 values
+
+**Security note:** Use `--decode` only in secure environments. Avoid logging decoded secrets.
+
+---
+
+### cleanup-jobs.sh
+
+Clean up completed or failed Kubernetes jobs.
+
+```bash
+# Preview deletion of succeeded jobs
+./scripts/bash/k8s_toolkit/job/cleanup-jobs.sh --namespace=prod
+
+# Delete all succeeded jobs
+./scripts/bash/k8s_toolkit/job/cleanup-jobs.sh --namespace=prod --status=succeeded --force
+
+# Delete all failed jobs
+./scripts/bash/k8s_toolkit/job/cleanup-jobs.sh --namespace=prod --status=failed --force
+
+# Delete all completed jobs (succeeded + failed)
+./scripts/bash/k8s_toolkit/job/cleanup-jobs.sh --namespace=prod --status=all --force
+```
+
+**Options:**
+- `--namespace=<ns>` - Namespace (default: default)
+- `--status=<status>` - Job status: succeeded, failed, all (default: succeeded)
+- `--dry-run` - Show what would be deleted (default)
+- `--force` - Actually delete jobs
+
+**What it does:**
+1. Lists jobs matching the status criteria
+2. With `--dry-run`: shows jobs that would be deleted
+3. With `--force`: permanently deletes matching jobs
+
+**Caution:** Job deletion is irreversible. Always run with `--dry-run` first.
+
+---
+
+### context-manager.sh
+
+Manage multiple Kubernetes contexts and namespaces.
+
+```bash
+# List all contexts with current highlighted
+./scripts/bash/k8s_toolkit/context/context-manager.sh list
+
+# Show current context and namespace
+./scripts/bash/k8s_toolkit/context/context-manager.sh current
+
+# Switch to production context
+./scripts/bash/k8s_toolkit/context/context-manager.sh switch production
+
+# Switch to production context and monitoring namespace
+./scripts/bash/k8s_toolkit/context/context-manager.sh switch production monitoring
+
+# Validate all contexts
+./scripts/bash/k8s_toolkit/context/context-manager.sh validate
+
+# Run command in specific context
+./scripts/bash/k8s_toolkit/context/context-manager.sh run staging kubectl get pods
+```
+
+**Commands:**
+- `list` - List all contexts (default)
+- `current` - Show current context and namespace
+- `switch <context> [ns]` - Switch to context, optionally set namespace
+- `validate [context]` - Validate context connectivity
+- `run <context> <command>` - Run command in specific context
+
+**Examples:**
+```bash
+# Quick context switch with namespace
+./context-manager.sh switch prod monitoring
+
+# Validate specific context before use
+./context-manager.sh validate production
+
+# Run deployment in staging without switching context
+./context-manager.sh run staging kubectl rollout status deployment/app
+```
+
+---
+
 ## Common errors
 
 ### kubectl: command not found

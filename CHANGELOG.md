@@ -87,6 +87,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - linux_toolkit: Implementation complete with system health monitoring, disk analysis, service management, network diagnostics, process management, and security audit scripts.
 - kafka_toolkit: Implementation complete with ACL management, consumer lag monitoring, throughput checks, and partition reassignment helpers. All scripts include dry-run modes and safety guardrails.
 
+## [2026-03-07] - k8s_toolkit Extended
+
+### Added
+- k8s_toolkit: New operational scripts for secret management, job cleanup, and context management
+  - `scripts/bash/k8s_toolkit/secret/decode-secret.sh`: Decode Kubernetes secrets (base64 encoded values)
+  - `scripts/bash/k8s_toolkit/job/cleanup-jobs.sh`: Clean up completed or failed Kubernetes jobs
+  - `scripts/bash/k8s_toolkit/context/context-manager.sh`: Multi-cluster context switching and validation
+- Documentation: Extended `docs/how-to/k8s_toolkit.md` with decode-secret, cleanup-jobs, and context-manager sections
+- Index updates: `00_index/quick-links.md` - Added links to new scripts
+
 ## [2026-03-02] - Initial Bootstrap
 
 Repository structure created with essential files and first tool implementation (k8s_toolkit). All mandatory components in place: index system, changelog, documentation standards, script templates, and PR automation.

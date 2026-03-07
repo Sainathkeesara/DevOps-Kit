@@ -44,6 +44,7 @@
 - [Cleanup Jobs](../scripts/bash/k8s_toolkit/job/cleanup-jobs.sh)
 - [Context Manager](../scripts/bash/k8s_toolkit/context/context-manager.sh)
 - [Rollout Status](../scripts/bash/k8s_toolkit/rollout-status.sh)
+- [Rollout Restart](../scripts/bash/k8s_toolkit/rollout-restart.sh) - Restart deployments with --watch and --timeout flags
 - [Restart Pod](../scripts/bash/k8s_toolkit/pod/restart-pod.sh)
 - [Pod Logs](../scripts/bash/k8s_toolkit/pod/pod-logs.sh)
 - [Exec Pod](../scripts/bash/k8s_toolkit/pod/exec-pod.sh)

@@ -13,6 +13,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Troubleshooting doc: `docs/troubleshooting/k8s-crashloopbackoff.md` — Complete guide for diagnosing and resolving CrashLoopBackOff with symptom/cause/fix patterns
 - Updated `00_index/quick-links.md` — Added Troubleshooting section with CrashLoopBackOff guide
 
+- k8s_toolkit: rollout-restart.sh script for Kubernetes resource restart
+  - Supports deployment, statefulset, and daemonset resources
+  - Includes `--watch` flag to monitor rollout progress
+  - Includes `--timeout` flag (default: 3m) for configurable timeout
+  - Supports `--dry-run` mode for safe testing
+  - Supports `--namespace` flag for specifying namespace
+- Updated `00_index/quick-links.md` — Added Rollout Restart link in Kubernetes section
+
 - Created missing directories for complete repo structure:
   - docs/setup-guides, docs/concepts, docs/troubleshooting, docs/runbooks, docs/reference
   - scripts/python, scripts/powershell, scripts/lib, scripts/examples

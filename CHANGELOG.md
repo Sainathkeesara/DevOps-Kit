@@ -6,7 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Bootstrap
+- Created missing directories for complete repo structure:
+  - docs/setup-guides, docs/concepts, docs/troubleshooting, docs/runbooks, docs/reference
+  - scripts/python, scripts/powershell, scripts/lib, scripts/examples
+  - templates/project-starters, templates/docker, templates/terraform, templates/docs
+  - lab/mini-projects, lab/sandboxes, assets/images, assets/diagrams
+
 ### Added
+- k8s_toolkit: Enhanced drain-node.sh with pod eviction wait monitoring
+  - Added `--wait` flag to monitor pod eviction progress
+  - Added `--wait-timeout=<seconds>` flag (default: 300s) for configurable timeout
+  - Script polls node until all pods are evicted or timeout reached
 - Initial repository bootstrap with complete directory structure
 - k8s_toolkit: Safe kubectl helper scripts for common operations
   - `scripts/bash/k8s_toolkit/node/drain-node.sh`: Safely drain a Kubernetes node

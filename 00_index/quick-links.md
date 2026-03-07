@@ -29,6 +29,10 @@
 - [Troubleshooting](#troubleshooting)
 - [Observability](#observability)
 
+## Troubleshooting
+- [CrashLoopBackOff](docs/troubleshooting/k8s-crashloopbackoff.md)
+- [Pod Debugging](docs/troubleshooting/k8s-pod-debug.md)
+
 ## Kubernetes
 - [k8s_toolkit Usage](how-to/k8s_toolkit.md)
 - [Kubectl Cheatsheet](../snippets/kubectl-cheatsheet.md)

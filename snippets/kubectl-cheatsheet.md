@@ -135,3 +135,22 @@ kubectl cp <pod-name>:/path/to/remote/file ./local/file
 # Copy local file to pod
 kubectl cp ./local/file <pod-name>:/remote/path
 ```
+
+## DevOps-Kit Helper Scripts
+
+These scripts provide additional automation beyond basic kubectl commands:
+
+```bash
+# ConfigMap and Secret management
+./scripts/bash/k8s_toolkit/configmap/configmap-manager.sh list -n <namespace>
+./scripts/bash/k8s_toolkit/configmap/configmap-manager.sh create <name> -n <namespace> -k "key=value"
+
+# Ingress diagnostics
+./scripts/bash/k8s_toolkit/ingress/ingress-diagnostics.sh diagnose <name> -n <namespace>
+./scripts/bash/k8s_toolkit/ingress/ingress-diagnostics.sh tls <name> -n <namespace>
+
+# PVC monitoring
+./scripts/bash/k8s_toolkit/pvc/pvc-monitor.sh list -n <namespace>
+./scripts/bash/k8s_toolkit/pvc/pvc-monitor.sh unused -n <namespace>
+./scripts/bash/k8s_toolkit/pvc/pvc-monitor.sh usage -n <namespace>
+```

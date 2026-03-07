@@ -15,6 +15,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - `scripts/bash/k8s_toolkit/pod/pod-logs.sh`: Stream pod logs with options
   - `scripts/bash/k8s_toolkit/debug/debug-pod.sh`: Interactive pod debugging
   - `scripts/bash/k8s_toolkit/report/namespace-report.sh`: Generate namespace resource report
+- k8s_toolkit extensions: ConfigMap, Ingress, and PVC management
+  - `scripts/bash/k8s_toolkit/configmap/configmap-manager.sh`: Manage ConfigMaps and Secrets with create/update/list/diff
+  - `scripts/bash/k8s_toolkit/ingress/ingress-diagnostics.sh`: Diagnose Ingress backends, TLS, events
+  - `scripts/bash/k8s_toolkit/pvc/pvc-monitor.sh`: Monitor PVC status, usage, unused PVCs
+- Extended documentation: `docs/how-to/k8s_toolkit.md` - Added ConfigMap, Ingress, and PVC sections
+- Extended snippets: `snippets/kubectl-cheatsheet.md` - Added DevOps-Kit helper scripts section
 - Documentation: `docs/how-to/k8s_toolkit.md` - Complete usage guide
 - Snippets: `snippets/kubectl-cheatsheet.md` - Quick kubectl reference
  - Template updates: `templates/k8s/deployment-monitor.sh`

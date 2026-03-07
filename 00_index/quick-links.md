@@ -5,7 +5,7 @@
 - [CHANGELOG](../CHANGELOG.md) - Version history and updates
 
 ## Tools
-- [k8s_toolkit](how-to/k8s_toolkit.md) - Safe kubectl helper scripts (drain, rollout, restart with dry-run, logs, exec, debug, report)
+- [k8s_toolkit](how-to/k8s_toolkit.md) - Safe kubectl helper scripts (drain, rollout, restart with dry-run, logs, exec, debug, report, configmap, ingress, pvc)
 - [oci_registry_toolkit](how-to/oci_registry_toolkit.md) - OCI registry helpers (list repos/tags, find old tags, keepalive plans, auth diagnostics)
 - [ci_cd_toolkit](how-to/ci_cd_toolkit.md) - CI/CD pipeline helpers (workflow linting, health checks, action updates, workflow generation)
 - [observability_toolkit](how-to/observability_toolkit.md) - Prometheus, Grafana, Loki, Jaeger, OTel query and health scripts
@@ -14,7 +14,10 @@
 ## Kafka
 - [kafka_toolkit Usage](how-to/kafka_toolkit.md)
 - [Kafka Cheatsheet](../snippets/kafka-cheatsheet.md)
-- [Topic Management](../scripts/bash/kafka_toolkit/topics/topic-list.sh)
+- [Topic List](../scripts/bash/kafka_toolkit/topics/topic-list.sh)
+- [Topic Create](../scripts/bash/kafka_toolkit/topics/topic-create.sh)
+- [Topic Config](../scripts/bash/kafka_toolkit/topics/topic-config.sh)
+- [Topic Delete](../scripts/bash/kafka_toolkit/topics/topic-delete.sh)
 - [Consumer Groups](../scripts/bash/kafka_toolkit/consumers/consumer-groups.sh)
 - [Message Produce/Consume](../scripts/bash/kafka_toolkit/messaging/produce-message.sh)
 - [Cluster Health](../scripts/bash/kafka_toolkit/admin/cluster-health.sh)
@@ -40,6 +43,9 @@
 - [Restart Pod](../scripts/bash/k8s_toolkit/pod/restart-pod.sh)
 - [Pod Logs](../scripts/bash/k8s_toolkit/pod/pod-logs.sh)
 - [Exec Pod](../scripts/bash/k8s_toolkit/pod/exec-pod.sh)
+- [ConfigMap Manager](../scripts/bash/k8s_toolkit/configmap/configmap-manager.sh)
+- [Ingress Diagnostics](../scripts/bash/k8s_toolkit/ingress/ingress-diagnostics.sh)
+- [PVC Monitor](../scripts/bash/k8s_toolkit/pvc/pvc-monitor.sh)
 
 ## Container Registries
 - [oci_registry_toolkit Usage](how-to/oci_registry_toolkit.md)

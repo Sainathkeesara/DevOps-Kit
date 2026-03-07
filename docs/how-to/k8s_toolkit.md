@@ -13,6 +13,9 @@ Use k8s_toolkit scripts when you need to:
 - Stream pod logs with consistent options
 - Debug pods interactively with integrated commands
 - Generate namespace resource reports
+- Manage ConfigMaps and Secrets
+- Diagnose Ingress issues (backends, TLS, events)
+- Monitor PVC status, usage, and bindings
 
 Do **not** use these for production-critical automation without testing in non-production first. For CI/CD pipelines, review dry-run behavior.
 
@@ -22,6 +25,8 @@ Do **not** use these for production-critical automation without testing in non-p
 - Appropriate RBAC permissions for target operations
 - For interactive scripts (`debug-pod.sh`): terminal supports colors and interactive sessions
 - For metrics in `namespace-report.sh`: Metrics API must be enabled
+- For TLS checks in `ingress-diagnostics.sh`: openssl for certificate parsing
+- For PVC usage in `pvc-monitor.sh`: jq for JSON parsing
 
 ## Installation
 
@@ -252,6 +257,113 @@ Generate a comprehensive report of resources in a namespace.
 
 ---
 
+### configmap-manager.sh
+
+Manage ConfigMaps and Secrets with create, update, list, and diff operations.
+
+```bash
+# List all ConfigMaps and Secrets
+./scripts/bash/k8s_toolkit/configmap/configmap-manager.sh list -n <namespace>
+
+# Get a ConfigMap
+./scripts/bash/k8s_toolkit/configmap/configmap-manager.sh get <name> -n <namespace>
+
+# Create ConfigMap from key-value pairs
+./scripts/bash/k8s_toolkit/configmap/configmap-manager.sh create <name> -n <namespace> -k "key1=value1" -k "key2=value2"
+
+# Create ConfigMap from file
+./scripts/bash/k8s_toolkit/configmap/configmap-manager.sh create <name> -n <namespace> -f /path/to/config.yaml
+
+# Update ConfigMap
+./scripts/bash/k8s_toolkit/configmap/configmap-manager.sh update <name> -n <namespace> -k "newkey=newvalue"
+
+# Delete ConfigMap or Secret
+./scripts/bash/k8s_toolkit/configmap/configmap-manager.sh delete <name> -n <namespace> -t secret
+
+# Diff local file against cluster
+./scripts/bash/k8s_toolkit/configmap/configmap-manager.sh diff <name> -n <namespace> -f local-config.yaml
+
+# Dry-run mode
+DRY_RUN=true ./scripts/bash/k8s_toolkit/configmap/configmap-manager.sh create <name> -n <namespace> -k "key=value"
+```
+
+**Options:**
+- `-n, --namespace` - Target namespace (default: default)
+- `-t, --type` - Resource type: configmap, secret, or all (default: all)
+- `-o, --output` - Output format: table, yaml, json (default: table)
+- `-f, --file` - File path for create/update from file
+- `-k, --key-value` - Key=value pairs (can repeat)
+- `--dry-run` - Show what would happen without making changes
+
+---
+
+### ingress-diagnostics.sh
+
+Diagnose Ingress issues including status, backends, TLS, and events.
+
+```bash
+# List all Ingress resources
+./scripts/bash/k8s_toolkit/ingress/ingress-diagnostics.sh list -n <namespace>
+
+# Check ingress status
+./scripts/bash/k8s_toolkit/ingress/ingress-diagnostics.sh status <name> -n <namespace>
+
+# Show backend services and endpoints
+./scripts/bash/k8s_toolkit/ingress/ingress-diagnostics.sh backends <name> -n <namespace>
+
+# Check TLS configuration
+./scripts/bash/k8s_toolkit/ingress/ingress-diagnostics.sh tls <name> -n <namespace>
+
+# Show ingress events
+./scripts/bash/k8s_toolkit/ingress/ingress-diagnostics.sh events <name> -n <namespace>
+
+# Full diagnostic report
+./scripts/bash/k8s_toolkit/ingress/ingress-diagnostics.sh diagnose <name> -n <namespace>
+
+# Test ingress from inside cluster
+./scripts/bash/k8s_toolkit/ingress/ingress-diagnostics.sh curl <name> /api/health -n <namespace>
+```
+
+**Options:**
+- `-n, --namespace` - Target namespace (default: default)
+- `-w, --watch` - Watch mode for events
+- `-v, --verbose` - Verbose output
+
+---
+
+### pvc-monitor.sh
+
+Monitor PersistentVolumeClaims, usage, bindings, and unused PVCs.
+
+```bash
+# List all PVCs with status
+./scripts/bash/k8s_toolkit/pvc/pvc-monitor.sh list -n <namespace>
+
+# Show PVC details
+./scripts/bash/k8s_toolkit/pvc/pvc-monitor.sh status <name> -n <namespace>
+
+# Show storage usage
+./scripts/bash/k8s_toolkit/pvc/pvc-monitor.sh usage -n <namespace>
+
+# Find unused PVCs (no pods referencing)
+./scripts/bash/k8s_toolkit/pvc/pvc-monitor.sh unused -n <namespace>
+
+# Show pods using each PVC
+./scripts/bash/k8s_toolkit/pvc/pvc-monitor.sh pods -n <namespace>
+
+# Show PV details
+./scripts/bash/k8s_toolkit/pvc/pvc-monitor.sh volume <name> -n <namespace>
+
+# Watch PVC status
+./scripts/bash/k8s_toolkit/pvc/pvc-monitor.sh watch -n <namespace>
+```
+
+**Options:**
+- `-n, --namespace` - Target namespace (default: all namespaces)
+- `-s, --storage-class` - Filter by storage class
+- `-w, --watch` - Watch mode
+- `--threshold` - Usage alert threshold percentage (default: 80)
+
 ## Common errors
 
 ### kubectl: command not found
@@ -289,3 +401,6 @@ Wait for budget to allow eviction or use `--force` cautiously.
 - Drain node procedure: https://kubernetes.io/docs/tasks/administer-cluster/safely-drain-node/
 - Rollout status: https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 - Kubernetes events: https://kubernetes.io/docs/concepts/cluster-administration/system-logs/
+- ConfigMaps and Secrets: https://kubernetes.io/docs/concepts/configuration/configmap-secrets/
+- Ingress: https://kubernetes.io/docs/concepts/services-networking/ingress/
+- Persistent Volumes: https://kubernetes.io/docs/concepts/storage/persistent-volumes/

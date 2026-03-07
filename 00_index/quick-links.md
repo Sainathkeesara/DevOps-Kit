@@ -39,7 +39,7 @@
 - [Pod Debugging Guide](../docs/troubleshooting/k8s-pod-debug.md)
 - [Namespace Report Script](../scripts/bash/k8s_toolkit/report/namespace-report.sh)
 - [Debug Pod Interactive](../scripts/bash/k8s_toolkit/debug/debug-pod.sh)
-- [Drain Node](../scripts/bash/k8s_toolkit/node/drain-node.sh)
+- [Drain Node](../scripts/bash/k8s_toolkit/node/drain-node.sh) - Now with --wait and --wait-timeout flags for pod eviction monitoring
 - [Decode Secret](../scripts/bash/k8s_toolkit/secret/decode-secret.sh)
 - [Cleanup Jobs](../scripts/bash/k8s_toolkit/job/cleanup-jobs.sh)
 - [Context Manager](../scripts/bash/k8s_toolkit/context/context-manager.sh)

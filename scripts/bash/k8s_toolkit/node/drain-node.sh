@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 #
-# PURPOSE: Safely drain a Kubernetes node, evicting pods gracefully
-# USAGE: ./drain-node.sh <node-name> [--dry-run] [--force] [--ignore-daemonsets]
+# PURPOSE: Safely drain a Kubernetes node, evicting pods gracefully with optional wait monitoring
+# USAGE: ./drain-node.sh <node-name> [--dry-run] [--force] [--ignore-daemonsets] [--wait] [--wait-timeout=<seconds>]
 # REQUIREMENTS: kubectl configured with cluster access, node must be schedulable
 # SAFETY: Drains node by evicting pods, respecting PodDisruptionBudgets. DaemonSets are skipped by default.
 #
 # EXAMPLES:
 #   ./drain-node.sh ip-10-0-1-100
 #   ./drain-node.sh ip-10-0-1-100 --dry-run
-#   ./drain-node.sh ip-10-0-1-100 --force --ignore-daemonsets
+#   ./drain-node.sh ip-10-0-1-100 --force --ignore-daemonsets --wait --wait-timeout=300
 
 set -euo pipefail
 IFS=$'\n\t'
@@ -17,6 +17,9 @@ IFS=$'\n\t'
 DRY_RUN=0
 FORCE=0
 IGNORE_DAEMONSETS=0
+WAIT_FOR_EVICTION=0
+WAIT_TIMEOUT=300
+POLL_INTERVAL=5
 NODE_NAME=""
 
 # Colors for output
@@ -48,6 +51,11 @@ parse_args() {
             --dry-run) DRY_RUN=1 ;;
             --force) FORCE=1 ;;
             --ignore-daemonsets) IGNORE_DAEMONSETS=1 ;;
+            --wait) WAIT_FOR_EVICTION=1 ;;
+            --wait-timeout=*)
+                WAIT_FOR_EVICTION=1
+                WAIT_TIMEOUT="${1#*=}"
+                ;;
             -h|--help) usage ;;
             -*)
                 log_error "Unknown option: $1"
@@ -95,9 +103,36 @@ build_drain_command() {
     local cmd="kubectl drain $NODE_NAME"
     [[ $IGNORE_DAEMONSETS -eq 1 ]] && cmd="$cmd --ignore-daemonsets"
     [[ $FORCE -eq 1 ]] && cmd="$cmd --force"
-    cmd="$cmd --delete-emptydir-data --timeout=120s"
+    cmd="$cmd --delete-emptydir-data"
 
     echo "$cmd"
+}
+
+wait_for_eviction() {
+    local node="$1"
+    local timeout="$2"
+    local elapsed=0
+
+    log_info "Waiting for pod eviction to complete (timeout: ${timeout}s)..."
+
+    while [[ $elapsed -lt $timeout ]]; do
+        local pod_count
+        pod_count=$(kubectl get pods --field-selector="spec.nodeName=$node" \
+            --all-namespaces \
+            -o jsonpath='{.items[*].metadata.name}' 2>/dev/null | wc -w)
+
+        if [[ "$pod_count" -eq 0 ]]; then
+            log_info "All pods evicted from node '$node'"
+            return 0
+        fi
+
+        log_info "Still $pod_count pod(s) on node, waiting... (${elapsed}s/${timeout}s)"
+        sleep "$POLL_INTERVAL"
+        elapsed=$((elapsed + POLL_INTERVAL))
+    done
+
+    log_warn "Timeout reached ($timeout s), some pods may still be present"
+    return 1
 }
 
 main() {
@@ -131,7 +166,11 @@ main() {
     # Execute drain
     log_info "Executing drain operation..."
     if eval "$drain_cmd"; then
-        log_info "Node '$NODE_NAME' drained successfully"
+        log_info "Node '$NODE_NAME' drain command completed"
+
+        if [[ $WAIT_FOR_EVICTION -eq 1 ]]; then
+            wait_for_eviction "$NODE_NAME" "$WAIT_TIMEOUT" || log_warn "Eviction wait completed with warnings"
+        fi
 
         # Mark node unschedulable
         log_info "Marking node as unschedulable..."

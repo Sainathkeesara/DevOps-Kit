@@ -7,6 +7,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Bootstrap
+- Created missing directories: assets/images, assets/diagrams, lab/mini-projects, lab/sandboxes, scripts/python, scripts/powershell, scripts/lib, scripts/examples, templates/docker, templates/terraform, templates/docs, templates/project-starters, docs/setup-guides, docs/concepts, docs/troubleshooting, docs/runbooks, docs/reference
+
+### Added
+- Troubleshooting doc: `docs/troubleshooting/k8s-crashloopbackoff.md` — Complete guide for diagnosing and resolving CrashLoopBackOff with symptom/cause/fix patterns
+- Updated `00_index/quick-links.md` — Added Troubleshooting section with CrashLoopBackOff guide
+
 - Created missing directories for complete repo structure:
   - docs/setup-guides, docs/concepts, docs/troubleshooting, docs/runbooks, docs/reference
   - scripts/python, scripts/powershell, scripts/lib, scripts/examples

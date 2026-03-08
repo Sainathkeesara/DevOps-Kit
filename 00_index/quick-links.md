@@ -11,7 +11,6 @@
 - [ci_cd_toolkit](how-to/ci_cd_toolkit.md) - CI/CD pipeline helpers (workflow linting, health checks, action updates, workflow generation)
 - [observability_toolkit](how-to/observability_toolkit.md) - Prometheus, Grafana, Loki, Jaeger, OTel query and health scripts
 - [linux_toolkit](how-to/linux_toolkit.md) - Linux system administration scripts (health check, disk usage, service management, network diagnostics)
-- [jenkins_toolkit](how-to/jenkins_toolkit.md) - Jenkins automation scripts (install, plugins, configuration)
 
 ## Kafka
 - [kafka_toolkit Usage](how-to/kafka_toolkit.md)

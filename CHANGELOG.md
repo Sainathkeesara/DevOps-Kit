@@ -13,6 +13,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Troubleshooting doc: `docs/troubleshooting/k8s-crashloopbackoff.md` — Complete guide for diagnosing and resolving CrashLoopBackOff with symptom/cause/fix patterns
 - Updated `00_index/quick-links.md` — Added Troubleshooting section with CrashLoopBackOff guide
 
+- jenkins_toolkit: Automated Jenkins installation script for Ubuntu 22.04
+  - `scripts/bash/jenkins_toolkit/install-jenkins.sh`: Automated, idempotent install with dry-run support
+  - Supports --version, --port, --plugins, --dry-run, and --skip-start options
+  - Installs Java 17, adds Jenkins repo, configures port, installs plugins
+- Updated `00_index/quick-links.md` — Added Jenkins section and jenkins_toolkit link
+
 - k8s_toolkit: rollout-restart.sh script for Kubernetes resource restart
   - Supports deployment, statefulset, and daemonset resources
   - Includes `--watch` flag to monitor rollout progress

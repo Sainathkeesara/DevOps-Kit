@@ -6,10 +6,12 @@
 
 ## Tools
 - [k8s_toolkit](how-to/k8s_toolkit.md) - Safe kubectl helper scripts (drain, rollout, restart with dry-run, logs, exec, debug, report)
+- [jenkins_toolkit](how-to/jenkins_toolkit.md) - Jenkins automation scripts (install, plugins, configuration)
 - [oci_registry_toolkit](how-to/oci_registry_toolkit.md) - OCI registry helpers (list repos/tags, find old tags, keepalive plans, auth diagnostics)
 - [ci_cd_toolkit](how-to/ci_cd_toolkit.md) - CI/CD pipeline helpers (workflow linting, health checks, action updates, workflow generation)
 - [observability_toolkit](how-to/observability_toolkit.md) - Prometheus, Grafana, Loki, Jaeger, OTel query and health scripts
 - [linux_toolkit](how-to/linux_toolkit.md) - Linux system administration scripts (health check, disk usage, service management, network diagnostics)
+- [jenkins_toolkit](how-to/jenkins_toolkit.md) - Jenkins automation scripts (install, plugins, configuration)
 
 ## Kafka
 - [kafka_toolkit Usage](how-to/kafka_toolkit.md)
@@ -48,6 +50,10 @@
 - [Restart Pod](../scripts/bash/k8s_toolkit/pod/restart-pod.sh)
 - [Pod Logs](../scripts/bash/k8s_toolkit/pod/pod-logs.sh)
 - [Exec Pod](../scripts/bash/k8s_toolkit/pod/exec-pod.sh)
+
+## Jenkins
+- [jenkins_toolkit Usage](how-to/jenkins_toolkit.md)
+- [Install Jenkins](../scripts/bash/jenkins_toolkit/install-jenkins.sh) - Automated install on Ubuntu 22.04 with --dry-run and --port options
 
 ## Container Registries
 - [oci_registry_toolkit Usage](how-to/oci_registry_toolkit.md)

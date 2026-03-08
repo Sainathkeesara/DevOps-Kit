@@ -10,6 +10,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Created missing directories: assets/images, assets/diagrams, lab/mini-projects, lab/sandboxes, scripts/python, scripts/powershell, scripts/lib, scripts/examples, templates/docker, templates/terraform, templates/docs, templates/project-starters, docs/setup-guides, docs/concepts, docs/troubleshooting, docs/runbooks, docs/reference
 
 ### Added
+- Jenkins snippet: `snippets/jenkins-cheatsheet.md` — Declarative Jenkinsfile examples for Docker build and push with multi-stage builds, multi-architecture builds, Kaniko, and best practices
+- Updated `00_index/quick-links.md` — Added Jenkins Cheatsheet link
 - Troubleshooting doc: `docs/troubleshooting/k8s-crashloopbackoff.md` — Complete guide for diagnosing and resolving CrashLoopBackOff with symptom/cause/fix patterns
 - Updated `00_index/quick-links.md` — Added Troubleshooting section with CrashLoopBackOff guide
 

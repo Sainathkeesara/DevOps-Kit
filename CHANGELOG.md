@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+- Jenkins doc: `docs/how-to/github-webhook-jenkins.md` — Complete guide for configuring GitHub webhooks to trigger Jenkins pipeline builds
+- Updated `00_index/quick-links.md` — Added GitHub Webhook Setup link in Jenkins section
+
 ### Fixed
 - `00_index/quick-links.md` — Removed duplicate jenkins_toolkit entry in Tools section
 

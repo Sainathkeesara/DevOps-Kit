@@ -54,6 +54,7 @@
 - [jenkins_toolkit Usage](how-to/jenkins_toolkit.md)
 - [Jenkins Cheatsheet](../snippets/jenkins-cheatsheet.md)
 - [Install Jenkins](../scripts/bash/jenkins_toolkit/install-jenkins.sh) - Automated install on Ubuntu 22.04 with --dry-run and --port options
+- [GitHub Webhook Setup](how-to/github-webhook-jenkins.md) - Configure GitHub webhooks to trigger Jenkins builds
 
 ## Container Registries
 - [oci_registry_toolkit Usage](how-to/oci_registry_toolkit.md)

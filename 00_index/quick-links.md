@@ -38,6 +38,8 @@
 - [k8s_toolkit Usage](how-to/k8s_toolkit.md)
 - [Kubectl Cheatsheet](../snippets/kubectl-cheatsheet.md)
 - [Pod Debugging Guide](../docs/troubleshooting/k8s-pod-debug.md)
+- [Production Deployment Template](../templates/k8s/production-deployment.yaml) - Deployment + HPA + PDB with anti-affinity
+- [Deploy Production App Script](../templates/k8s/deploy-prod-app.sh) - Generate and apply production deployment
 - [Namespace Report Script](../scripts/bash/k8s_toolkit/report/namespace-report.sh)
 - [Debug Pod Interactive](../scripts/bash/k8s_toolkit/debug/debug-pod.sh)
 - [Drain Node](../scripts/bash/k8s_toolkit/node/drain-node.sh) - Now with --wait and --wait-timeout flags for pod eviction monitoring

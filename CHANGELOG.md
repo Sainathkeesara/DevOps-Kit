@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- k8s_toolkit: Production Deployment template with HPA and PodDisruptionBudget
+  - `templates/k8s/production-deployment.yaml`: Production-ready Deployment with anti-affinity, HPA, and PDB
+  - `templates/k8s/deploy-prod-app.sh`: Helper script to generate and apply production deployments with customizable options
+- Updated `00_index/quick-links.md` — Added Production Deployment Template and Deploy Production App Script links in Kubernetes section
 - Jenkins doc: `docs/how-to/github-webhook-jenkins.md` — Complete guide for configuring GitHub webhooks to trigger Jenkins pipeline builds
 - Updated `00_index/quick-links.md` — Added GitHub Webhook Setup link in Jenkins section
 

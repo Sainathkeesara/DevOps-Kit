@@ -36,6 +36,7 @@
 
 ## Kubernetes
 - [k8s_toolkit Usage](how-to/k8s_toolkit.md)
+- [EKS Cluster Setup Guide](docs/setup-guides/eks-cluster-setup.md) - Complete guide for creating EKS cluster from scratch on AWS
 - [Kubectl Cheatsheet](../snippets/kubectl-cheatsheet.md)
 - [Pod Debugging Guide](../docs/troubleshooting/k8s-pod-debug.md)
 - [Production Deployment Template](../templates/k8s/production-deployment.yaml) - Deployment + HPA + PDB with anti-affinity

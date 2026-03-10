@@ -11,6 +11,7 @@
 #   - APP_NAME:        Your application name (e.g., api-service)
 #   - APP_VERSION:     Image tag (e.g., v1.2.3)
 #   - NAMESPACE:       Target namespace (default: default)
+#   - PORT:            Container/service port (default: 8080)
 #   - REPLICAS:        Initial replica count (default: 3)
 #   - MIN_REPLICAS:    HPA minimum replicas (default: 2)
 #   - MAX_REPLICAS:    HPA maximum replicas (default: 10)
@@ -41,8 +42,8 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-    - port: 80
-      targetPort: 8080
+    - port: PORT_PLACEHOLDER
+      targetPort: http
       protocol: TCP
       name: http
   selector:
@@ -74,7 +75,7 @@ spec:
         version: APP_VERSION_PLACEHOLDER
       annotations:
         prometheus.io/scrape: "true"
-        prometheus.io/port: "8080"
+        prometheus.io/port: "PORT_PLACEHOLDER"
         prometheus.io/path: "/metrics"
     spec:
       affinity:
@@ -92,7 +93,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
-              containerPort: 8080
+              containerPort: PORT_PLACEHOLDER
               protocol: TCP
           resources:
             requests:

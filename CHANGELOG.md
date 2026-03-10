@@ -15,6 +15,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Updated `00_index/quick-links.md` — Added GitHub Webhook Setup link in Jenkins section
 
 ### Fixed
+- `templates/k8s/deploy-prod-app.sh` — Fixed unused PORT variable by adding port substitution to template generation
+- `templates/k8s/production-deployment.yaml` — Added PORT_PLACEHOLDER for customizable container port
 - `00_index/quick-links.md` — Removed duplicate jenkins_toolkit entry in Tools section
 
 ### Bootstrap

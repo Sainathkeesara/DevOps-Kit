@@ -131,6 +131,7 @@ generate_yaml() {
         -e "s|MEMORY_LIMIT_PLACEHOLDER|$MEMORY_LIMIT|g" \
         -e "s|MAX_UNAVAILABLE_PLACEHOLDER|$MAX_UNAVAILABLE|g" \
         -e "s|MIN_AVAILABLE_PLACEHOLDER|$MIN_AVAILABLE|g" \
+        -e "s|PORT_PLACEHOLDER|$PORT|g" \
         "$TEMPLATE_FILE"
 }
 

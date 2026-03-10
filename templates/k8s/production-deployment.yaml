@@ -42,7 +42,7 @@ spec:
   type: ClusterIP
   ports:
     - port: 80
-      targetPort: 8080
+      targetPort: PORT_PLACEHOLDER
       protocol: TCP
       name: http
   selector:
@@ -74,7 +74,7 @@ spec:
         version: APP_VERSION_PLACEHOLDER
       annotations:
         prometheus.io/scrape: "true"
-        prometheus.io/port: "8080"
+        prometheus.io/port: "PORT_PLACEHOLDER"
         prometheus.io/path: "/metrics"
     spec:
       affinity:
@@ -92,7 +92,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
-              containerPort: 8080
+              containerPort: PORT_PLACEHOLDER
               protocol: TCP
           resources:
             requests:

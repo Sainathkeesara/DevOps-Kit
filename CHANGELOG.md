@@ -8,9 +8,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Bootstrap
 - Verified complete repo structure - all required directories present
-- k8s-004: Production Deployment template implementation verified complete
+- k8s-005: EKS cluster setup documentation added
 
 ### Added
+- EKS setup guide: `docs/setup-guides/eks-cluster-setup.md` — Complete guide for creating EKS cluster from scratch on AWS
+  - Covers eksctl cluster creation with various options
+  - Includes IAM role configuration for cluster access
+  - Node group management and add-on installation
+  - Verification steps and rollback procedures
+  - Common errors section with troubleshooting
+- Updated `00_index/quick-links.md` — Added EKS Cluster Setup Guide in Kubernetes section
+
+### Bootstrap
 - k8s_toolkit: Production Deployment template with HPA and PodDisruptionBudget
   - `templates/k8s/production-deployment.yaml`: Production-ready Deployment with anti-affinity, HPA, and PDB
   - `templates/k8s/deploy-prod-app.sh`: Helper script to generate and apply production deployments with customizable options

@@ -7,18 +7,15 @@
 
 set -euo pipefail
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-readonly SCRIPT_DIR
-
 # Defaults
 BOOTSTRAP_SERVER="${KAFKA_BOOTSTRAP_SERVER:-localhost:9092}"
 GROUP_FILTER=""
 TOPIC_FILTER=""
 LAG_THRESHOLD=10000
 OUTPUT_FORMAT="table"
-VERBOSE=false
 COMMAND_CONFIG=""
 SORT_BY="lag"
+VERBOSE="${KAFKA_VERBOSE:-false}"
 
 usage() {
     cat <<EOF
@@ -34,7 +31,7 @@ OPTIONS:
     -f, --format FORMAT             Output format: table, json, csv (default: table)
     -s, --sort FIELD                Sort by: lag, group, topic (default: lag)
     -c, --command-config FILE       Properties file for client config
-    -v, --verbose                   Enable verbose output
+    -v, --verbose                   Enable verbose output (also via KAFKA_VERBOSE=true)
     -h, --help                      Show this help message
 
 OUTPUT:
@@ -66,6 +63,10 @@ EOF
 
 log() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*"
+}
+
+log_verbose() {
+    [[ "$VERBOSE" == "true" ]] && echo "[VERBOSE] $*"
 }
 
 error() {
@@ -110,7 +111,7 @@ parse_args() {
                 ;;
             -v|--verbose)
                 VERBOSE=true
-                shift
+                export VERBOSE
                 ;;
             -h|--help)
                 usage
@@ -137,12 +138,12 @@ validate_prerequisites() {
     fi
 
     local valid_formats=("table" "json" "csv")
-    if [[ ! " ${valid_formats[*]} " =~ " ${OUTPUT_FORMAT} " ]]; then
+    if [[ ! " ${valid_formats[*]} " =~ ${OUTPUT_FORMAT} ]]; then
         die "Invalid format: $OUTPUT_FORMAT. Valid: ${valid_formats[*]}"
     fi
 
     local valid_sorts=("lag" "group" "topic")
-    if [[ ! " ${valid_sorts[*]} " =~ " ${SORT_BY} " ]]; then
+    if [[ ! " ${valid_sorts[*]} " =~ ${SORT_BY} ]]; then
         die "Invalid sort field: $SORT_BY. Valid: ${valid_sorts[*]}"
     fi
 }

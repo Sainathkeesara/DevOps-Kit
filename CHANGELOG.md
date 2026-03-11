@@ -14,6 +14,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Both consumer-lag.sh and check-lag.sh now pass shellcheck
 
 ### Added
+- kafka_toolkit: Broker health check script (port, JMX, replica status)
+  - `scripts/bash/kafka_toolkit/admin/broker-health.sh`: Check individual broker health
+  - Supports port connectivity check, JMX port accessibility, replica status verification
+  - Options: --check-port, --check-jmx, --check-replica, --check-all
+  - JSON output format support for monitoring integration
+  - Dry-run mode for safe testing
+- Updated `docs/how-to/kafka_toolkit.md` — Added broker-health.sh documentation in Cluster Administration section
+- Updated `00_index/quick-links.md` — Added Broker Health Check link in Kafka section
+
 - kafka_toolkit: Consumer group lag check script using kafka-consumer-groups.sh
   - `scripts/bash/kafka_toolkit/consumers/check-lag.sh`: Check consumer group lag with threshold-based alerts
   - Supports filtering by group, custom thresholds, multiple output formats (table, json, csv)

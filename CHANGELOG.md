@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Fixed
+- kafka_toolkit: Fixed shellcheck warnings in consumer-lag.sh
+  - Removed unused SCRIPT_DIR variable
+  - Added proper VERBOSE support with KAFKA_VERBOSE env var and log_verbose function
+  - Fixed regex matching issues in format/sort validation (SC2076)
+  - Both consumer-lag.sh and check-lag.sh now pass shellcheck
+
 ### Added
 - kafka_toolkit: Consumer group lag check script using kafka-consumer-groups.sh
   - `scripts/bash/kafka_toolkit/consumers/check-lag.sh`: Check consumer group lag with threshold-based alerts

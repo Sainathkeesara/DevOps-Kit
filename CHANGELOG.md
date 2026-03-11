@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+- Kubernetes RBAC documentation: `docs/how-to/k8s_rbac.md` — Complete guide covering Role, ClusterRole, RoleBinding, ClusterRoleBinding with practical kubectl examples
+  - Explains RBAC API objects and their scope (namespace vs cluster)
+  - Includes YAML examples for creating Roles and ClusterRoles
+  - Shows how to bind to users, groups, and service accounts
+  - Covers aggregation rules, resourceNames restrictions, and API group permissions
+  - Verification commands using kubectl auth can-i
+  - Rollback procedures and common error troubleshooting
+- Updated `00_index/quick-links.md` — Added RBAC Guide link in Kubernetes section
+
 ### Bootstrap
 - Verified complete repo structure - all required directories present
 - k8s-005: EKS cluster setup documentation added

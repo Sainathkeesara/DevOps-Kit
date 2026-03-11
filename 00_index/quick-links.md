@@ -52,6 +52,7 @@
 - [Restart Pod](../scripts/bash/k8s_toolkit/pod/restart-pod.sh)
 - [Pod Logs](../scripts/bash/k8s_toolkit/pod/pod-logs.sh)
 - [Exec Pod](../scripts/bash/k8s_toolkit/pod/exec-pod.sh)
+- [RBAC Guide](docs/how-to/k8s_rbac.md) - Role, ClusterRole, RoleBinding, ClusterRoleBinding with examples
 
 ## Jenkins
 - [jenkins_toolkit Usage](how-to/jenkins_toolkit.md)

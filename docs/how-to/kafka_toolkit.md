@@ -182,6 +182,28 @@ Verify cluster health and broker status.
 ./scripts/bash/kafka_toolkit/admin/cluster-health.sh -v
 ```
 
+#### broker-health.sh
+
+Check individual broker health: port connectivity, JMX, and replica status.
+
+```bash
+# Basic port check
+./scripts/bash/kafka_toolkit/admin/broker-health.sh \
+  -b kafka1.example.com -p 9092
+
+# Full health check with JMX
+./scripts/bash/kafka_toolkit/admin/broker-health.sh \
+  -b kafka1.example.com -j 9999 --check-all
+
+# Check replicas only
+./scripts/bash/kafka_toolkit/admin/broker-health.sh \
+  -B kafka.example.com:9092 --check-replica
+
+# JSON output for monitoring
+./scripts/bash/kafka_toolkit/admin/broker-health.sh \
+  -b kafka1 -j 9999 --check-all -f json
+```
+
 ### ACL Management
 
 #### manage-acls.sh

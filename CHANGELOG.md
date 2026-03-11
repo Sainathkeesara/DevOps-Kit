@@ -7,6 +7,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- kafka_toolkit: Consumer group lag check script using kafka-consumer-groups.sh
+  - `scripts/bash/kafka_toolkit/consumers/check-lag.sh`: Check consumer group lag with threshold-based alerts
+  - Supports filtering by group, custom thresholds, multiple output formats (table, json, csv)
+  - Exits with error code if lag exceeds threshold
+  - Integration with KAFKA_BOOTSTRAP_SERVER and --command-config support
+- Updated `docs/how-to/kafka_toolkit.md` — Added check-lag.sh documentation in Consumer Group Management section
+- Updated `00_index/quick-links.md` — Added Consumer Lag Check link in Kafka section
+
 - Kubernetes RBAC documentation: `docs/how-to/k8s_rbac.md` — Complete guide covering Role, ClusterRole, RoleBinding, ClusterRoleBinding with practical kubectl examples
   - Explains RBAC API objects and their scope (namespace vs cluster)
   - Includes YAML examples for creating Roles and ClusterRoles

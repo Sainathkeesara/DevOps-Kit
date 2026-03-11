@@ -17,6 +17,7 @@
 - [Kafka Cheatsheet](../snippets/kafka-cheatsheet.md)
 - [Topic Management](../scripts/bash/kafka_toolkit/topics/topic-list.sh)
 - [Consumer Groups](../scripts/bash/kafka_toolkit/consumers/consumer-groups.sh)
+- [Consumer Lag Check](../scripts/bash/kafka_toolkit/consumers/check-lag.sh)
 - [Message Produce/Consume](../scripts/bash/kafka_toolkit/messaging/produce-message.sh)
 - [Cluster Health](../scripts/bash/kafka_toolkit/admin/cluster-health.sh)
 - [ACL Management](../scripts/bash/kafka_toolkit/acl/manage-acls.sh)

@@ -104,6 +104,24 @@ List, describe, and reset consumer group offsets.
   --all-topics --to-latest --execute
 ```
 
+#### check-lag.sh
+
+Check consumer group lag with threshold-based alerts.
+
+```bash
+# Check all consumer groups
+./scripts/bash/kafka_toolkit/consumers/check-lag.sh
+
+# Check specific group
+./scripts/bash/kafka_toolkit/consumers/check-lag.sh -g order-processor
+
+# Lower threshold for alert
+./scripts/bash/kafka_toolkit/consumers/check-lag.sh -T 5000
+
+# JSON output for monitoring
+./scripts/bash/kafka_toolkit/consumers/check-lag.sh -f json -g processor-group
+```
+
 ### Messaging
 
 #### produce-message.sh

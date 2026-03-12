@@ -14,6 +14,7 @@
 
 ## Kafka
 - [kafka_toolkit Usage](how-to/kafka_toolkit.md)
+- [Kafka Cluster Setup Guide](docs/setup-guides/kafka-cluster-setup.md) - Single broker setup for local development
 - [Kafka Cheatsheet](../snippets/kafka-cheatsheet.md)
 - [Topic Management](../scripts/bash/kafka_toolkit/topics/topic-list.sh)
 - [Consumer Groups](../scripts/bash/kafka_toolkit/consumers/consumer-groups.sh)

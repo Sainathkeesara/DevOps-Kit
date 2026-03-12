@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+- kfk-004: Kafka cluster setup documentation: `docs/setup-guides/kafka-cluster-setup.md` — Complete guide for setting up a single-broker Kafka cluster for local development
+  - Covers Java installation, Kafka download, KRaft mode configuration
+  - Step-by-step setup with verification commands
+  - Message production and consumption testing
+  - Rollback procedures and common errors section
+- Updated `00_index/quick-links.md` — Added Kafka Cluster Setup Guide link in Kafka section
+
 ### Fixed
 - lin-001: disk-usage.sh — Added header comment with purpose/usage/requirements, wired DRY_RUN to all operations, added binary existence checks for df/du/find
   - Added --dry-run, --threshold, and --help CLI options

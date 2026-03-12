@@ -7,6 +7,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Fixed
+- lin-001: disk-usage.sh — Added header comment with purpose/usage/requirements, wired DRY_RUN to all operations, added binary existence checks for df/du/find
+  - Added --dry-run, --threshold, and --help CLI options
+  - Added disk usage threshold warnings (default 80%)
+  - Script now passes shellcheck with no warnings
+
+### Fixed
 - kafka_toolkit: Fixed shellcheck warnings in consumer-lag.sh
   - Removed unused SCRIPT_DIR variable
   - Added proper VERBOSE support with KAFKA_VERBOSE env var and log_verbose function

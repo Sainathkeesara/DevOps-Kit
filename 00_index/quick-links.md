@@ -96,7 +96,7 @@
 - [linux_toolkit Usage](how-to/linux_toolkit.md)
 - [Linux Cheatsheet](../snippets/linux-cheatsheet.md)
 - [System Health Check](../scripts/bash/linux_toolkit/system/health-check.sh)
-- [Disk Usage Analysis](../scripts/bash/linux_toolkit/system/disk-usage.sh)
+- [Disk Usage Analysis](../scripts/bash/linux_toolkit/system/disk-usage.sh) - With --dry-run, --threshold, and --help flags
 - [Service Management](../scripts/bash/linux_toolkit/service/manage-services.sh)
 - [Network Diagnostics](../scripts/bash/linux_toolkit/network/net-diag.sh)
 - [Process Manager](../scripts/bash/linux_toolkit/process/process-manager.sh)

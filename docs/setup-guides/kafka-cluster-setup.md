@@ -163,6 +163,9 @@ bin/kafka-broker-api-versions.sh --bootstrap-server localhost:9092
 
 # Verify broker metadata
 bin/kafka-metadata.sh --snapshot /tmp/kraft-combined-logs/__cluster_metadata-0/00000000000000000000.log
+
+# Quick connectivity test with kafka-verifiable-producer
+bin/kafka-verifiable-producer.sh --bootstrap-server localhost:9092 --topic test-topic --max-messages 3
 ```
 
 ### Topic Operations

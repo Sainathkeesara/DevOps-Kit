@@ -13,7 +13,7 @@
 - [linux_toolkit](how-to/linux_toolkit.md) - Linux system administration scripts (health check, disk usage, service management, network diagnostics)
 
 ## Kafka
-- [kafka_toolkit Usage](how-to/kafka_toolkit.md)
+- [kafka_toolkit Usage](how-to/kafka_toolkit.md) - Prerequisites include [Kafka Cluster Setup Guide](docs/setup-guides/kafka-cluster-setup.md)
 - [Kafka Cluster Setup Guide](docs/setup-guides/kafka-cluster-setup.md) - Single broker setup for local development
 - [Kafka Cheatsheet](../snippets/kafka-cheatsheet.md)
 - [Topic Management](../scripts/bash/kafka_toolkit/topics/topic-list.sh)

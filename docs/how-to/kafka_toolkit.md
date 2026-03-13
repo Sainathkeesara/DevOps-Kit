@@ -19,6 +19,8 @@ Safe CLI wrappers and operational helpers for Apache Kafka clusters. Provides to
 - Network connectivity to Kafka bootstrap servers
 - Appropriate ACLs for operations (read-only for basic usage)
 
+For local development setup, see: [Kafka Cluster Setup Guide](../setup-guides/kafka-cluster-setup.md)
+
 ## Environment Setup
 
 ```bash

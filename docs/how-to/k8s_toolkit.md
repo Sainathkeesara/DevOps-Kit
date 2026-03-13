@@ -362,6 +362,46 @@ Manage multiple Kubernetes contexts and namespaces.
 
 ---
 
+### cve-2026-3288-nginx.sh
+
+Detect and remediate CVE-2026-3288 (ingress-nginx rewrite-target RCE vulnerability).
+
+```bash
+./scripts/bash/k8s_toolkit/security/cve-2026-3288-nginx.sh [--namespace=<ns>] [--dry-run] [--json-output]
+```
+
+**Options:**
+- `--namespace=<ns>` - Scan specific namespace (default: ingress-nginx)
+- `--dry-run` - Preview findings without making changes
+- `--json-output` - Output results in JSON format
+
+**What it does:**
+1. Checks ingress-nginx controller version against affected versions (< v1.13.7 and < v1.14.3)
+2. Scans for ingress resources using the rewrite-target annotation
+3. Reports vulnerable configurations
+4. Provides remediation recommendations
+
+**Example:**
+```bash
+# Full scan
+./scripts/bash/k8s_toolkit/security/cve-2026-3288-nginx.sh
+
+# Scan specific namespace with JSON output
+./scripts/bash/k8s_toolkit/security/cve-2026-3288-nginx.sh --namespace=production --json-output
+
+# Dry-run mode
+./scripts/bash/k8s_toolkit/security/cve-2026-3288-nginx.sh --dry-run
+```
+
+**Requirements:**
+- kubectl
+- jq
+
+**References:**
+- NVD CVE-2026-3288: https://nvd.nist.gov/vuln/detail/CVE-2026-3288
+
+---
+
 ## Common errors
 
 ### kubectl: command not found

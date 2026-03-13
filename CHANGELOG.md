@@ -7,6 +7,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- k8s-009: CVE-2026-3288 hardening script for ingress-nginx rewrite-target RCE
+  - `scripts/bash/k8s_toolkit/security/cve-2026-3288-nginx.sh`: Detect and remediate CVE-2026-3288 vulnerability
+  - Checks ingress-nginx controller version for affected versions (< v1.13.7 and < v1.14.3)
+  - Scans for ingress resources with vulnerable rewrite-target annotations
+  - Provides remediation recommendations and upgrade guidance
+  - Supports --namespace, --dry-run, --json-output options
+  - Requires: kubectl, jq
+- Updated `00_index/quick-links.md` — Added CVE-2026-3288 Hardening link in Kubernetes section
+
+### Added
 - kfk-004: Kafka cluster setup documentation: `docs/setup-guides/kafka-cluster-setup.md` — Complete guide for setting up a single-broker Kafka cluster for local development
   - Covers Java installation, Kafka download, KRaft mode configuration
   - Step-by-step setup with verification commands

@@ -26,6 +26,8 @@
 - [Consumer Lag Monitoring](../scripts/bash/kafka_toolkit/monitoring/consumer-lag.sh)
 - [Throughput Check](../scripts/bash/kafka_toolkit/monitoring/throughput-check.sh)
 - [Partition Reassignment](../scripts/bash/kafka_toolkit/partitions/partition-reassign.sh)
+- [CVE-2025-27818 Hardening](../scripts/bash/kafka_toolkit/security/cve-2025-27818.sh) - Kafka Connect SASL JAAS RCE vulnerability scanner
+- [CVE-2025-27817 Hardening](../scripts/bash/kafka_toolkit/security/cve-2025-27817.sh) - Kafka Client arbitrary file read/SSRF vulnerability scanner
 
 ## Topics
 - [Kubernetes](#kubernetes)
@@ -63,6 +65,7 @@
 - [Jenkins Cheatsheet](../snippets/jenkins-cheatsheet.md)
 - [Install Jenkins](../scripts/bash/jenkins_toolkit/install-jenkins.sh) - Automated install on Ubuntu 22.04 with --dry-run and --port options
 - [GitHub Webhook Setup](how-to/github-webhook-jenkins.md) - Configure GitHub webhooks to trigger Jenkins builds
+- [CVE-2026-27099 Hardening](../scripts/bash/jenkins_toolkit/security/cve-2026-27099.sh) - Jenkins XSS and DoS vulnerability scanner
 
 ## Container Registries
 - [oci_registry_toolkit Usage](how-to/oci_registry_toolkit.md)

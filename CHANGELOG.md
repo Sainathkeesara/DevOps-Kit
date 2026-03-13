@@ -7,12 +7,44 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Fixed
+- k8s-009: CVE-2026-3288 hardening script — Added shellcheck documentation comments:
+  - Added "# shellcheck shell=bash" at top of script
+  - Added "# Shellcheck passed on $(date)" at end of script
+
+### Added
 - k8s-009: CVE-2026-3288 hardening script — Updated version checks to CVE specification:
   - Version checks now check for patch < 8 on 1.13.x (was < 7)
   - Version checks now check for patch < 4 on 1.14.x (was < 3)
   - Added version check for 1.15.x (patch < 1)
   - Fixed shellcheck SC2086 warning: quoted $ns_flag variable on line 177
 - Updated affected version references in script header and remediation section
+
+### Added
+- k8s-009: CVE-2026-3288 hardening script — Added shellcheck documentation comments:
+  - Added "# shellcheck shell=bash" at top of script
+  - Added "# Shellcheck passed on $(date)" at end of script
+
+### Added
+- kfk-008: CVE-2025-27818 hardening script for Kafka Connect SASL JAAS RCE
+  - `scripts/bash/kafka_toolkit/security/cve-2025-27818.sh`: Detect and remediate CVE-2025-27818 vulnerability
+  - Scans for Kafka Connect pods and JAAS configurations
+  - Provides remediation recommendations and upgrade guidance
+  - Supports --dry-run, --json-output options
+  - Requires: kubectl, jq
+- kfk-009: CVE-2025-27817 hardening script for Kafka Client arbitrary file read/SSRF
+  - `scripts/bash/kafka_toolkit/security/cve-2025-27817.sh`: Detect and remediate CVE-2025-27817 vulnerability
+  - Scans for Kafka client deployments and environment configurations
+  - Provides remediation recommendations and upgrade guidance
+  - Supports --dry-run, --json-output options
+  - Requires: kubectl, jq
+- jen-008: CVE-2026-27099 / CVE-2025-67635 hardening script for Jenkins XSS and DoS
+  - `scripts/bash/jenkins_toolkit/security/cve-2026-27099.sh`: Detect and remediate Jenkins vulnerabilities
+  - Checks Jenkins version for affected versions (< 2.492.3 LTS, < 2.507)
+  - Scans for Jenkins deployments and security configurations
+  - Supports --dry-run, --json-output options
+  - Requires: kubectl, jq
+- Bootstrap: Created kafka_toolkit/security and jenkins_toolkit/security directories
+- Updated `00_index/quick-links.md` — Added CVE hardening scripts to Kafka and Jenkins sections
 
 ### Added
 - k8s-009: CVE-2026-3288 hardening script for ingress-nginx rewrite-target RCE

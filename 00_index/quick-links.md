@@ -56,6 +56,7 @@
 - [Pod Logs](../scripts/bash/k8s_toolkit/pod/pod-logs.sh)
 - [Exec Pod](../scripts/bash/k8s_toolkit/pod/exec-pod.sh)
 - [RBAC Guide](docs/how-to/k8s_rbac.md) - Role, ClusterRole, RoleBinding, ClusterRoleBinding with examples
+- [CVE-2026-3288 Hardening](../scripts/bash/k8s_toolkit/security/cve-2026-3288-nginx.sh) - ingress-nginx rewrite-target RCE vulnerability scanner
 
 ## Jenkins
 - [jenkins_toolkit Usage](how-to/jenkins_toolkit.md)

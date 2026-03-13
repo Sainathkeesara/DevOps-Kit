@@ -7,6 +7,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Fixed
+- k8s-009: CVE-2026-3288 hardening script — DRY_RUN variable now fully wired to kubectl operations:
+  - Added --remediate flag to actually perform remediation (upgrade ingress-nginx)
+  - Added perform_remediation() function that wraps kubectl set image with dry-run check
+  - DRY_RUN now properly guards the remediation command execution
+  - Updated usage and examples in script header
+  - shellcheck: pass
+
+### Fixed
 - k8s-009: CVE-2026-3288 hardening script — Added shellcheck documentation comments:
   - Added "# shellcheck shell=bash" at top of script
   - Added "# Shellcheck passed on $(date)" at end of script

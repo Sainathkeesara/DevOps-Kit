@@ -13,6 +13,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Message production and consumption testing
   - Rollback procedures and common errors section
 - Updated `00_index/quick-links.md` — Added Kafka Cluster Setup Guide link in Kafka section
+- kfk-004: Integrated cluster setup guide reference in kafka_toolkit.md — Added "For local development setup" link in Prerequisites section for complete doc coverage
 
 ### Fixed
 - lin-001: disk-usage.sh — Added header comment with purpose/usage/requirements, wired DRY_RUN to all operations, added binary existence checks for df/du/find

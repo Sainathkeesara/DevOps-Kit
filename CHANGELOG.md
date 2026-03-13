@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Fixed
+- k8s-009: CVE-2026-3288 hardening script — Updated version checks to CVE specification:
+  - Version checks now check for patch < 8 on 1.13.x (was < 7)
+  - Version checks now check for patch < 4 on 1.14.x (was < 3)
+  - Added version check for 1.15.x (patch < 1)
+  - Fixed shellcheck SC2086 warning: quoted $ns_flag variable on line 177
+- Updated affected version references in script header and remediation section
+
 ### Added
 - k8s-009: CVE-2026-3288 hardening script for ingress-nginx rewrite-target RCE
   - `scripts/bash/k8s_toolkit/security/cve-2026-3288-nginx.sh`: Detect and remediate CVE-2026-3288 vulnerability

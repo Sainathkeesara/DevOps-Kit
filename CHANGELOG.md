@@ -6,6 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+- ter-002: Terraform init/plan/apply workflow script with sensitive value handling
+  - `scripts/bash/terraform_toolkit/terraform-workflow.sh`: Run Terraform workflows with security best practices
+  - Supports init, plan, apply, destroy, validate commands
+  - Sensitive value handling: warns about secrets in var files, recommends TF_VAR_* environment variables
+  - Supports --dry-run for plan/apply/destroy operations
+  - Supports --var-file, --backend-config, --lock-timeout options
+  - Color-coded logging for info/warn/error
+  - shellcheck: pass
+- Updated `00_index/quick-links.md` — Added terraform_toolkit to Tools section and new Terraform section
+- Bootstrap: Created scripts/bash/terraform_toolkit directory
+
 ### Fixed
 - k8s-009: CVE-2026-3288 hardening script — DRY_RUN variable now fully wired to kubectl operations:
   - Added --remediate flag to actually perform remediation (upgrade ingress-nginx)

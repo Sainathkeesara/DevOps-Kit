@@ -11,6 +11,7 @@
 - [ci_cd_toolkit](how-to/ci_cd_toolkit.md) - CI/CD pipeline helpers (workflow linting, health checks, action updates, workflow generation)
 - [observability_toolkit](how-to/observability_toolkit.md) - Prometheus, Grafana, Loki, Jaeger, OTel query and health scripts
 - [linux_toolkit](how-to/linux_toolkit.md) - Linux system administration scripts (health check, disk usage, service management, network diagnostics)
+- [terraform_toolkit](how-to/terraform_toolkit.md) - Terraform workflow scripts (init/plan/apply/destroy with sensitive value handling)
 
 ## Kafka
 - [kafka_toolkit Usage](how-to/kafka_toolkit.md) - Prerequisites include [Kafka Cluster Setup Guide](docs/setup-guides/kafka-cluster-setup.md)
@@ -106,6 +107,10 @@
 - [Network Diagnostics](../scripts/bash/linux_toolkit/network/net-diag.sh)
 - [Process Manager](../scripts/bash/linux_toolkit/process/process-manager.sh)
 - [Security Check](../scripts/bash/linux_toolkit/security/security-check.sh)
+
+## Terraform
+- [terraform_toolkit Usage](how-to/terraform_toolkit.md)
+- [Terraform Workflow Script](../scripts/bash/terraform_toolkit/terraform-workflow.sh) - init/plan/apply with sensitive value handling and --dry-run support
 
 ## Scripting
 - [Bash Scripts](../scripts/bash/)

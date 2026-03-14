@@ -17,6 +17,7 @@
 ## Kafka
 - [kafka_toolkit Usage](how-to/kafka_toolkit.md) - Prerequisites include [Kafka Cluster Setup Guide](docs/setup-guides/kafka-cluster-setup.md)
 - [Kafka Cluster Setup Guide](docs/setup-guides/kafka-cluster-setup.md) - Single broker setup for local development
+- [Kafka Troubleshooting](docs/troubleshooting/kafka-consumer-lag.md) - Consumer lag and rebalancing issues
 - [Kafka Cheatsheet](../snippets/kafka-cheatsheet.md)
 - [Topic Management](../scripts/bash/kafka_toolkit/topics/topic-list.sh)
 - [Consumer Groups](../scripts/bash/kafka_toolkit/consumers/consumer-groups.sh)
@@ -40,6 +41,7 @@
 ## Troubleshooting
 - [CrashLoopBackOff](docs/troubleshooting/k8s-crashloopbackoff.md)
 - [Pod Debugging](docs/troubleshooting/k8s-pod-debug.md)
+- [Kafka Consumer Lag](docs/troubleshooting/kafka-consumer-lag.md)
 
 ## Kubernetes
 - [k8s_toolkit Usage](how-to/k8s_toolkit.md)

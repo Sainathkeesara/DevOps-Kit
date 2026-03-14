@@ -117,6 +117,7 @@
 
 ## Ansible
 - [ansible_toolkit Usage](how-to/ansible_toolkit.md)
+- [Vault Password Rotation](../scripts/bash/ansible_toolkit/vault-rotate.sh) - Rotate Ansible vault passwords with --dry-run, --backup-dir, --json-output flags
 - [CVE-2025-14010 Audit](../scripts/bash/ansible_toolkit/security/cve-2025-14010-audit.sh) - Sensitive variable exposure audit with --path, --dry-run, --json-output flags
 
 ## Scripting

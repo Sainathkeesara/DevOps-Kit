@@ -7,6 +7,7 @@
 ## Tools
 - [k8s_toolkit](how-to/k8s_toolkit.md) - Safe kubectl helper scripts (drain, rollout, restart with dry-run, logs, exec, debug, report)
 - [jenkins_toolkit](how-to/jenkins_toolkit.md) - Jenkins automation scripts (install, plugins, configuration)
+- [ansible_toolkit](how-to/ansible_toolkit.md) - Ansible security audit scripts (sensitive variable exposure, CVE-2025-14010)
 - [oci_registry_toolkit](how-to/oci_registry_toolkit.md) - OCI registry helpers (list repos/tags, find old tags, keepalive plans, auth diagnostics)
 - [ci_cd_toolkit](how-to/ci_cd_toolkit.md) - CI/CD pipeline helpers (workflow linting, health checks, action updates, workflow generation)
 - [observability_toolkit](how-to/observability_toolkit.md) - Prometheus, Grafana, Loki, Jaeger, OTel query and health scripts
@@ -111,6 +112,10 @@
 ## Terraform
 - [terraform_toolkit Usage](how-to/terraform_toolkit.md)
 - [Terraform Workflow Script](../scripts/bash/terraform_toolkit/terraform-workflow.sh) - init/plan/apply with sensitive value handling and --dry-run support
+
+## Ansible
+- [ansible_toolkit Usage](how-to/ansible_toolkit.md)
+- [CVE-2025-14010 Audit](../scripts/bash/ansible_toolkit/security/cve-2025-14010-audit.sh) - Sensitive variable exposure audit with --path, --dry-run, --json-output flags
 
 ## Scripting
 - [Bash Scripts](../scripts/bash/)

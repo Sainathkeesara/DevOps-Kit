@@ -7,6 +7,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- ansi-003: Ansible playbook audit for CVE-2025-14010 (sensitive variable exposure)
+  - `scripts/bash/ansible_toolkit/security/cve-2025-14010-audit.sh`: Detect and audit sensitive variable exposure
+  - Checks for missing no_log on sensitive tasks (shell, command, script, template, copy)
+  - Detects hardcoded secrets in variable files
+  - Reviews environment variable security
+  - Identifies debug tasks without no_log protection
+  - Supports --path, --dry-run, --json-output, --verbose options
+  - Requires: bash 4+, grep, awk, find
+  - shellcheck: pass (warnings only)
+- Added `docs/how-to/ansible_toolkit.md` — Complete documentation for ansible_toolkit
+- Updated `00_index/quick-links.md` — Added ansible_toolkit to Tools section and new Ansible section
+- Updated `00_index/topics.md` — Added ansible_toolkit to Tools table
+- Bootstrap: Created scripts/bash/ansible_toolkit/security directory
+
+### Added
 - ter-002: Terraform init/plan/apply workflow script with sensitive value handling
   - `scripts/bash/terraform_toolkit/terraform-workflow.sh`: Run Terraform workflows with security best practices
   - Supports init, plan, apply, destroy, validate commands

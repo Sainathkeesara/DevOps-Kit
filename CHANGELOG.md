@@ -7,6 +7,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- kfk-005: Kafka troubleshooting guide for consumer lag and rebalancing
+  - `docs/troubleshooting/kafka-consumer-lag.md`: Comprehensive troubleshooting guide
+  - Covers consumer lag identification, analysis, and remediation
+  - Includes rebalancing issues, common causes, and fixes
+  - Covers session timeout, heartbeat, static membership configurations
+  - Rollback procedures with offset reset examples
+  - Common errors table with causes and fixes
+- Updated `00_index/quick-links.md` — Added Kafka troubleshooting link
+
+### Added
 - ansi-003: Ansible playbook audit for CVE-2025-14010 (sensitive variable exposure)
   - `scripts/bash/ansible_toolkit/security/cve-2025-14010-audit.sh`: Detect and audit sensitive variable exposure
   - Checks for missing no_log on sensitive tasks (shell, command, script, template, copy)

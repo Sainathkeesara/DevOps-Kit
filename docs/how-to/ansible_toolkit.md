@@ -33,6 +33,53 @@ chmod +x scripts/bash/ansible_toolkit/security/*.sh
 
 ## Tools
 
+### vault-rotate.sh
+
+Rotates Ansible vault passwords for encrypted files. This script helps you update vault passwords securely with backup support and dry-run mode.
+
+```bash
+./scripts/bash/ansible_toolkit/vault-rotate.sh [OPTIONS]
+```
+
+**Arguments:**
+- `--vault-id=<id>` - Vault ID to rotate (default: default)
+- `--old-password=<pwd>` - Current vault password (or set VAULT_PASSWORD env var)
+- `--new-password=<pwd>` - New vault password (or set NEW_VAULT_PASSWORD env var)
+- `--encrypted-file=<file>` - Encrypted file to re-encrypt (can be specified multiple times)
+- `--encrypted-dir=<dir>` - Directory containing encrypted files (recursive)
+- `--backup-dir=<dir>` - Directory for backups (default: <file>.bak)
+- `--dry-run` - Preview changes without applying
+- `--json-output` - Output results in JSON format
+- `--verbose` - Enable verbose debug output
+
+**Examples:**
+
+Rotate password for a single encrypted file:
+```bash
+./scripts/bash/ansible_toolkit/vault-rotate.sh --encrypted-file=vars/secrets.yml --old-password=oldpass --new-password=newpass
+```
+
+Rotate password for all encrypted files in a directory:
+```bash
+./scripts/bash/ansible_toolkit/vault-rotate.sh --encrypted-dir=./vault --old-password=oldpass --new-password=newpass
+```
+
+Preview changes without applying:
+```bash
+./scripts/bash/ansible_toolkit/vault-rotate.sh --encrypted-file=vars/secrets.yml --dry-run
+```
+
+Use environment variables for passwords:
+```bash
+VAULT_PASSWORD=oldpass NEW_VAULT_PASSWORD=newpass ./scripts/bash/ansible_toolkit/vault-rotate.sh --encrypted-file=vars/secrets.yml
+```
+
+**Safety features:**
+- Creates automatic backups before modifying files
+- Supports dry-run mode to preview changes
+- JSON output for integration with automation
+- Vault ID support for multiple vault configurations
+
 ### security/cve-2025-14010-audit.sh
 
 Audits Ansible playbooks for sensitive variable exposure (CVE-2025-14010). This vulnerability allows credentials to be exposed when Ansible runs with verbose mode (`-v`) or when sensitive variables lack proper `no_log` protection.

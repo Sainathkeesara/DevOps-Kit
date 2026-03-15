@@ -7,6 +7,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- vault-002: Vault hardening script for CVE-2025-5999 (privilege escalation to root)
+  - `scripts/bash/vault_toolkit/security/cve-2025-5999.sh`: Detect and remediate Vault privilege escalation vulnerability
+  - Checks Vault server version against vulnerable versions (< 1.16.12, < 1.17.8, < 1.18.2)
+  - Audits policies with elevated permissions and root-like privileges
+  - Reviews entity and group memberships for root policy assignments
+  - Checks token roles for excessive permissions
+  - Provides remediation recommendations for policy hardening
+  - Supports --dry-run, --remediate, --json-output flags
+  - shellcheck: pass
+- Updated `docs/how-to/vault_toolkit.md` — Added CVE-2025-5999 script documentation
+- Updated `00_index/quick-links.md` — Added CVE-2025-5999 hardening script link
+
+### Added
 - vault-001: Vault hardening script for CVE-2025-6000 (plugin directory RCE)
   - `scripts/bash/vault_toolkit/security/cve-2025-6000.sh`: Detect and remediate Vault plugin directory RCE vulnerability
   - Checks Vault server version against vulnerable versions (< 1.16.12, < 1.17.8, < 1.18.2)

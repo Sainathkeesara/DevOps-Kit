@@ -7,6 +7,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- ansi-001: Ansible vault password rotation script
+  - `scripts/bash/ansible_toolkit/security/vault-password-rotation.sh`: Rotate vault passwords across encrypted files
+  - Supports rotating from old vault ID to new vault ID
+  - Identifies and processes encrypted vault files (.yml, .yaml)
+  - Creates backups before re-encryption (.bak.YYYMMDDHHMMSS)
+  - Supports --path, --old-vault-id, --new-vault-id, --backup-dir options
+  - DRY_RUN mode enabled by default, --execute to apply changes
+  - shellcheck: pass (warnings only)
+- Updated `00_index/quick-links.md` — Added vault password rotation script to Ansible section
+
+### Added
 - kfk-005: Kafka troubleshooting guide for consumer lag and rebalancing
   - `docs/troubleshooting/kafka-consumer-lag.md`: Comprehensive troubleshooting guide
   - Covers consumer lag identification, analysis, and remediation

@@ -7,6 +7,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- vault-001: Vault hardening script for CVE-2025-6000 (plugin directory RCE)
+  - `scripts/bash/vault_toolkit/security/cve-2025-6000.sh`: Detect and remediate Vault plugin directory RCE vulnerability
+  - Checks Vault server version against vulnerable versions (< 1.16.12, < 1.17.8, < 1.18.2)
+  - Audits plugin directory configuration and permissions
+  - Provides remediation recommendations for plugin security
+  - Supports --dry-run, --remediate, --json-output flags
+  - shellcheck: pass
+- Updated `00_index/quick-links.md` — Added vault_toolkit to Tools section and new Vault section
+- Bootstrap: Created scripts/bash/vault_toolkit/security directory
+
+### Added
 - ansi-001: Ansible vault password rotation script
   - `scripts/bash/ansible_toolkit/security/vault-password-rotation.sh`: Rotate vault passwords across encrypted files
   - Supports rotating from old vault ID to new vault ID

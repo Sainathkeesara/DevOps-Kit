@@ -38,6 +38,7 @@ Location: `docs/reference/`
 |-------|--------|-------------|---------------|
 | k8s_toolkit | DONE | Safe kubectl helpers for node operations, pod management, debugging, and reporting | [how-to/k8s_toolkit.md](how-to/k8s_toolkit.md) |
 | ansible_toolkit | DONE | Ansible security audit scripts (sensitive variable exposure, CVE-2025-14010) | [how-to/ansible_toolkit.md](how-to/ansible_toolkit.md) |
+| vault_toolkit | DONE | Vault security hardening scripts (CVE-2025-6000 plugin directory RCE) | [how-to/vault_toolkit.md](how-to/vault_toolkit.md) |
 | oci_registry_toolkit | PLANNED | OCI container registry management (list, cleanup, auth) | — |
 | ci_cd_toolkit | PLANNED | CI/CD templates for GitHub Actions/Jenkins | — |
 | observability_toolkit | PLANNED | Grafana/Prometheus/OTEL patterns and dashboards | — |

@@ -7,6 +7,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- dok-001: Docker hardening script for CVE-2026-28400 (Model Runner privilege escalation)
+  - `scripts/bash/docker_toolkit/security/cve-2026-28400.sh`: Detect Docker Model Runner privilege escalation vulnerability
+  - Checks Docker version and Model Runner container status
+  - Scans for privileged containers and Docker socket mounts
+  - Checks Model Runner API exposure
+  - Provides remediation recommendations
+  - Supports --dry-run, --remediate, --json-output flags
+  - shellcheck: pass
+- Updated `00_index/quick-links.md` — Added Docker section with CVE-2026-28400 hardening script
+- Bootstrap: Created scripts/bash/docker_toolkit/security directory
+
+### Added
 - vault-002: Vault hardening script for CVE-2025-5999 (privilege escalation to root)
   - `scripts/bash/vault_toolkit/security/cve-2025-5999.sh`: Detect and remediate Vault privilege escalation vulnerability
   - Checks Vault server version against vulnerable versions (< 1.16.12, < 1.17.8, < 1.18.2)

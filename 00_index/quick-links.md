@@ -13,6 +13,7 @@
 - [observability_toolkit](how-to/observability_toolkit.md) - Prometheus, Grafana, Loki, Jaeger, OTel query and health scripts
 - [linux_toolkit](how-to/linux_toolkit.md) - Linux system administration scripts (health check, disk usage, service management, network diagnostics)
 - [terraform_toolkit](how-to/terraform_toolkit.md) - Terraform workflow scripts (init/plan/apply/destroy with sensitive value handling)
+- [vault_toolkit](how-to/vault_toolkit.md) - Vault security hardening scripts (CVE detection and remediation)
 
 ## Kafka
 - [kafka_toolkit Usage](how-to/kafka_toolkit.md) - Prerequisites include [Kafka Cluster Setup Guide](docs/setup-guides/kafka-cluster-setup.md)
@@ -119,6 +120,9 @@
 - [ansible_toolkit Usage](how-to/ansible_toolkit.md)
 - [CVE-2025-14010 Audit](../scripts/bash/ansible_toolkit/security/cve-2025-14010-audit.sh) - Sensitive variable exposure audit with --path, --dry-run, --json-output flags
 - [Vault Password Rotation](../scripts/bash/ansible_toolkit/security/vault-password-rotation.sh) - Rotate vault passwords across encrypted files with --dry-run and --execute flags
+
+## Vault
+- [CVE-2025-6000 Hardening](../scripts/bash/vault_toolkit/security/cve-2025-6000.sh) - Vault plugin directory RCE vulnerability scanner with --remediate and --dry-run flags
 
 ## Scripting
 - [Bash Scripts](../scripts/bash/)

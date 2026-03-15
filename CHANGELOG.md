@@ -7,6 +7,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- helm-001: Helm hardening script for CVE-2025-53547 (Chart.yaml code injection)
+  - `scripts/bash/helm_toolkit/security/cve-2025-53547.sh`: Detect and remediate Helm Chart.yaml code injection vulnerability
+  - Checks Helm client version against vulnerable versions (< 3.16.7, < 3.17.2)
+  - Analyzes Chart.yaml for injection patterns (\$(), \${}, backticks, template syntax)
+  - Reviews values.yaml for potential injection vectors
+  - Scans templates for dangerous function calls
+  - Provides remediation recommendations for chart sanitization
+  - Supports --dry-run, --remediate, --json-output flags
+  - shellcheck: pass
+- Updated `00_index/quick-links.md` — Added Helm CVE-2025-53547 hardening script link
+- Bootstrap: Created scripts/bash/helm_toolkit/security directory
+
+### Added
 - dok-001: Docker hardening script for CVE-2026-28400 (Model Runner privilege escalation)
   - `scripts/bash/docker_toolkit/security/cve-2026-28400.sh`: Detect Docker Model Runner privilege escalation vulnerability
   - Checks Docker version and Model Runner container status

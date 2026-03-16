@@ -7,6 +7,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- vault-008: Vault hardening script for CVE-2025-11621 (AWS Auth bypass)
+  - `scripts/bash/vault_toolkit/security/cve-2025-11621.sh`: Detect and remediate Vault AWS Auth method bypass vulnerability
+  - Checks Vault server version against vulnerable versions (< 1.16.27, < 1.19.11, < 1.20.5, < 1.21.0)
+  - Audits AWS auth methods for bound_principal_iam with wildcards
+  - Detects cross-account IAM role access patterns
+  - Reviews AWS auth roles for bound_iam_role_arn configurations
+  - Provides remediation recommendations for IAM policy hardening
+  - Supports --dry-run, --json-output flags
+  - shellcheck: pass
+- Updated `00_index/quick-links.md` — Added CVE-2025-11621 hardening script to Vault section
+
+### Added
 - helm-001: Helm hardening script for CVE-2025-53547 (Chart.yaml code injection)
   - `scripts/bash/helm_toolkit/security/cve-2025-53547-harden.sh`: Detect and remediate Helm Chart.yaml code injection vulnerability
   - Checks Helm client version against vulnerable versions (< 3.17.2)

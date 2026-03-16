@@ -7,6 +7,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- ansi-008: Ansible AAP hardening script for CVE-2026-24049 (wheel privilege escalation)
+  - `scripts/bash/ansible_toolkit/security/aap-cve-2026-24049-check.sh`: Detect wheel package privilege escalation vulnerability
+  - Checks wheel package version (vulnerable: 0.40.0 - 0.46.1)
+  - Validates AAP access and checks AAP version affected by CVE-2026-24049
+  - Checks critical file permissions for unauthorized changes
+  - Scans for recent wheel unpack activities in AAP logs
+  - Provides remediation recommendations (upgrade wheel to 0.46.2+, AAP to 2.5.3+)
+  - Supports --host, --token, --dry-run, --output flags
+  - shellcheck: pass with warnings (SC2038 - style only, fixed)
+- Updated `00_index/quick-links.md` — Added CVE-2026-24049 hardening script to Ansible section
+
+### Added
 - ansi-002: Ansible Lightspeed hardening script for CVE-2026-0598 (auth bypass)
   - `scripts/bash/ansible_toolkit/security/cve-2026-0598-audit.sh`: Detect CVE-2026-0598 auth bypass in Ansible Lightspeed
   - Checks AAP version against vulnerable versions

@@ -120,6 +120,7 @@
 - [ansible_toolkit Usage](docs/how-to/ansible_toolkit.md)
 - [CVE-2025-14010 Audit](../scripts/bash/ansible_toolkit/security/cve-2025-14010-audit.sh) - Sensitive variable exposure audit with --path, --dry-run, --json-output flags
 - [Vault Password Rotation](../scripts/bash/ansible_toolkit/security/vault-password-rotation.sh) - Rotate vault passwords across encrypted files with --dry-run and --execute flags
+- [CVE-2026-0598 Hardening](../scripts/bash/ansible_toolkit/security/aap-cve-2026-0598-check.sh) - AAP Lightspeed auth bypass vulnerability scanner with --dry-run, --host, --token, and --output flags
 
 ## Vault
 - [CVE-2025-6000 Hardening](../scripts/bash/vault_toolkit/security/cve-2025-6000.sh) - Vault plugin directory RCE vulnerability scanner with --remediate and --dry-run flags

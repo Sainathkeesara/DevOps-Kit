@@ -1,70 +1,55 @@
-# Topics Index
+# Topics
 
-## Categories
+## Infrastructure
+- Kubernetes — node management, scaling, upgrades, RBAC
+- Terraform — state management, workflow automation
+- Ansible — playbook auditing, security hardening
 
-### Setup Guides
-Step-by-step instructions for installing and configuring tools and environments.
+## CI/CD
+- Jenkins — installation, plugins, webhook configuration
+- ArgoCD — sync strategies, rollback (new)
+- GitHub Actions — workflow validation, pipeline health
 
-Location: `docs/setup-guides/`
+## Observability
+- Prometheus — alerting rules, scrape configs, target health
+- Grafana — dashboard health, datasource validation
+- Loki — log querying with LogQL
+- Jaeger — trace querying
+- OpenTelemetry — collector health
 
-### How-To
-Practical guides for performing specific tasks with provided tools.
+## Security
+- Vault — secret management, CVE hardening scripts
+- Trivy — container vulnerability scanning (new)
+- Kubescape — K8s security scanning (new)
+- Falco — runtime security monitoring (new)
 
-Location: `docs/how-to/`
+## Data & Messaging
+- Kafka — topic management, consumer groups, ACLs, partition reassignment
 
-### Concepts
-Deep dives into technologies, patterns, and architectural decisions.
+## Container & Registry
+- Docker — security hardening, CVE scripts
+- Helm — Chart security, CVE hardening
+- OCI Registry — repository management, tag cleanup
 
-Location: `docs/concepts/`
-
-### Troubleshooting
-Symptom → cause → fix documentation for common issues.
-
-Location: `docs/troubleshooting/`
-
-### Runbooks
-Operational procedures for incident response and routine checks.
-
-Location: `docs/runbooks/`
-
-### Reference
-API docs, configuration references, and quick lookup material.
-
-Location: `docs/reference/`
+## System Administration
+- Linux — system health, disk usage, service management, network diagnostics
 
 ## Tools
-
-| Tool | Status | Description | Documentation |
-|-------|--------|-------------|---------------|
-| k8s_toolkit | DONE | Safe kubectl helpers for node operations, pod management, debugging, and reporting | [how-to/k8s_toolkit.md](how-to/k8s_toolkit.md) |
-| ansible_toolkit | DONE | Ansible security audit scripts (sensitive variable exposure, CVE-2025-14010) | [how-to/ansible_toolkit.md](how-to/ansible_toolkit.md) |
-| vault_toolkit | DONE | Vault security hardening scripts (CVE-2025-6000 plugin directory RCE) | [how-to/vault_toolkit.md](how-to/vault_toolkit.md) |
-| oci_registry_toolkit | PLANNED | OCI container registry management (list, cleanup, auth) | — |
-| ci_cd_toolkit | PLANNED | CI/CD templates for GitHub Actions/Jenkins | — |
-| observability_toolkit | PLANNED | Grafana/Prometheus/OTEL patterns and dashboards | — |
-| linux_toolkit | PLANNED | Linux Mint/Ubuntu setup and troubleshooting scripts | — |
-
-## Scripts
-
-Scripts are organized by language in `scripts/`:
-- **bash/** - Shell scripts for Unix-like systems
-- **python/** - Cross-platform Python utilities
-- **powershell/** - Windows PowerShell scripts
-
-Each script includes comprehensive header documentation, safety guards, and dry-run modes where applicable.
-
-## Snippets
-
-Copy-paste ready code organized by technology in `snippets/`. Includes:
-- Configuration snippets
-- Command examples
-- Query patterns
-
-## Templates
-
-Starter files and skeletons in `templates/`:
-- `project-starters/` - Boilerplate for new projects
-- `docker/` - Dockerfile and compose templates
-- `k8s/` - Kubernetes manifest templates
-- `terraform/` - Infrastructure as Code patterns
-- `docs/` - Documentation templates
+| Tool | Status | Description |
+|------|--------|-------------|
+| k8s_toolkit | DONE | Safe kubectl helpers for node operations, pod management, debugging, and reporting |
+| kafka_toolkit | DONE | Kafka topic management, consumer lag, ACLs, monitoring, security hardening |
+| jenkins_toolkit | DONE | Jenkins installation, plugins, GitHub webhook configuration |
+| linux_toolkit | DONE | System health, disk usage, service management, network diagnostics |
+| observability_toolkit | DONE | Prometheus, Grafana, Loki, Jaeger, OTel query and health scripts |
+| oci_registry_toolkit | DONE | OCI registry management, tag cleanup, authentication |
+| ci_cd_toolkit | DONE | GitHub Actions validation, pipeline health, workflow generation |
+| terraform_toolkit | DONE | Terraform workflow scripts with sensitive value handling |
+| ansible_toolkit | DONE | Ansible security audit scripts, vault password rotation |
+| vault_toolkit | DONE | Vault CVE hardening scripts |
+| docker_toolkit | DONE | Docker security hardening scripts |
+| helm_toolkit | DONE | Helm Chart security hardening |
+| ArgoCD | PLANNED | GitOps deployment tooling |
+| Trivy | PLANNED | Container vulnerability scanner |
+| Kubescape | PLANNED | K8s security scanner |
+| Falco | PLANNED | Runtime security |

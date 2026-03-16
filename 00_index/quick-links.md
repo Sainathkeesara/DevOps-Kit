@@ -5,18 +5,18 @@
 - [CHANGELOG](../CHANGELOG.md) - Version history and updates
 
 ## Tools
-- [k8s_toolkit](how-to/k8s_toolkit.md) - Safe kubectl helper scripts (drain, rollout, restart with dry-run, logs, exec, debug, report)
-- [jenkins_toolkit](how-to/jenkins_toolkit.md) - Jenkins automation scripts (install, plugins, configuration)
-- [ansible_toolkit](how-to/ansible_toolkit.md) - Ansible security audit scripts (sensitive variable exposure, CVE-2025-14010)
-- [oci_registry_toolkit](how-to/oci_registry_toolkit.md) - OCI registry helpers (list repos/tags, find old tags, keepalive plans, auth diagnostics)
-- [ci_cd_toolkit](how-to/ci_cd_toolkit.md) - CI/CD pipeline helpers (workflow linting, health checks, action updates, workflow generation)
-- [observability_toolkit](how-to/observability_toolkit.md) - Prometheus, Grafana, Loki, Jaeger, OTel query and health scripts
-- [linux_toolkit](how-to/linux_toolkit.md) - Linux system administration scripts (health check, disk usage, service management, network diagnostics)
-- [terraform_toolkit](how-to/terraform_toolkit.md) - Terraform workflow scripts (init/plan/apply/destroy with sensitive value handling)
-- [vault_toolkit](how-to/vault_toolkit.md) - Vault security hardening scripts (CVE detection and remediation)
+- [k8s_toolkit](docs/how-to/k8s_toolkit.md) - Safe kubectl helper scripts (drain, rollout, restart with dry-run, logs, exec, debug, report)
+- [jenkins_toolkit](docs/how-to/jenkins_toolkit.md) - Jenkins automation scripts (install, plugins, configuration)
+- [ansible_toolkit](docs/how-to/ansible_toolkit.md) - Ansible security audit scripts (sensitive variable exposure, CVE-2025-14010)
+- [oci_registry_toolkit](docs/how-to/oci_registry_toolkit.md) - OCI registry helpers (list repos/tags, find old tags, keepalive plans, auth diagnostics)
+- [ci_cd_toolkit](docs/how-to/ci_cd_toolkit.md) - CI/CD pipeline helpers (workflow linting, health checks, action updates, workflow generation)
+- [observability_toolkit](docs/how-to/observability_toolkit.md) - Prometheus, Grafana, Loki, Jaeger, OTel query and health scripts
+- [linux_toolkit](docs/how-to/linux_toolkit.md) - Linux system administration scripts (health check, disk usage, service management, network diagnostics)
+- [terraform_toolkit](docs/how-to/terraform_toolkit.md) - Terraform workflow scripts (init/plan/apply/destroy with sensitive value handling)
+- [vault_toolkit](docs/how-to/vault_toolkit.md) - Vault security hardening scripts (CVE detection and remediation)
 
 ## Kafka
-- [kafka_toolkit Usage](how-to/kafka_toolkit.md) - Prerequisites include [Kafka Cluster Setup Guide](docs/setup-guides/kafka-cluster-setup.md)
+- [kafka_toolkit Usage](docs/how-to/kafka_toolkit.md) - Prerequisites include [Kafka Cluster Setup Guide](docs/setup-guides/kafka-cluster-setup.md)
 - [Kafka Cluster Setup Guide](docs/setup-guides/kafka-cluster-setup.md) - Single broker setup for local development
 - [Kafka Troubleshooting](docs/troubleshooting/kafka-consumer-lag.md) - Consumer lag and rebalancing issues
 - [Kafka Cheatsheet](../snippets/kafka-cheatsheet.md)
@@ -45,10 +45,10 @@
 - [Kafka Consumer Lag](docs/troubleshooting/kafka-consumer-lag.md)
 
 ## Kubernetes
-- [k8s_toolkit Usage](how-to/k8s_toolkit.md)
+- [k8s_toolkit Usage](docs/how-to/k8s_toolkit.md)
 - [EKS Cluster Setup Guide](docs/setup-guides/eks-cluster-setup.md) - Complete guide for creating EKS cluster from scratch on AWS
 - [Kubectl Cheatsheet](../snippets/kubectl-cheatsheet.md)
-- [Pod Debugging Guide](../docs/troubleshooting/k8s-pod-debug.md)
+- [Pod Debugging Guide](docs/troubleshooting/k8s-pod-debug.md)
 - [Production Deployment Template](../templates/k8s/production-deployment.yaml) - Deployment + HPA + PDB with anti-affinity
 - [Deploy Production App Script](../templates/k8s/deploy-prod-app.sh) - Generate and apply production deployment with customizable port
 - [Namespace Report Script](../scripts/bash/k8s_toolkit/report/namespace-report.sh)
@@ -66,14 +66,14 @@
 - [CVE-2026-3288 Hardening](../scripts/bash/k8s_toolkit/security/cve-2026-3288-nginx.sh) - ingress-nginx rewrite-target RCE vulnerability scanner with --remediate and --dry-run flags
 
 ## Jenkins
-- [jenkins_toolkit Usage](how-to/jenkins_toolkit.md)
+- [jenkins_toolkit Usage](docs/how-to/jenkins_toolkit.md)
 - [Jenkins Cheatsheet](../snippets/jenkins-cheatsheet.md)
 - [Install Jenkins](../scripts/bash/jenkins_toolkit/install-jenkins.sh) - Automated install on Ubuntu 22.04 with --dry-run and --port options
-- [GitHub Webhook Setup](how-to/github-webhook-jenkins.md) - Configure GitHub webhooks to trigger Jenkins builds
+- [GitHub Webhook Setup](docs/how-to/github-webhook-jenkins.md) - Configure GitHub webhooks to trigger Jenkins builds
 - [CVE-2026-27099 Hardening](../scripts/bash/jenkins_toolkit/security/cve-2026-27099.sh) - Jenkins XSS and DoS vulnerability scanner
 
 ## Container Registries
-- [oci_registry_toolkit Usage](how-to/oci_registry_toolkit.md)
+- [oci_registry_toolkit Usage](docs/how-to/oci_registry_toolkit.md)
 - [OCI Registry Cheatsheet](../snippets/oci-registry-cheatsheet.md)
 - [List Repositories](../scripts/bash/oci_registry_toolkit/registry/list-repos.sh)
 - [List Tags](../scripts/bash/oci_registry_toolkit/registry/list-tags.sh)
@@ -82,7 +82,7 @@
 - [Auth Diagnostics](../scripts/bash/oci_registry_toolkit/auth/check-auth.sh)
 
 ## CI/CD
-- [ci_cd_toolkit Usage](how-to/ci_cd_toolkit.md)
+- [ci_cd_toolkit Usage](docs/how-to/ci_cd_toolkit.md)
 - [CI/CD Cheatsheet](../snippets/ci-cd-cheatsheet.md)
 - [Lint Workflows](../scripts/bash/ci_cd_toolkit/github/lint-workflows.sh)
 - [Validate Workflow](../scripts/bash/ci_cd_toolkit/github/validate-workflow.sh)
@@ -91,7 +91,7 @@
 - [Generate Workflow](../scripts/bash/ci_cd_toolkit/github/generate-workflow.sh)
 
 ## Observability
-- [observability_toolkit Usage](how-to/observability_toolkit.md)
+- [observability_toolkit Usage](docs/how-to/observability_toolkit.md)
 - [Observability Cheatsheet](../snippets/observability-cheatsheet.md)
 - [Prometheus Targets Status](../scripts/bash/observability_toolkit/prometheus/targets-status.sh)
 - [Check Alert](../scripts/bash/observability_toolkit/prometheus/check-alert.sh)
@@ -103,7 +103,7 @@
 - [Stack Health Check](../scripts/bash/observability_toolkit/stack-health.sh)
 
 ## Linux Administration
-- [linux_toolkit Usage](how-to/linux_toolkit.md)
+- [linux_toolkit Usage](docs/how-to/linux_toolkit.md)
 - [Linux Cheatsheet](../snippets/linux-cheatsheet.md)
 - [System Health Check](../scripts/bash/linux_toolkit/system/health-check.sh)
 - [Disk Usage Analysis](../scripts/bash/linux_toolkit/system/disk-usage.sh) - With --dry-run, --threshold, and --help flags
@@ -113,11 +113,11 @@
 - [Security Check](../scripts/bash/linux_toolkit/security/security-check.sh)
 
 ## Terraform
-- [terraform_toolkit Usage](how-to/terraform_toolkit.md)
+- [terraform_toolkit Usage](docs/how-to/terraform_toolkit.md)
 - [Terraform Workflow Script](../scripts/bash/terraform_toolkit/terraform-workflow.sh) - init/plan/apply with sensitive value handling and --dry-run support
 
 ## Ansible
-- [ansible_toolkit Usage](how-to/ansible_toolkit.md)
+- [ansible_toolkit Usage](docs/how-to/ansible_toolkit.md)
 - [CVE-2025-14010 Audit](../scripts/bash/ansible_toolkit/security/cve-2025-14010-audit.sh) - Sensitive variable exposure audit with --path, --dry-run, --json-output flags
 - [Vault Password Rotation](../scripts/bash/ansible_toolkit/security/vault-password-rotation.sh) - Rotate vault passwords across encrypted files with --dry-run and --execute flags
 

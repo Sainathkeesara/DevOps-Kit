@@ -7,16 +7,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
-- ansi-002: AAP hardening script for CVE-2026-0598 (Lightspeed auth bypass)
-  - `scripts/bash/ansible_toolkit/security/aap-cve-2026-0598-check.sh`: Detect and remediate AAP Lightspeed authentication bypass vulnerability
-  - Checks AAP version against vulnerable versions (< 2.4.3)
-  - Audits Lightspeed settings and configuration
-  - Reviews conversation access logs for suspicious patterns
-  - Checks audit logs for unauthorized cross-user access
-  - Provides remediation recommendations for upgrading AAP
-  - Supports --dry-run, --host, --token, --output (json/text) flags
-  - shellcheck: pass (warnings only)
-- Updated `00_index/quick-links.md` — Added CVE-2026-0598 hardening script to Ansible section
+- ansi-002: Ansible Lightspeed hardening script for CVE-2026-0598 (auth bypass)
+  - `scripts/bash/ansible_toolkit/security/cve-2026-0598-audit.sh`: Detect CVE-2026-0598 auth bypass in Ansible Lightspeed
+  - Checks AAP version against vulnerable versions
+  - Audits Lightspeed service status and configuration
+  - Reviews audit logs for unauthorized conversation access
+  - Checks API endpoint vulnerability patterns
+  - Reviews user permissions and roles
+  - Provides remediation recommendations for ownership validation
+  - Supports --host, --token, --dry-run, --json-output, --verbose flags
+  - shellcheck: pass with warnings (SC2043, SC2155 - style only)
+- Updated `00_index/quick-links.md` — Added CVE-2026-0598 audit script to Ansible section
+- Updated `docs/how-to/ansible_toolkit.md` — Added CVE-2026-0598 documentation
+- Added `docs/how-to/ansible-lightspeed-cve-2026-0598.md` — How-to guide for CVE-2026-0598
+
+### Added
 - vault-008: Vault hardening script for CVE-2025-11621 (AWS Auth bypass)
   - `scripts/bash/vault_toolkit/security/cve-2025-11621.sh`: Detect and remediate Vault AWS Auth method bypass vulnerability
   - Checks Vault server version against vulnerable versions (< 1.16.27, < 1.19.11, < 1.20.5, < 1.21.0)

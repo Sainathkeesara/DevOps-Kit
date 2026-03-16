@@ -2,12 +2,13 @@
 
 ## Purpose
 
-The ansible_toolkit provides security auditing scripts for Ansible playbooks, focusing on sensitive variable exposure vulnerabilities. These scripts help detect and remediate CVE-2025-14010 and other credential leakage issues in Ansible projects.
+The ansible_toolkit provides security auditing scripts for Ansible playbooks, focusing on sensitive variable exposure vulnerabilities. These scripts help detect and remediate CVE-2025-14010, CVE-2026-0598, and other credential leakage issues in Ansible projects.
 
 ## When to use
 
 Use ansible_toolkit scripts when you need to:
 - Audit Ansible playbooks for sensitive variable exposure
+- Check Ansible Automation Platform for CVE-2026-0598
 - Check for missing `no_log` protection on sensitive tasks
 - Detect hardcoded secrets in variable files
 - Review environment variable security
@@ -20,6 +21,7 @@ Do **not** use these in production as a security control - they are audit tools 
 - Bash 4.0 or higher
 - Standard Unix tools: grep, awk, find
 - Optional: ansible-playbook (for syntax validation)
+- For CVE-2026-0598: curl, jq, AAP API access
 
 ## Installation
 
@@ -32,6 +34,42 @@ chmod +x scripts/bash/ansible_toolkit/security/*.sh
 ```
 
 ## Tools
+
+### security/cve-2026-0598-audit.sh
+
+Audits Ansible Automation Platform for CVE-2026-0598, an authentication bypass vulnerability in the Lightspeed API conversation endpoints. The vulnerability allows authenticated attackers to access conversations owned by other users.
+
+```bash
+./scripts/bash/ansible_toolkit/security/cve-2026-0598-audit.sh [--host=<aap_host>] [--token=<api_token>] [--dry-run] [--json-output] [--verbose]
+```
+
+**Arguments:**
+- `--host=<aap_host>` - Ansible Automation Platform hostname
+- `--user=<username>` - AAP username (default: admin)
+- `--token=<api_token>` - AAP API token (or set AAP_TOKEN env var)
+- `--output=<file>` - Save results to file
+- `--dry-run` - Preview findings without API calls
+- `--json-output` - Output results in JSON format
+- `--verbose` - Enable verbose debug output
+
+**Examples:**
+
+Basic scan:
+```bash
+./scripts/bash/ansible_toolkit/security/cve-2026-0598-audit.sh --host=aap.example.com --token=your_token
+```
+
+With JSON output:
+```bash
+./scripts/bash/ansible_toolkit/security/cve-2026-0598-audit.sh --host=aap.example.com --token=your_token --json-output
+```
+
+**What CVE-2026-0598 checks:**
+1. AAP version verification (must be patched)
+2. Lightspeed service status and configuration
+3. User conversation access audit logs
+4. API endpoint vulnerability patterns
+5. User permissions and roles
 
 ### security/cve-2025-14010-audit.sh
 
@@ -99,6 +137,7 @@ This is a read-only audit tool. It does not modify any files. No rollback is nee
 
 ## References
 
+- CVE-2026-0598 — https://nvd.nist.gov/vuln/detail/CVE-2026-0598 (verified: 2026-03-16)
 - CVE-2025-14010 — https://nvd.nist.gov/vuln/detail/CVE-2025-14010 (verified: 2026-03-14)
 - Ansible Documentation — https://docs.ansible.com/ (verified: 2026-03-14)
 - Ansible Vault — https://docs.ansible.com/ansible/latest/vault_guide/index.html (verified: 2026-03-14)

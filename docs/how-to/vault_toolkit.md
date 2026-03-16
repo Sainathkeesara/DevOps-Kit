@@ -13,6 +13,12 @@ Provide security scanning and hardening scripts to detect and remediate vulnerab
 | `security/cve-2025-6000.sh` | Detect and remediate CVE-2025-6000 (Vault plugin directory RCE) |
 | `security/cve-2025-5999.sh` | Detect and remediate CVE-2025-5999 (Vault privilege escalation to root) |
 
+## Documentation
+
+| Document | Description |
+|----------|-------------|
+| `vault-secure-deployment.md` | Comprehensive security hardening guide for Vault production deployments |
+
 ## Requirements
 
 - `vault` CLI (installed and configured)

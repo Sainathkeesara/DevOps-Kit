@@ -7,6 +7,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- vault-003: Vault secure deployment best practices guide
+  - `docs/how-to/vault-secure-deployment.md`: Comprehensive security hardening guide for Vault production deployments
+  - Covers TLS configuration, authentication methods, authorization policies, audit logging
+  - Network security, sealing/unsealing, rate limiting, namespaces
+  - Includes hardening checklist and verification steps
+  - Updated `00_index/quick-links.md` — Added Vault secure deployment guide to Vault section
+  - Updated `docs/how-to/vault_toolkit.md` — Added documentation reference
+
+### Added
 - ansi-008: Ansible AAP hardening script for CVE-2026-24049 (wheel privilege escalation)
   - `scripts/bash/ansible_toolkit/security/aap-cve-2026-24049-check.sh`: Detect wheel package privilege escalation vulnerability
   - Checks wheel package version (vulnerable: 0.40.0 - 0.46.1)

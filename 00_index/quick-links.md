@@ -133,7 +133,7 @@
 - [Python Scripts](../scripts/python/)
 - [PowerShell Scripts](../scripts/powershell/)
 - [Script Guidelines](../scripts/README.md)
-- [CVE-2025-53547 Hardening](../scripts/bash/helm_toolkit/security/cve-2025-53547.sh) - Helm Chart.yaml code injection vulnerability scanner with --remediate and --dry-run flags
+- [CVE-2025-53547 Hardening](../scripts/bash/helm_toolkit/security/cve-2025-53547-harden.sh) - Helm Chart.yaml code injection vulnerability scanner with --check-version, --dry-run, and --verbose flags
 
 ## Templates
 - [Kubernetes Templates](../templates/k8s/)

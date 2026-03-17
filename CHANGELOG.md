@@ -7,6 +7,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- helm-002: Helm chart security scanning guide
+  - `docs/how-to/helm-security-scanning.md`: Comprehensive security scanning guide for Helm charts
+  - Covers Trivy, kube-score, Checkov, Kubescape scanning tools
+  - CI/CD integration examples (GitHub Actions, GitLab CI)
+  - Runtime security scanning with Falco integration
+  - Chart integrity verification and signing
+  - Security report generation in multiple formats
+  - Updated `00_index/quick-links.md` - Added Helm security scanning to Helm section
+
+### Added
 - dok-002: Docker security best practices guide
   - `docs/how-to/docker-security-best-practices.md`: Comprehensive security hardening guide for Docker
   - Covers image security, runtime protection, network isolation

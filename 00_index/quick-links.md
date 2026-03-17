@@ -43,6 +43,7 @@
 - [CrashLoopBackOff](docs/troubleshooting/k8s-crashloopbackoff.md)
 - [Pod Debugging](docs/troubleshooting/k8s-pod-debug.md)
 - [Kafka Consumer Lag](docs/troubleshooting/kafka-consumer-lag.md)
+- [Vault Seal/Unseal Issues](docs/troubleshooting/vault-seal-unseal.md)
 
 ## Kubernetes
 - [k8s_toolkit Usage](docs/how-to/k8s_toolkit.md)
@@ -126,6 +127,7 @@
 
 ## Vault
 - [Vault Secure Deployment Guide](docs/how-to/vault-secure-deployment.md) - Comprehensive security hardening for Vault production deployments
+- [Vault Seal/Unseal Troubleshooting](docs/troubleshooting/vault-seal-unseal.md) - Diagnose and resolve Vault sealed states, unseal failures, and recovery procedures
 - [CVE-2025-6000 Hardening](../scripts/bash/vault_toolkit/security/cve-2025-6000.sh) - Vault plugin directory RCE vulnerability scanner with --remediate and --dry-run flags
 - [CVE-2025-5999 Hardening](../scripts/bash/vault_toolkit/security/cve-2025-5999.sh) - Vault privilege escalation vulnerability scanner with --remediate and --dry-run flags
 - [CVE-2025-11621 Hardening](../scripts/bash/vault_toolkit/security/cve-2025-11621.sh) - Vault AWS Auth bypass vulnerability scanner with --dry-run and --json-output flags

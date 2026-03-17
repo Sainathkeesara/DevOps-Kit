@@ -7,6 +7,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- vault-004: Vault troubleshooting guide for seal/unseal issues
+  - `docs/troubleshooting/vault-seal-unseal.md`: Comprehensive troubleshooting guide for Vault sealed states
+  - Covers Vault status verification, system logs analysis
+  - Manual unseal procedures (Shamir), auto-unseal troubleshooting (AWS KMS, Azure, GCP)
+  - Lost key recovery procedures, cluster-specific procedures
+  - Storage backend issues, rollback procedures
+  - Common error patterns with causes and resolutions
+  - Verified URLs to HashiCorp documentation
+  - Updated `00_index/quick-links.md` — Added Vault seal/unseal troubleshooting to Troubleshooting and Vault sections
+
+### Added
 - vault-003: Vault secure deployment best practices guide
   - `docs/how-to/vault-secure-deployment.md`: Comprehensive security hardening guide for Vault production deployments
   - Covers TLS configuration, authentication methods, authorization policies, audit logging

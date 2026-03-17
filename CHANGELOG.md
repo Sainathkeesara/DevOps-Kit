@@ -7,6 +7,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- dok-002: Docker security best practices guide
+  - `docs/how-to/docker-security-best-practices.md`: Comprehensive security hardening guide for Docker
+  - Covers image security, runtime protection, network isolation
+  - Includes Dockerfile best practices, vulnerability scanning with Trivy
+  - Docker secrets management, TLS configuration
+  - Daemon security, host hardening guidelines
+  - Security verification checklist and audit script
+  - Updated `00_index/quick-links.md` - Added Docker security guide to Tools section
+
+### Added
 - vault-004: Vault seal/unseal troubleshooting guide
   - `docs/how-to/vault-troubleshooting-seal-unseal.md`: Comprehensive troubleshooting guide for Vault seal/unseal issues
   - Covers seal status identification, Shamir key unseal procedures
@@ -423,3 +433,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [2026-03-02] - Initial Bootstrap
 
 Repository structure created with essential files and first tool implementation (k8s_toolkit). All mandatory components in place: index system, changelog, documentation standards, script templates, and PR automation.
+
+## [2026-03-17] - Auditor
+
+### Tasks Audited
+- vault-004: Vault seal/unseal troubleshooting guide — Score: 10/10 ✅
+
+### Passed (≥8/10)
+- vault-004 (10/10) — comprehensive troubleshooting guide with all 8 sections present, real Vault error strings, verified HashiCorp URLs with dates
+
+### Rework (!)
+- None
+
+### Stuck
+- None

@@ -7,15 +7,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
-- vault-004: Vault troubleshooting guide for seal/unseal issues
-  - `docs/troubleshooting/vault-seal-unseal.md`: Comprehensive troubleshooting guide for Vault sealed states
-  - Covers Vault status verification, system logs analysis
-  - Manual unseal procedures (Shamir), auto-unseal troubleshooting (AWS KMS, Azure, GCP)
-  - Lost key recovery procedures, cluster-specific procedures
-  - Storage backend issues, rollback procedures
-  - Common error patterns with causes and resolutions
-  - Verified URLs to HashiCorp documentation
-  - Updated `00_index/quick-links.md` — Added Vault seal/unseal troubleshooting to Troubleshooting and Vault sections
+- vault-004: Vault seal/unseal troubleshooting guide
+  - `docs/how-to/vault-troubleshooting-seal-unseal.md`: Comprehensive troubleshooting guide for Vault seal/unseal issues
+  - Covers seal status identification, Shamir key unseal procedures
+  - Common unseal failure scenarios with resolution steps
+  - Auto-unseal troubleshooting (AWS KMS, Azure Key Vault, GCP Cloud KMS)
+  - HSM seal troubleshooting with PKCS#11 diagnostics
+  - Recovery mode procedures and manual seal operations
+  - Error reference table for common seal/unseal errors
+  - Verified reference URLs from HashiCorp documentation
+  - Updated `00_index/quick-links.md` — Added Vault seal/unseal troubleshooting to Vault and Troubleshooting sections
 
 ### Added
 - vault-003: Vault secure deployment best practices guide

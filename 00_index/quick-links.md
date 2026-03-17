@@ -137,6 +137,7 @@
 - [CVE-2026-28400 Hardening](../scripts/bash/docker_toolkit/security/cve-2026-28400.sh) - Docker Model Runner privilege escalation vulnerability scanner with --remediate and --dry-run flags
 
 ## Helm
+- [Helm Security Scanning Guide](docs/how-to/helm-security-scanning.md) - Comprehensive security hardening for Helm charts (Trivy, kube-score, Checkov, Kubescape)
 - [Bash Scripts](../scripts/bash/)
 - [Python Scripts](../scripts/python/)
 - [PowerShell Scripts](../scripts/powershell/)

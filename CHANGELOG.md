@@ -7,6 +7,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- vault-008: Vault TLS certificate auth validation bypass (CVE-2025-6037) hardening script
+  - `scripts/bash/vault_toolkit/security/cve-2025-6037.sh`: Detection and remediation script
+  - Checks Vault version for CVE-2025-6037 vulnerability
+  - Validates certificate auth method configuration
+  - Detects non-CA certificate usage in trusted certificates
+  - Provides remediation recommendations
+  - Supports --dry-run and --verbose modes
+  - shellcheck passed with warnings only
+
+### Added
 - helm-002: Helm chart security scanning guide
   - `docs/how-to/helm-security-scanning.md`: Comprehensive security scanning guide for Helm charts
   - Covers Trivy, kube-score, Checkov, Kubescape scanning tools

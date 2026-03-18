@@ -40,18 +40,18 @@ DevOps-Kit/
 | OCI/Registry | 5 | 1 | 1 | 0 |
 | CI/CD | 5 | 1 | 1 | 0 |
 | Terraform | 1 | 0 | 0 | 0 |
-| Ansible | 2 | 1 | 0 | 0 |
-| Vault | 3 | 1 | 0 | 0 |
-| Docker | 1 | 0 | 0 | 0 |
-| Helm | 2 | 0 | 0 | 0 |
+| Ansible | 5 | 2 | 0 | 0 |
+| Vault | 4 | 2 | 0 | 0 |
+| Docker | 1 | 1 | 0 | 0 |
+| Helm | 2 | 1 | 0 | 0 |
 
 ## Quick links
 
-- [Vault: CVE-2025-11621 AWS Auth bypass hardening script](scripts/bash/vault_toolkit/security/cve-2025-11621.sh)
-- [Helm: CVE-2025-53547 Chart.yaml code injection hardening script](scripts/bash/helm_toolkit/security/cve-2025-53547-harden.sh)
-- [Docker: CVE-2026-28400 Model Runner privilege escalation hardening script](scripts/bash/docker_toolkit/security/cve-2026-28400.sh)
-- [Kafka: consumer lag troubleshooting guide](docs/troubleshooting/kafka-consumer-lag.md)
-- [Kubernetes: drain node runbook](scripts/bash/k8s_toolkit/node/drain-node.sh)
+- [Vault: CVE-2025-6037 TLS certificate auth validation bypass hardening script](scripts/bash/vault_toolkit/security/cve-2025-6037.sh)
+- [Helm: Security scanning guide](docs/how-to/helm-security-scanning.md)
+- [Docker: Security best practices guide](docs/how-to/docker-security-best-practices.md)
+- [Vault: Seal/unseal troubleshooting guide](docs/how-to/vault-troubleshooting-seal-unseal.md)
+- [Vault: Secure deployment best practices](docs/how-to/vault-secure-deployment.md)
 
 ## Contributing
 

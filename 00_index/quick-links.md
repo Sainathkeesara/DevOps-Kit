@@ -45,9 +45,8 @@
 
 ## Troubleshooting
 - [CrashLoopBackOff](docs/troubleshooting/k8s-crashloopbackoff.md)
-- [Pod Debugging](docs/troubleshooting/k8s-pod-debug.md)
 - [Kafka Consumer Lag](docs/troubleshooting/kafka-consumer-lag.md)
-- [Vault Seal/Unseal](docs/how-to/vault-troubleshooting-seal-unseal.md)
+- [Vault Seal/Unseal](docs/troubleshooting/vault-seal-unseal.md)
 
 ## Kubernetes
 - [k8s_toolkit Usage](docs/how-to/k8s_toolkit.md)
@@ -123,6 +122,7 @@
 
 ## Ansible
 - [ansible_toolkit Usage](docs/how-to/ansible_toolkit.md)
+- [CVE-2026-0598 Guide](docs/how-to/ansible-lightspeed-cve-2026-0598.md)
 - [CVE-2025-14010 Audit](../scripts/bash/ansible_toolkit/security/cve-2025-14010-audit.sh) - Sensitive variable exposure audit with --path, --dry-run, --json-output flags
 - [CVE-2026-0598 Audit](../scripts/bash/ansible_toolkit/security/cve-2026-0598-audit.sh) - Lightspeed auth bypass vulnerability scanner with --host, --token, --dry-run, --json-output flags
 - [CVE-2026-24049 Hardening](../scripts/bash/ansible_toolkit/security/aap-cve-2026-24049-check.sh) - Wheel package privilege escalation vulnerability scanner with --host, --token, --dry-run, and --output flags
@@ -135,6 +135,7 @@
 - [CVE-2025-6000 Hardening](../scripts/bash/vault_toolkit/security/cve-2025-6000.sh) - Vault plugin directory RCE vulnerability scanner with --remediate and --dry-run flags
 - [CVE-2025-5999 Hardening](../scripts/bash/vault_toolkit/security/cve-2025-5999.sh) - Vault privilege escalation vulnerability scanner with --remediate and --dry-run flags
 - [CVE-2025-11621 Hardening](../scripts/bash/vault_toolkit/security/cve-2025-11621.sh) - Vault AWS Auth bypass vulnerability scanner with --dry-run and --json-output flags
+- [CVE-2025-6037 Hardening](../scripts/bash/vault_toolkit/security/cve-2025-6037.sh) - TLS certificate auth validation bypass scanner with --dry-run and --verbose flags
 
 ## Docker
 - [CVE-2026-28400 Hardening](../scripts/bash/docker_toolkit/security/cve-2026-28400.sh) - Docker Model Runner privilege escalation vulnerability scanner with --remediate and --dry-run flags

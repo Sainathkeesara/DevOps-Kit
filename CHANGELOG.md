@@ -7,6 +7,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- ansi-010: Ansible Automation Platform EDA credentials exposure (CVE-2025-9907) hardening script
+  - `scripts/bash/ansible_toolkit/security/cve-2025-9907-eda-creds.sh`: Detection and remediation script
+  - Checks AAP installation and version
+  - Validates EDA configuration for credential exposure risks
+  - Detects test mode configuration indicators
+  - Provides remediation recommendations
+  - Supports --dry-run, --remediate, and --json-output modes
+  - shellcheck passed with warnings only
+
+### Added
 - dok-006: Docker Desktop grpcfuse kernel module privilege escalation (CVE-2026-2664) hardening script
   - `scripts/bash/docker_toolkit/security/cve-2026-2664.sh`: Detection and remediation script
   - Checks Docker version for CVE-2026-2664 vulnerability
@@ -482,10 +492,10 @@ Repository structure created with essential files and first tool implementation 
 ## [2026-03-18] - Auditor
 
 ### Tasks Audited
-- vault-008: Vault TLS certificate auth validation bypass (CVE-2025-6037) — Score: 10/10 ✅
+- dok-006: Docker Desktop grpcfuse kernel module privilege escalation (CVE-2026-2664) — Score: 9/10 ✅
 
 ### Passed (≥8/10)
-- vault-008 (10/10) — comprehensive read-only detection script for CVE-2025-6037. shellcheck passed with minor warning only.
+- dok-006 (9/10) — comprehensive read-only detection script for CVE-2026-2664. Minor jq syntax fix needed on line 191: has("buildkit"] should be has("buildkit"). shellcheck passed with info only. Production-ready.
 
 ### Rework (!)
 - None

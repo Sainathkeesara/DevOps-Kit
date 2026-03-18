@@ -8,6 +8,8 @@
 - [k8s_toolkit](docs/how-to/k8s_toolkit.md) - Safe kubectl helper scripts (drain, rollout, restart with dry-run, logs, exec, debug, report)
 - [jenkins_toolkit](docs/how-to/jenkins_toolkit.md) - Jenkins automation scripts (install, plugins, configuration)
 - [ansible_toolkit](docs/how-to/ansible_toolkit.md) - Ansible security audit scripts (sensitive variable exposure, CVE-2025-14010)
+- [CVE-2025-9907](scripts/bash/ansible_toolkit/security/cve-2025-9907-eda-creds.sh) - Ansible Automation Platform EDA credentials exposure scanner
+- [CVE-2026-0598](scripts/bash/ansible_toolkit/security/cve-2026-0598-audit.sh) - Ansible Lightspeed API auth bypass scanner
 - [docker_toolkit](docs/how-to/docker-security-best-practices.md) - Docker security hardening guide (image scanning, runtime security, secrets management)
 - [CVE-2026-2664](scripts/bash/docker_toolkit/security/cve-2026-2664.sh) - Docker Desktop grpcfuse kernel module privilege escalation scanner
 - [CVE-2026-28400](scripts/bash/docker_toolkit/security/cve-2026-28400.sh) - Docker Model Runner privilege escalation scanner

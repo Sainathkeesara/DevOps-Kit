@@ -7,6 +7,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- ansi-010: Ansible Automation Platform EDA credentials exposure (CVE-2025-9907) hardening script
+  - `scripts/bash/ansible_toolkit/security/cve-2025-9907-eda-creds.sh`: Detection and remediation script
+  - Checks AAP installation and version
+  - Validates EDA configuration for credential exposure risks
+  - Detects test mode configuration indicators
+  - Provides remediation recommendations
+  - Supports --dry-run, --remediate, and --json-output modes
+  - shellcheck passed with warnings only
+
+### Added
 - dok-006: Docker Desktop grpcfuse kernel module privilege escalation (CVE-2026-2664) hardening script
   - `scripts/bash/docker_toolkit/security/cve-2026-2664.sh`: Detection and remediation script
   - Checks Docker version for CVE-2026-2664 vulnerability

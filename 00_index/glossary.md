@@ -32,6 +32,24 @@
 
 **no_log (Ansible)**: Ansible directive that prevents task output from being logged for security.
 
+**Shamir key (Vault)**: Vault's default seal mechanism that splits the unseal key into multiple shares using Shamir's secret sharing algorithm.
+
+**Auto-unseal (Vault)**: Vault feature that automatically unseals using a trusted cloud KMS (AWS KMS, Azure Key Vault, GCP Cloud KMS) or HSM.
+
+**HSM (Hardware Security Module)**: Physical device that provides secure key storage and cryptographic operations.
+
+**PKCS#11**: Standard interface for communicating with cryptographic devices like HSMs.
+
+**Recovery mode (Vault)**: Vault operation mode used for recovery when standard unseal is not possible.
+
+**Trivy**: Open-source vulnerability scanner for containers and Kubernetes.
+
+**Kubescape**: Kubernetes security platform for scanning clusters and manifests.
+
+**Checkov**: Infrastructure as Code security scanner that checks Terraform, CloudFormation, and Kubernetes manifests.
+
+**Falco**: Cloud-native runtime security tool that detects anomalous activity in containers and Kubernetes.
+
 ## Acronyms
 
 **CI/CD** - Continuous Integration/Continuous Deployment

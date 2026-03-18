@@ -7,6 +7,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- dok-006: Docker Desktop grpcfuse kernel module privilege escalation (CVE-2026-2664) hardening script
+  - `scripts/bash/docker_toolkit/security/cve-2026-2664.sh`: Detection and remediation script
+  - Checks Docker version for CVE-2026-2664 vulnerability
+  - Validates FUSE/grpcfuse mounts
+  - Checks /proc/docker access permissions
+  - Detects docker group membership and container capabilities
+  - Provides remediation recommendations
+  - Supports --dry-run, --remediate, and --json-output modes
+  - shellcheck passed
+
+### Added
 - vault-008: Vault TLS certificate auth validation bypass (CVE-2025-6037) hardening script
   - `scripts/bash/vault_toolkit/security/cve-2025-6037.sh`: Detection and remediation script
   - Checks Vault version for CVE-2025-6037 vulnerability
@@ -461,6 +472,20 @@ Repository structure created with essential files and first tool implementation 
 
 ### Passed (≥8/10)
 - vault-004 (10/10) — comprehensive troubleshooting guide with all 8 sections present, real Vault error strings, verified HashiCorp URLs with dates
+
+### Rework (!)
+- None
+
+### Stuck
+- None
+
+## [2026-03-18] - Auditor
+
+### Tasks Audited
+- vault-008: Vault TLS certificate auth validation bypass (CVE-2025-6037) — Score: 10/10 ✅
+
+### Passed (≥8/10)
+- vault-008 (10/10) — comprehensive read-only detection script for CVE-2025-6037. shellcheck passed with minor warning only.
 
 ### Rework (!)
 - None

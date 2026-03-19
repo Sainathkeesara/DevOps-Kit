@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- k8s-012: Kubernetes CI/CD pipeline with Jenkins and Vault secrets injection (L9 cross-tool project)
+  - `docs/how-to/k8s-jenkins-vault-cicd-security.md`: Complete guide covering Jenkins on K8s, Vault HA with Kubernetes auth, Trivy/Kubescape security scanning, GitOps deployment with Vault sidecar
+
+### Added
 - k8s-010: Kubernetes cluster provisioning with Terraform + Ansible (L9 cross-tool project)
   - `docs/how-to/k8s-terraform-ansible-provisioning.md`: Full walkthrough covering VPC setup, Ansible bootstrap, kubeadm init, Calico CNI, worker join
   - `docs/how-to/k8s-terraform-ansible-provisioning/terraform/main.tf`: VPC, subnets, NAT GW, IGW, bastion host

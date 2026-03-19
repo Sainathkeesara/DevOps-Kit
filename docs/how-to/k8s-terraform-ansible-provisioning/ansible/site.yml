@@ -1,0 +1,46 @@
+# ansible/site.yml — Main playbook for Kubernetes cluster provisioning
+# Runs all stages: preflight, container runtime, k8s components, bootstrap, join workers
+---
+- name: Preflight — update packages and configure sysctl
+  hosts: kube_control_plane:kube_workers
+  become: true
+  gather_facts: true
+  roles:
+    - role: preflight
+
+- name: Install container runtime on all nodes
+  hosts: kube_control_plane:kube_workers
+  become: true
+  roles:
+    - role: container-runtime
+
+- name: Install Kubernetes components on all nodes
+  hosts: kube_control_plane:kube_workers
+  become: true
+  roles:
+    - role: kubernetes
+
+- name: Bootstrap Kubernetes control plane (first CP node only)
+  hosts: "{{ groups['kube_control_plane'][0] }}"
+  become: true
+  roles:
+    - role: bootstrap-control-plane
+
+- name: Install Calico CNI
+  hosts: "{{ groups['kube_control_plane'][0] }}"
+  become: true
+  roles:
+    - role: calico
+
+- name: Join remaining control plane nodes
+  hosts: kube_control_plane
+  become: true
+  roles:
+    - role: join-control-plane
+  when: inventory_hostname != groups['kube_control_plane'][0]
+
+- name: Join worker nodes
+  hosts: kube_workers
+  become: true
+  roles:
+    - role: join-workers

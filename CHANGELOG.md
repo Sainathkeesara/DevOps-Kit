@@ -7,6 +7,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- k8s-010: Kubernetes cluster provisioning with Terraform + Ansible (L9 cross-tool project)
+  - `docs/how-to/k8s-terraform-ansible-provisioning.md`: Full walkthrough covering VPC setup, Ansible bootstrap, kubeadm init, Calico CNI, worker join
+  - `docs/how-to/k8s-terraform-ansible-provisioning/terraform/main.tf`: VPC, subnets, NAT GW, IGW, bastion host
+  - `docs/how-to/k8s-terraform-ansible-provisioning/terraform/control-plane.tf`: CP nodes, NLB, target groups, security groups
+  - `docs/how-to/k8s-terraform-ansible-provisioning/terraform/workers.tf`: Worker nodes, worker security group
+  - `docs/how-to/k8s-terraform-ansible-provisioning/terraform/variables.tf`: All configurable variables
+  - `docs/how-to/k8s-terraform-ansible-provisioning/terraform/outputs.tf`: IPs, NLB DNS, SSH config, Ansible inventory
+  - `docs/how-to/k8s-terraform-ansible-provisioning/ansible/site.yml`: Main Ansible playbook
+  - `docs/how-to/k8s-terraform-ansible-provisioning/ansible/roles/preflight/tasks/main.yml`: Package update, kernel modules, sysctl, swap disable
+  - `docs/how-to/k8s-terraform-ansible-provisioning/ansible/teardown.yml`: kubeadm reset teardown playbook
+  - `docs/how-to/k8s-terraform-ansible-provisioning/ansible/inventory.ini.example`: Ansible inventory template
+
+### Added
 - jen-009: Jenkins commands reference with 100+ CLI commands
   - `snippets/jenkins-commands-reference.md`: Comprehensive Jenkins CLI reference
   - Covers job management, build operations, node/agent management, plugin management

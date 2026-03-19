@@ -1,0 +1,94 @@
+# ansible/roles/preflight/tasks/main.yml
+---
+- name: Update apt cache
+  ansible.builtin.apt:
+    update_cache: true
+    cache_valid_time: 3600
+  changed_when: false
+
+- name: Upgrade all packages
+  ansible.builtin.apt:
+    upgrade: full
+    autoremove: true
+  register: apt_upgrade_result
+  changed_when: "'0 upgraded' not in apt_upgrade_result.stdout"
+
+- name: Install required packages
+  ansible.builtin.apt:
+    name:
+      - python3
+      - python3-pip
+      - jq
+      - curl
+      - wget
+      - gnupg
+      - lsb-release
+      - ca-certificates
+      - apt-transport-https
+      - net-tools
+      - ipvsadm
+      - tcpdump
+    state: present
+
+- name: Enable br_netfilter kernel module
+  community.general.modprobe:
+    name: br_netfilter
+    state: present
+  register: modprobe_br_netfilter
+
+- name: Enable overlay kernel module
+  community.general.modprobe:
+    name: overlay
+    state: present
+  register: modprobe_overlay
+
+- name: Persist br_netfilter module load on reboot
+  ansible.builtin.lineinfile:
+    path: /etc/modules-load.d/k8s.conf
+    line: br_netfilter
+    create: true
+    mode: '0644'
+
+- name: Persist overlay module load on reboot
+  ansible.builtin.lineinfile:
+    path: /etc/modules-load.d/k8s.conf
+    line: overlay
+    create: true
+    mode: '0644'
+
+- name: Configure kernel sysctl for Kubernetes networking
+  ansible.posix.sysctl:
+    name: "{{ item.name }}"
+    value: "{{ item.value }}"
+    state: present
+    reload: true
+    sysctl_file: /etc/sysctl.d/99-kubernetes.conf
+  loop:
+    - { name: net.bridge.bridge-nf-call-iptables, value: '1' }
+    - { name: net.bridge.bridge-nf-call-ip6tables, value: '1' }
+    - { name: net.ipv4.ip_forward, value: '1' }
+    - { name: net.ipv4.conf.all.forwarding, value: '1' }
+    - { name: net.ipv4.conf.all.rp_filter, value: '0' }
+    - { name: net.ipv4.conf.default.rp_filter, value: '0' }
+
+- name: Disable swap
+  ansible.builtin.shell: |
+    set -euo pipefail
+    if swapon --show | grep -q '/'; then
+      swapoff -a
+      sed -i '/ swap / d' /etc/fstab
+    fi
+  changed_when: true
+
+- name: Verify swap is disabled
+  ansible.builtin.command: swapon --show
+  register: swap_status
+  changed_when: false
+  failed_when: swap_status.stdout | length > 0
+
+- name: Add short hostnames to /etc/hosts
+  ansible.builtin.lineinfile:
+    path: /etc/hosts
+    line: "{{ hostvars[inventory_hostname]['ansible_host'] | default(ansible_host) }} {{ inventory_hostname }}"
+    state: present
+    create: true

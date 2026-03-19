@@ -7,6 +7,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- jen-009: Jenkins commands reference with 100+ CLI commands
+  - `snippets/jenkins-commands-reference.md`: Comprehensive Jenkins CLI reference
+  - Covers job management, build operations, node/agent management, plugin management
+  - Includes credential management, pipeline commands, system information, user and view management
+  - Provides 50+ practical one-liners and troubleshooting tips
+
+### Audited
+- vault-009: CVE-2025-6013 hardening script - Score: 10/10 - Passed audit
+
+### Added
 - vault-009: Vault LDAP MFA enforcement bypass (CVE-2025-6013) hardening script
   - `scripts/bash/vault_toolkit/security/cve-2025-6013.sh`: Detection script
   - Checks Vault version for CVE-2025-6013 vulnerability

@@ -138,6 +138,7 @@
 - [CVE-2025-5999 Hardening](../scripts/bash/vault_toolkit/security/cve-2025-5999.sh) - Vault privilege escalation vulnerability scanner with --remediate and --dry-run flags
 - [CVE-2025-11621 Hardening](../scripts/bash/vault_toolkit/security/cve-2025-11621.sh) - Vault AWS Auth bypass vulnerability scanner with --dry-run and --json-output flags
 - [CVE-2025-6037 Hardening](../scripts/bash/vault_toolkit/security/cve-2025-6037.sh) - TLS certificate auth validation bypass scanner with --dry-run and --verbose flags
+- [CVE-2025-6013 Hardening](../scripts/bash/vault_toolkit/security/cve-2025-6013.sh) - LDAP MFA enforcement bypass scanner with --dry-run and --json-output flags
 
 ## Docker
 - [CVE-2026-28400 Hardening](../scripts/bash/docker_toolkit/security/cve-2026-28400.sh) - Docker Model Runner privilege escalation vulnerability scanner with --remediate and --dry-run flags

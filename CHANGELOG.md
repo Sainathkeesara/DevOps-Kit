@@ -7,6 +7,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- vault-009: Vault LDAP MFA enforcement bypass (CVE-2025-6013) hardening script
+  - `scripts/bash/vault_toolkit/security/cve-2025-6013.sh`: Detection script
+  - Checks Vault version for CVE-2025-6013 vulnerability
+  - Enumerates LDAP auth methods
+  - Validates username_as_alias configuration
+  - Checks MFA setup
+  - Provides remediation recommendations
+  - Supports --dry-run, --json-output, and --verbose modes
+  - shellcheck passed with warnings only
+
+### Added
 - ansi-010: Ansible Automation Platform EDA credentials exposure (CVE-2025-9907) hardening script
   - `scripts/bash/ansible_toolkit/security/cve-2025-9907-eda-creds.sh`: Detection and remediation script
   - Checks AAP installation and version

@@ -1,0 +1,46 @@
+# ansible/teardown.yml — Tear down Kubernetes cluster (run before terraform destroy)
+---
+- name: Reset kubeadm on all nodes
+  hosts: kube_control_plane:kube_workers
+  become: true
+  gather_facts: true
+  tasks:
+    - name: Run kubeadm reset
+      ansible.builtin.shell: |
+        set -euo pipefail
+        kubeadm reset --force --cri-socket=unix:///var/run/containerd/containerd.sock
+      changed_when: true
+      failed_when: false
+
+    - name: Remove Kubernetes apt hold
+      ansible.builtin.shell: |
+        set -euo pipefail
+        apt-mark unhold kubelet kubeadm kubectl 2>/dev/null || true
+      changed_when: true
+      failed_when: false
+
+    - name: Stop and disable kubelet
+      ansible.builtin.systemd:
+        name: kubelet
+        state: stopped
+        enabled: false
+      failed_when: false
+
+    - name: Stop and disable containerd
+      ansible.builtin.systemd:
+        name: containerd
+        state: stopped
+        enabled: false
+      failed_when: false
+
+    - name: Remove Kubernetes artifacts
+      ansible.builtin.file:
+        path: "{{ item }}"
+        state: absent
+      loop:
+        - /etc/kubernetes
+        - /var/lib/etcd
+        - /var/lib/kubelet
+        - /var/lib/containerd
+        - ~/.kube
+      failed_when: false

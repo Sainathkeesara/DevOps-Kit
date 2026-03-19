@@ -54,6 +54,7 @@
 - [k8s_toolkit Usage](docs/how-to/k8s_toolkit.md)
 - [EKS Cluster Setup Guide](docs/setup-guides/eks-cluster-setup.md) - Complete guide for creating EKS cluster from scratch on AWS
 - [Kubectl Cheatsheet](../snippets/kubectl-cheatsheet.md)
+- [Kubernetes Provisioning with Terraform + Ansible](docs/how-to/k8s-terraform-ansible-provisioning.md) - End-to-end self-managed K8s cluster on AWS using Terraform for infrastructure and Ansible for configuration (L9 cross-tool project)
 - [Pod Debugging Guide](docs/troubleshooting/k8s-pod-debug.md)
 - [Production Deployment Template](../templates/k8s/production-deployment.yaml) - Deployment + HPA + PDB with anti-affinity
 - [Deploy Production App Script](../templates/k8s/deploy-prod-app.sh) - Generate and apply production deployment with customizable port
@@ -122,6 +123,7 @@
 ## Terraform
 - [terraform_toolkit Usage](docs/how-to/terraform_toolkit.md)
 - [Terraform Workflow Script](../scripts/bash/terraform_toolkit/terraform-workflow.sh) - init/plan/apply with sensitive value handling and --dry-run support
+- [K8s Provisioning with Terraform + Ansible](docs/how-to/k8s-terraform-ansible-provisioning/terraform/) - Terraform modules for VPC, control plane nodes, worker nodes, NLB, and IAM for self-managed Kubernetes on AWS
 
 ## Ansible
 - [ansible_toolkit Usage](docs/how-to/ansible_toolkit.md)

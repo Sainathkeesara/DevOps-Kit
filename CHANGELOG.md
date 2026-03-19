@@ -6,6 +6,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Audited
+- vault-009: CVE-2025-6013 hardening script - Score: 10/10 - Passed audit
+
 ### Added
 - vault-009: Vault LDAP MFA enforcement bypass (CVE-2025-6013) hardening script
   - `scripts/bash/vault_toolkit/security/cve-2025-6013.sh`: Detection script

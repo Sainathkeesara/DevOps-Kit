@@ -78,6 +78,7 @@
 - [jenkins_toolkit Usage](docs/how-to/jenkins_toolkit.md)
 - [Jenkins Cheatsheet](../snippets/jenkins-cheatsheet.md)
 - [Jenkins Commands Reference](../snippets/jenkins-commands-reference.md) - 100+ CLI commands for job management, builds, nodes, plugins, credentials, and pipelines
+- [Jenkins Scripted Pipeline Groovy Snippets](../snippets/jenkins-scripted-pipeline-groovy.md) - 50+ Groovy code snippets for scripted pipelines
 - [Install Jenkins](../scripts/bash/jenkins_toolkit/install-jenkins.sh) - Automated install on Ubuntu 22.04 with --dry-run and --port options
 - [GitHub Webhook Setup](docs/how-to/github-webhook-jenkins.md) - Configure GitHub webhooks to trigger Jenkins builds
 - [CVE-2026-27099 Hardening](../scripts/bash/jenkins_toolkit/security/cve-2026-27099.sh) - Jenkins XSS and DoS vulnerability scanner

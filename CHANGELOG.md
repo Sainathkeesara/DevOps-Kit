@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- jen-012: Jenkins Pipeline Groovy Snippets for Scripted Pipelines (L4)
+  - `snippets/jenkins-scripted-pipeline-groovy.md`: 50+ Groovy code snippets for Jenkins scripted pipelines covering node/stage blocks, variable handling, conditionals, loops, error handling, parallel execution, Docker integration, Git operations, file operations, HTTP APIs, credential handling, email notifications, artifact management, and testing integration
+
+### Added
 - k8s-012: Kubernetes CI/CD pipeline with Jenkins and Vault secrets injection (L9 cross-tool project)
   - `docs/how-to/k8s-jenkins-vault-cicd-security.md`: Complete guide covering Jenkins on K8s, Vault HA with Kubernetes auth, Trivy/Kubescape security scanning, GitOps deployment with Vault sidecar
 - k8s-011: Kubernetes GitOps workflow with ArgoCD and Vault secrets injection (L9 cross-tool project)

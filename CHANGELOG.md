@@ -7,6 +7,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- k8s-011: Kubernetes GitOps workflow with ArgoCD and Vault secrets injection (L9 cross-tool project)
+  - `docs/how-to/k8s-argocd-vault-gitops.md`: Complete GitOps walkthrough with ArgoCD, Vault CSI Provider, SecretStore
+  - Covers ArgoCD installation, Git repository setup, Vault Kubernetes auth configuration
+  - Includes SecretProviderClass setup, secrets injection verification, rollback procedures
+  - Real error scenarios and troubleshooting steps
+
+### Added
 - k8s-010: Kubernetes cluster provisioning with Terraform + Ansible (L9 cross-tool project)
   - `docs/how-to/k8s-terraform-ansible-provisioning.md`: Full walkthrough covering VPC setup, Ansible bootstrap, kubeadm init, Calico CNI, worker join
   - `docs/how-to/k8s-terraform-ansible-provisioning/terraform/main.tf`: VPC, subnets, NAT GW, IGW, bastion host

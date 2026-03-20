@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+- dok-002: Docker Security Best Practices Guide (L8)
+  - `docs/how-to/docker-security.md`: Comprehensive guide covering image security, container runtime security, network security, secrets management, host security, logging/monitoring, and image build security with verification steps, rollback procedures, and common error resolutions
+
 ### Fixed
 - vault-009: CVE-2025-6013 LDAP MFA enforcement bypass script
   - Fixed hardcoded ldap_mounts to dynamically enumerate from sys/auth endpoint

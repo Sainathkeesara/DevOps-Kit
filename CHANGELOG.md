@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Fixed
+- vault-009: CVE-2025-6013 LDAP MFA enforcement bypass script
+  - Fixed hardcoded ldap_mounts to dynamically enumerate from sys/auth endpoint
+  - Added shellcheck notes for unused DRY_RUN/VERBOSE variables
+
 ### Added
 - jen-012: Jenkins Pipeline Groovy Snippets for Scripted Pipelines (L4)
   - `snippets/jenkins-scripted-pipeline-groovy.md`: 50+ Groovy code snippets for Jenkins scripted pipelines covering node/stage blocks, variable handling, conditionals, loops, error handling, parallel execution, Docker integration, Git operations, file operations, HTTP APIs, credential handling, email notifications, artifact management, and testing integration

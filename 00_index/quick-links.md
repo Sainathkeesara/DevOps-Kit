@@ -56,6 +56,7 @@
 - [Kubectl Cheatsheet](../snippets/kubectl-cheatsheet.md)
 - [Kubernetes Provisioning with Terraform + Ansible](docs/how-to/k8s-terraform-ansible-provisioning.md) - End-to-end self-managed K8s cluster on AWS using Terraform for infrastructure and Ansible for configuration (L9 cross-tool project)
 - [Kubernetes CI/CD with Jenkins and Vault](docs/how-to/k8s-jenkins-vault-cicd-security.md) - Secure CI/CD pipeline with Jenkins, Vault secrets injection, Trivy and Kubescape security scanning (L9 cross-tool project)
+- [Kubernetes GitOps with ArgoCD + Vault](docs/how-to/k8s-argocd-vault-gitops.md) - GitOps workflow with ArgoCD and Vault secrets injection via CSI Provider (L9 cross-tool project)
 - [Pod Debugging Guide](docs/troubleshooting/k8s-pod-debug.md)
 - [Production Deployment Template](../templates/k8s/production-deployment.yaml) - Deployment + HPA + PDB with anti-affinity
 - [Deploy Production App Script](../templates/k8s/deploy-prod-app.sh) - Generate and apply production deployment with customizable port

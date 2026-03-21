@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Audited
+- lin-067: Linux Incident Response Automation - Score: 10/10 - Passed
+- git-000: Git concept - Score: 2/10 - Rework required (no output file)
+
 ### Added
 - lin-067: Linux Incident Response Automation (L7 project)
   - `docs/how-to/linux-incident-response-automation.md`: Guide covering incident response preparation, evidence collection, chain of custody, forensic analysis, and common error resolutions

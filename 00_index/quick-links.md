@@ -128,6 +128,8 @@
 - [OpenSCAP Hardening Script](../scripts/bash/linux_toolkit/security/openscap-hardening.sh) - Compliance automation with --dry-run, --auto-remediate, and --profile flags
 - [Linux Incident Response](docs/how-to/linux-incident-response-automation.md) - Automated forensic evidence collection with chain of custody
 - [Incident Response Script](../scripts/bash/linux_toolkit/security/forensics/incident-response.sh) - Forensics automation with --dry-run, --full-forensic, --case-id, and --examiner flags
+- [Linux Monitoring with Prometheus](docs/how-to/linux-monitoring-prometheus.md) - Prometheus node_exporter setup with Grafana integration
+- [Node Exporter Setup Script](../scripts/bash/linux_toolkit/monitoring/node-exporter-setup.sh) - Automated installation with --dry-run, --version, and --port options
 
 ## Terraform
 - [Terraform Workflow Script](../scripts/bash/terraform_toolkit/terraform-workflow.sh) - init/plan/apply with sensitive value handling and --dry-run support

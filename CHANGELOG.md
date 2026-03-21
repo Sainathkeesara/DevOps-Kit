@@ -6,7 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Audited
+- lin-067: Linux Incident Response Automation - Score: 10/10 - Passed
+- git-000: Git concept - Score: 2/10 - Rework required (no output file)
+
 ### Added
+- lin-008: Linux System Monitoring Dashboard with Prometheus Node Exporter (L7 project)
+  - `docs/how-to/linux-monitoring-prometheus.md`: Complete guide covering node_exporter installation, Prometheus configuration, Grafana dashboard import, alerts setup, custom metrics, and common error resolutions
+  - `scripts/bash/linux_toolkit/monitoring/node-exporter-setup.sh`: Automation script with --dry-run, --version, --port flags for Prometheus node_exporter deployment
+
+### Added (prior)
 - lin-067: Linux Incident Response Automation (L7 project)
   - `docs/how-to/linux-incident-response-automation.md`: Guide covering incident response preparation, evidence collection, chain of custody, forensic analysis, and common error resolutions
   - `scripts/bash/linux_toolkit/security/forensics/incident-response.sh`: Automation script with --dry-run, --full-forensic, --case-id, --examiner, and --output flags for comprehensive forensic collection

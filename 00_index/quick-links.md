@@ -134,6 +134,8 @@
 ## Terraform
 - [Terraform Workflow Script](../scripts/bash/terraform_toolkit/terraform-workflow.sh) - init/plan/apply with sensitive value handling and --dry-run support
 - [K8s Provisioning with Terraform + Ansible](docs/how-to/k8s-terraform-ansible-provisioning/terraform/) - Terraform modules for VPC, control plane nodes, worker nodes, NLB, and IAM for self-managed Kubernetes on AWS
+- [Terraform Module Composition and Workspaces](docs/how-to/terraform-module-composition-workspaces.md) - Production-ready project structure with reusable modules and workspace isolation
+- [Terraform Project Starter](lab/mini-projects/terraform-project/) - Complete project with network, compute, and storage modules
 
 ## Ansible
 - [ansible_toolkit Usage](docs/how-to/ansible_toolkit.md)

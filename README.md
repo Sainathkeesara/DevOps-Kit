@@ -34,24 +34,24 @@ DevOps-Kit/
 |------|---------|------|----------|-----------|
 | Kubernetes | 12 | 2 | 1 | 3 |
 | Kafka | 17 | 2 | 1 | 0 |
-| Jenkins | 2 | 2 | 1 | 0 |
+| Jenkins | 2 | 2 | 3 | 0 |
 | Linux | 6 | 1 | 1 | 0 |
 | Observability | 8 | 1 | 1 | 0 |
 | OCI/Registry | 5 | 1 | 1 | 0 |
 | CI/CD | 5 | 1 | 1 | 0 |
 | Terraform | 1 | 0 | 0 | 0 |
-| Ansible | 5 | 2 | 0 | 0 |
-| Vault | 4 | 2 | 0 | 0 |
-| Docker | 1 | 1 | 0 | 0 |
+| Ansible | 6 | 2 | 0 | 0 |
+| Vault | 5 | 3 | 0 | 0 |
+| Docker | 2 | 2 | 0 | 0 |
 | Helm | 2 | 1 | 0 | 0 |
 
 ## Quick links
 
-- [Vault: CVE-2025-6037 TLS certificate auth validation bypass hardening script](scripts/bash/vault_toolkit/security/cve-2025-6037.sh)
-- [Helm: Security scanning guide](docs/how-to/helm-security-scanning.md)
-- [Docker: Security best practices guide](docs/how-to/docker-security-best-practices.md)
-- [Vault: Seal/unseal troubleshooting guide](docs/how-to/vault-troubleshooting-seal-unseal.md)
-- [Vault: Secure deployment best practices](docs/how-to/vault-secure-deployment.md)
+- [Docker: Security best practices guide](docs/how-to/docker-security.md)
+- [Vault: CVE-2025-6013 LDAP MFA enforcement bypass hardening](scripts/bash/vault_toolkit/security/cve-2025-6013.sh)
+- [Jenkins: Pipeline Groovy snippets](snippets/jenkins-scripted-pipeline-groovy.md)
+- [Kubernetes: CI/CD with Jenkins and Vault](docs/how-to/k8s-jenkins-vault-cicd-security.md)
+- [Kubernetes: GitOps with ArgoCD and Vault](docs/how-to/k8s-argocd-vault-gitops.md)
 
 ## Contributing
 

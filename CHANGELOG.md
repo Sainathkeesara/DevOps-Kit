@@ -20,6 +20,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - `snippets/jenkins-scripted-pipeline-groovy.md`: 50+ Groovy code snippets for Jenkins scripted pipelines covering node/stage blocks, variable handling, conditionals, loops, error handling, parallel execution, Docker integration, Git operations, file operations, HTTP APIs, credential handling, email notifications, artifact management, and testing integration
 
 ### Added
+- jen-009: Jenkins Commands Reference (L4)
+  - `docs/reference/jenkins-commands.md`: 50+ Jenkins CLI commands for job management, build management, node/agent management, plugin management, queue scheduling, API automation, and more. Includes commands with pipes, filters, and awk combinations.
+
+### Added
 - k8s-012: Kubernetes CI/CD pipeline with Jenkins and Vault secrets injection (L9 cross-tool project)
   - `docs/how-to/k8s-jenkins-vault-cicd-security.md`: Complete guide covering Jenkins on K8s, Vault HA with Kubernetes auth, Trivy/Kubescape security scanning, GitOps deployment with Vault sidecar
 - k8s-011: Kubernetes GitOps workflow with ArgoCD and Vault secrets injection (L9 cross-tool project)
@@ -552,6 +556,20 @@ Repository structure created with essential files and first tool implementation 
 
 ### Passed (≥8/10)
 - dok-006 (9/10) — comprehensive read-only detection script for CVE-2026-2664. Minor jq syntax fix needed on line 191: has("buildkit"] should be has("buildkit"). shellcheck passed with info only. Production-ready.
+
+### Rework (!)
+- None
+
+### Stuck
+- None
+
+## [2026-03-21] - Auditor
+
+### Tasks Audited
+- dok-002: Docker Security Best Practices Guide — Score: 9/10 ✅
+
+### Passed (≥8/10)
+- dok-002 (9/10) — comprehensive security guide with all 8 sections, real error strings, verified URLs. Minor: line 256 has Chinese characters that should be English "Regularly update Docker". Production-ready.
 
 ### Rework (!)
 - None

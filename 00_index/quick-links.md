@@ -175,3 +175,4 @@
 - [Glossary](../00_index/glossary.md)
 - [Runbooks](../docs/runbooks/)
 - [Concepts](../docs/concepts/)
+- [Git Version Control Mental Model](../docs/concepts/git-version-control-mental-model.md) - Architecture, repositories, branching, remote operations

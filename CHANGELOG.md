@@ -9,6 +9,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Audited
 - lin-067: Linux Incident Response Automation - Score: 10/10 - Passed
 - git-000: Git concept - Score: 2/10 - Rework required (no output file)
+  - Added: docs/concepts/git-version-control-mental-model.md (L1 concept doc)
+- lin-008: Linux System Monitoring Dashboard - Score: 9/10 - Passed
+  - Doc: docs/how-to/linux-monitoring-prometheus.md (168 lines, all 8 sections)
+  - Script: scripts/bash/linux_toolkit/monitoring/node-exporter-setup.sh (296 lines, shellcheck passed)
+  - Minor: add shellcheck badge to script header
 
 ### Added
 - lin-008: Linux System Monitoring Dashboard with Prometheus Node Exporter (L7 project)

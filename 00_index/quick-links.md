@@ -126,6 +126,8 @@
 - [Security Check](../scripts/bash/linux_toolkit/security/security-check.sh)
 - [OpenSCAP Hardening](docs/how-to/linux-openscap-hardening.md) - Automated compliance scanning and remediation with STIG/CIS profiles
 - [OpenSCAP Hardening Script](../scripts/bash/linux_toolkit/security/openscap-hardening.sh) - Compliance automation with --dry-run, --auto-remediate, and --profile flags
+- [Linux Incident Response](docs/how-to/linux-incident-response-automation.md) - Automated forensic evidence collection with chain of custody
+- [Incident Response Script](../scripts/bash/linux_toolkit/security/forensics/incident-response.sh) - Forensics automation with --dry-run, --full-forensic, --case-id, and --examiner flags
 
 ## Terraform
 - [Terraform Workflow Script](../scripts/bash/terraform_toolkit/terraform-workflow.sh) - init/plan/apply with sensitive value handling and --dry-run support

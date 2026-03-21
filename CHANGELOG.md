@@ -7,6 +7,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- lin-067: Linux Incident Response Automation (L7 project)
+  - `docs/how-to/linux-incident-response-automation.md`: Guide covering incident response preparation, evidence collection, chain of custody, forensic analysis, and common error resolutions
+  - `scripts/bash/linux_toolkit/security/forensics/incident-response.sh`: Automation script with --dry-run, --full-forensic, --case-id, --examiner, and --output flags for comprehensive forensic collection
 - helm-005: Helm + Terraform Full-Stack Project (L9 cross-tool)
   - `docs/how-to/helm-terraform-fullstack/README.md`: Complete guide covering Terraform EKS provisioning, Helm chart development, deployment automation, and integration patterns
   - `scripts/bash/helm_toolkit/helm-terraform/deploy-helm-terraform.sh`: Automated deployment script with plan/apply/deploy/rollback/clean targets

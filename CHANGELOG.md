@@ -7,6 +7,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- helm-005: Helm + Terraform Full-Stack Project (L9 cross-tool)
+  - `docs/how-to/helm-terraform-fullstack/README.md`: Complete guide covering Terraform EKS provisioning, Helm chart development, deployment automation, and integration patterns
+  - `scripts/bash/helm_toolkit/helm-terraform/deploy-helm-terraform.sh`: Automated deployment script with plan/apply/deploy/rollback/clean targets
 - dok-002: Docker Security Best Practices Guide (L8)
   - `docs/how-to/docker-security.md`: Comprehensive guide covering image security, container runtime security, network security, secrets management, host security, logging/monitoring, and image build security with verification steps, rollback procedures, and common error resolutions
 

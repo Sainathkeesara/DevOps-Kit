@@ -32,10 +32,10 @@ DevOps-Kit/
 
 | Tool | Scripts | Docs | Snippets | Templates |
 |------|---------|------|----------|-----------|
-| Kubernetes | 12 | 2 | 1 | 3 |
-| Kafka | 17 | 2 | 1 | 0 |
-| Jenkins | 2 | 2 | 3 | 0 |
-| Linux | 6 | 1 | 1 | 0 |
+| Kubernetes | 12 | 7 | 1 | 3 |
+| Kafka | 17 | 3 | 1 | 0 |
+| Jenkins | 2 | 3 | 3 | 0 |
+| Linux | 6 | 2 | 1 | 0 |
 | Observability | 8 | 1 | 1 | 0 |
 | OCI/Registry | 5 | 1 | 1 | 0 |
 | CI/CD | 5 | 1 | 1 | 0 |
@@ -43,15 +43,15 @@ DevOps-Kit/
 | Ansible | 6 | 2 | 0 | 0 |
 | Vault | 5 | 3 | 0 | 0 |
 | Docker | 2 | 2 | 0 | 0 |
-| Helm | 2 | 1 | 0 | 0 |
+| Helm | 3 | 2 | 0 | 0 |
 
 ## Quick links
 
+- [Helm + Terraform Full-Stack](docs/how-to/helm-terraform-fullstack/README.md)
+- [Helm + Terraform Deploy Script](scripts/bash/helm_toolkit/helm-terraform/deploy-helm-terraform.sh)
 - [Docker: Security best practices guide](docs/how-to/docker-security.md)
-- [Vault: CVE-2025-6013 LDAP MFA enforcement bypass hardening](scripts/bash/vault_toolkit/security/cve-2025-6013.sh)
+- [Jenkins: Commands reference](docs/reference/jenkins-commands.md)
 - [Jenkins: Pipeline Groovy snippets](snippets/jenkins-scripted-pipeline-groovy.md)
-- [Kubernetes: CI/CD with Jenkins and Vault](docs/how-to/k8s-jenkins-vault-cicd-security.md)
-- [Kubernetes: GitOps with ArgoCD and Vault](docs/how-to/k8s-argocd-vault-gitops.md)
 
 ## Contributing
 

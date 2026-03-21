@@ -94,7 +94,6 @@
 
 ## Terraform
 - [script] scripts/bash/terraform_toolkit/terraform-workflow.sh — Terraform workflow automation
-- [doc] docs/how-to/terraform_toolkit.md — Terraform toolkit usage guide
 
 ## Ansible
 - [script] scripts/bash/ansible_toolkit/security/cve-2025-14010-audit.sh — Sensitive variable exposure scanner

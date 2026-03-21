@@ -7,6 +7,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- lin-067: Linux Incident Response Automation (L7 project)
+  - `docs/how-to/linux-incident-response-automation.md`: Guide covering incident response preparation, evidence collection, chain of custody, forensic analysis, and common error resolutions
+  - `scripts/bash/linux_toolkit/security/forensics/incident-response.sh`: Automation script with --dry-run, --full-forensic, --case-id, --examiner, and --output flags for comprehensive forensic collection
 - helm-005: Helm + Terraform Full-Stack Project (L9 cross-tool)
   - `docs/how-to/helm-terraform-fullstack/README.md`: Complete guide covering Terraform EKS provisioning, Helm chart development, deployment automation, and integration patterns
   - `scripts/bash/helm_toolkit/helm-terraform/deploy-helm-terraform.sh`: Automated deployment script with plan/apply/deploy/rollback/clean targets
@@ -573,9 +576,11 @@ Repository structure created with essential files and first tool implementation 
 
 ### Tasks Audited
 - dok-002: Docker Security Best Practices Guide — Score: 9/10 ✅
+- lin-066: Linux OpenSCAP Hardening Automation — Score: 9/10 ✅
 
 ### Passed (≥8/10)
 - dok-002 (9/10) — comprehensive security guide with all 8 sections, real error strings, verified URLs. Minor: line 256 has Chinese characters that should be English "Regularly update Docker". Production-ready.
+- lin-066 (9/10) — comprehensive OpenSCAP hardening script with dry-run, backup, profile selection. Minor issue: line 143 URL has space ("data/ scap") - should be "data/scap". Production-ready.
 
 ### Rework (!)
 - None

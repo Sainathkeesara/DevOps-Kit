@@ -21,6 +21,8 @@
 - [terraform_toolkit](docs/how-to/terraform_toolkit.md) - Terraform workflow scripts (init/plan/apply/destroy with sensitive value handling)
 - [vault_toolkit](docs/how-to/vault_toolkit.md) - Vault security hardening scripts (CVE detection and remediation)
 - [CVE-2025-6037](scripts/bash/vault_toolkit/security/cve-2025-6037.sh) - TLS certificate auth validation bypass detection
+- [Helm + Terraform Full-Stack](docs/how-to/helm-terraform-fullstack/README.md) - Complete infrastructure-as-code workflow combining Terraform for EKS provisioning and Helm for application deployment
+- [Helm + Terraform Deploy Script](scripts/bash/helm_toolkit/helm-terraform/deploy-helm-terraform.sh) - Automated deployment script for Helm + Terraform workflow
 
 ## Kafka
 - [kafka_toolkit Usage](docs/how-to/kafka_toolkit.md) - Prerequisites include [Kafka Cluster Setup Guide](docs/setup-guides/kafka-cluster-setup.md)

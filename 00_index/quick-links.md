@@ -18,7 +18,7 @@
 - [ci_cd_toolkit](docs/how-to/ci_cd_toolkit.md) - CI/CD pipeline helpers (workflow linting, health checks, action updates, workflow generation)
 - [observability_toolkit](docs/how-to/observability_toolkit.md) - Prometheus, Grafana, Loki, Jaeger, OTel query and health scripts
 - [linux_toolkit](docs/how-to/linux_toolkit.md) - Linux system administration scripts (health check, disk usage, service management, network diagnostics)
-- [terraform_toolkit](docs/how-to/terraform_toolkit.md) - Terraform workflow scripts (init/plan/apply/destroy with sensitive value handling)
+- [terraform_toolkit](scripts/bash/terraform_toolkit/terraform-workflow.sh) - Terraform workflow scripts (init/plan/apply/destroy with sensitive value handling)
 - [vault_toolkit](docs/how-to/vault_toolkit.md) - Vault security hardening scripts (CVE detection and remediation)
 - [CVE-2025-6037](scripts/bash/vault_toolkit/security/cve-2025-6037.sh) - TLS certificate auth validation bypass detection
 - [Helm + Terraform Full-Stack](docs/how-to/helm-terraform-fullstack/README.md) - Complete infrastructure-as-code workflow combining Terraform for EKS provisioning and Helm for application deployment
@@ -126,7 +126,6 @@
 - [Security Check](../scripts/bash/linux_toolkit/security/security-check.sh)
 
 ## Terraform
-- [terraform_toolkit Usage](docs/how-to/terraform_toolkit.md)
 - [Terraform Workflow Script](../scripts/bash/terraform_toolkit/terraform-workflow.sh) - init/plan/apply with sensitive value handling and --dry-run support
 - [K8s Provisioning with Terraform + Ansible](docs/how-to/k8s-terraform-ansible-provisioning/terraform/) - Terraform modules for VPC, control plane nodes, worker nodes, NLB, and IAM for self-managed Kubernetes on AWS
 

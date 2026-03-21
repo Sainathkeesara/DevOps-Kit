@@ -573,9 +573,11 @@ Repository structure created with essential files and first tool implementation 
 
 ### Tasks Audited
 - dok-002: Docker Security Best Practices Guide — Score: 9/10 ✅
+- lin-066: Linux OpenSCAP Hardening Automation — Score: 9/10 ✅
 
 ### Passed (≥8/10)
 - dok-002 (9/10) — comprehensive security guide with all 8 sections, real error strings, verified URLs. Minor: line 256 has Chinese characters that should be English "Regularly update Docker". Production-ready.
+- lin-066 (9/10) — comprehensive OpenSCAP hardening script with dry-run, backup, profile selection. Minor issue: line 143 URL has space ("data/ scap") - should be "data/scap". Production-ready.
 
 ### Rework (!)
 - None

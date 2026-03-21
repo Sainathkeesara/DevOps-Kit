@@ -12,6 +12,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - `scripts/bash/helm_toolkit/helm-terraform/deploy-helm-terraform.sh`: Automated deployment script with plan/apply/deploy/rollback/clean targets
 - dok-002: Docker Security Best Practices Guide (L8)
   - `docs/how-to/docker-security.md`: Comprehensive guide covering image security, container runtime security, network security, secrets management, host security, logging/monitoring, and image build security with verification steps, rollback procedures, and common error resolutions
+- lin-066: Linux OpenSCAP Hardening Automation (L7 project)
+  - `docs/how-to/linux-openscap-hardening.md`: Guide covering OpenSCAP installation, dry-run scans, full compliance scanning, remediation script generation, and automated remediation with backup/rollback
+  - `scripts/bash/linux_toolkit/security/openscap-hardening.sh`: Automation script with --dry-run, --auto-remediate, --profile, and --report flags for STIG/CIS/PCI-DSS compliance
 
 ### Fixed
 - vault-009: CVE-2025-6013 LDAP MFA enforcement bypass script

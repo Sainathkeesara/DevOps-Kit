@@ -124,6 +124,8 @@
 - [Network Diagnostics](../scripts/bash/linux_toolkit/network/net-diag.sh)
 - [Process Manager](../scripts/bash/linux_toolkit/process/process-manager.sh)
 - [Security Check](../scripts/bash/linux_toolkit/security/security-check.sh)
+- [OpenSCAP Hardening](docs/how-to/linux-openscap-hardening.md) - Automated compliance scanning and remediation with STIG/CIS profiles
+- [OpenSCAP Hardening Script](../scripts/bash/linux_toolkit/security/openscap-hardening.sh) - Compliance automation with --dry-run, --auto-remediate, and --profile flags
 
 ## Terraform
 - [terraform_toolkit Usage](docs/how-to/terraform_toolkit.md)

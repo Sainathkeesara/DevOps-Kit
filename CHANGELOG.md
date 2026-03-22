@@ -19,6 +19,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - FAILURE: No output file found in DevOps-Kit
 
 ### Added
+- ter-051: Terraform CI/CD Pipeline with Atlantis and GitOps (L7 project)
+  - `scripts/bash/terraform_toolkit/atlantis/setup-atlantis.sh`: Docker-based Atlantis server setup script with dry-run support
+  - `docs/how-to/terraform-atlantis-gitops.md`: Complete guide covering architecture, setup, GitHub webhook config, workspace isolation, and common errors
 - ter-009: Terraform Project with Module Composition and Workspaces (L7 project)
   - `lab/mini-projects/terraform-project/`: Complete project with main.tf, variables.tf, outputs.tf, workspace.tf
   - `lab/mini-projects/terraform-project/modules/network/`: VPC, subnets, NAT gateways, route tables

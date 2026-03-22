@@ -136,6 +136,8 @@
 - [K8s Provisioning with Terraform + Ansible](docs/how-to/k8s-terraform-ansible-provisioning/terraform/) - Terraform modules for VPC, control plane nodes, worker nodes, NLB, and IAM for self-managed Kubernetes on AWS
 - [Terraform Module Composition and Workspaces](docs/how-to/terraform-module-composition-workspaces.md) - Production-ready project structure with reusable modules and workspace isolation
 - [Terraform Project Starter](lab/mini-projects/terraform-project/) - Complete project with network, compute, and storage modules
+- [Terraform CI/CD with Atlantis and GitOps](docs/how-to/terraform-atlantis-gitops.md) - Automated Terraform plan/apply from Git PRs with GitOps workflow
+- [Atlantis Setup Script](../scripts/bash/terraform_toolkit/atlantis/setup-atlantis.sh) - Docker-based Atlantis server setup with --dry-run support
 
 ## Ansible
 - [ansible_toolkit Usage](docs/how-to/ansible_toolkit.md)

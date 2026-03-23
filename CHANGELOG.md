@@ -10,6 +10,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - lin-009: Automated backup solution with rsync and retention policy
   - Script: scripts/bash/linux_toolkit/backup/backup-rsync-retention.sh
   - Doc: docs/how-to/linux-backup-rsync-retention.md
+- lin-008: Linux system monitoring dashboard with Prometheus node_exporter
+  - Doc: docs/how-to/linux-monitoring-prometheus-node-exporter.md
+  - Script: scripts/bash/linux_toolkit/monitoring/node-exporter-setup.sh (existing)
 
 ### Audited
 - lin-067: Linux Incident Response Automation - Score: 10/10 - Passed

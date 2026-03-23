@@ -131,6 +131,7 @@
 - [Linux Incident Response](docs/how-to/linux-incident-response-automation.md) - Automated forensic evidence collection with chain of custody
 - [Incident Response Script](../scripts/bash/linux_toolkit/security/forensics/incident-response.sh) - Forensics automation with --dry-run, --full-forensic, --case-id, and --examiner flags
 - [Linux Monitoring with Prometheus](docs/how-to/linux-monitoring-prometheus.md) - Prometheus node_exporter setup with Grafana integration
+- [Linux Monitoring Dashboard](docs/how-to/linux-monitoring-prometheus-node-exporter.md) - Comprehensive system monitoring with Prometheus node_exporter and Grafana dashboard
 - [Node Exporter Setup Script](../scripts/bash/linux_toolkit/monitoring/node-exporter-setup.sh) - Automated installation with --dry-run, --version, and --port options
 
 ## Terraform

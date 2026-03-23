@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added (2026-03-23)
+- lin-009: Automated backup solution with rsync and retention policy
+  - Script: scripts/bash/linux_toolkit/backup/backup-rsync-retention.sh
+  - Doc: docs/how-to/linux-backup-rsync-retention.md
+
 ### Audited
 - lin-067: Linux Incident Response Automation - Score: 10/10 - Passed
 - git-000: Git concept - Score: 9/10 - Passed

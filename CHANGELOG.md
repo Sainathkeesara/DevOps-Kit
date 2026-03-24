@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added (2026-03-25)
+- lin-014: Mail server setup with Postfix and Dovecot
+  - Script: scripts/bash/linux_toolkit/mail/mail-server-setup.sh
+  - Doc: docs/how-to/linux-mail-server.md
+
 ### Added (2026-03-24)
 - lin-012: Nginx reverse proxy with SSL/TLS termination
   - Script: scripts/bash/linux_toolkit/network/nginx-reverse-proxy.sh

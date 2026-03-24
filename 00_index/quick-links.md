@@ -19,7 +19,7 @@
 - [observability_toolkit](docs/how-to/observability_toolkit.md) - Prometheus, Grafana, Loki, Jaeger, OTel query and health scripts
 - [linux_toolkit](docs/how-to/linux_toolkit.md) - Linux system administration scripts (health check, disk usage, service management, network diagnostics)
 - [linux_backup_solution](docs/how-to/linux-backup-rsync-retention.md) - Automated backup solution with rsync and retention policy
-- [linux_container_host](docs/how-to/linux-container-host-docker-security.md) - Container host setup with Docker and security hardening
+- [linux_container_host](docs/how-to/linux-container-host-security.md) - Container host setup with Docker and security hardening
 - [container_host_hardening](scripts/bash/linux_toolkit/security/container-host-hardening.sh) - Security hardening script for Docker container hosts
 - [backup_script](scripts/bash/linux_toolkit/backup/backup-rsync-retention.sh) - Backup script with dry-run, encryption, and retention support
 - [linux_elk_log_aggregation](docs/how-to/linux-elk-log-aggregation.md) - ELK stack log aggregation system setup guide

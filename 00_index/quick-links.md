@@ -20,6 +20,8 @@
 - [linux_toolkit](docs/how-to/linux_toolkit.md) - Linux system administration scripts (health check, disk usage, service management, network diagnostics)
 - [linux_backup_solution](docs/how-to/linux-backup-rsync-retention.md) - Automated backup solution with rsync and retention policy
 - [backup_script](scripts/bash/linux_toolkit/backup/backup-rsync-retention.sh) - Backup script with dry-run, encryption, and retention support
+- [linux_elk_log_aggregation](docs/how-to/linux-elk-log-aggregation.md) - ELK stack log aggregation system setup guide
+- [elk_setup_script](scripts/bash/linux_toolkit/logging/elk-setup.sh) - Automated ELK stack installation script (Elasticsearch, Logstash, Kibana, Filebeat)
 - [terraform_toolkit](scripts/bash/terraform_toolkit/terraform-workflow.sh) - Terraform workflow scripts (init/plan/apply/destroy with sensitive value handling)
 - [vault_toolkit](docs/how-to/vault_toolkit.md) - Vault security hardening scripts (CVE detection and remediation)
 - [CVE-2025-6037](scripts/bash/vault_toolkit/security/cve-2025-6037.sh) - TLS certificate auth validation bypass detection

@@ -7,6 +7,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added (2026-03-23)
+- lin-011: ELK stack log aggregation system for Linux
+  - Script: scripts/bash/linux_toolkit/logging/elk-setup.sh
+  - Doc: docs/how-to/linux-elk-log-aggregation.md
 - lin-009: Automated backup solution with rsync and retention policy
   - Script: scripts/bash/linux_toolkit/backup/backup-rsync-retention.sh
   - Doc: docs/how-to/linux-backup-rsync-retention.md

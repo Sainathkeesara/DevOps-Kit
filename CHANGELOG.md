@@ -12,6 +12,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Doc: docs/how-to/linux-nginx-reverse-proxy-ssl-tls.md
 
 ### Added (2026-03-23)
+- lin-010: Container host setup with Docker and security hardening
+  - Doc: docs/how-to/linux-container-host-docker-security.md
+  - Script: scripts/bash/linux_toolkit/security/container-host-hardening.sh
 - lin-011: ELK stack log aggregation system for Linux
   - Script: scripts/bash/linux_toolkit/logging/elk-setup.sh
   - Doc: docs/how-to/linux-elk-log-aggregation.md

@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added (2026-03-24)
+- lin-012: Nginx reverse proxy with SSL/TLS termination
+  - Script: scripts/bash/linux_toolkit/network/nginx-reverse-proxy.sh
+  - Doc: docs/how-to/linux-nginx-reverse-proxy-ssl-tls.md
+
 ### Added (2026-03-23)
 - lin-011: ELK stack log aggregation system for Linux
   - Script: scripts/bash/linux_toolkit/logging/elk-setup.sh

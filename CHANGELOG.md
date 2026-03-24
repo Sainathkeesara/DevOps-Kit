@@ -12,6 +12,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Doc: docs/how-to/linux-nginx-reverse-proxy-ssl-tls.md
 
 ### Added (2026-03-24)
+- lin-013: LDAP authentication server setup with OpenLDAP
+  - Doc: docs/how-to/linux-ldap-server.md
+  - Script: scripts/bash/linux_toolkit/authentication/ldap-server-setup.sh
+
+### Added (2026-03-24)
 - lin-010: Container host setup with Docker and security hardening
   - Doc: docs/how-to/linux-container-host-security.md
   - Script: scripts/bash/linux_toolkit/security/container-host-hardening.sh

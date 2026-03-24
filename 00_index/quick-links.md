@@ -139,6 +139,8 @@
 - [Linux Monitoring with Prometheus](docs/how-to/linux-monitoring-prometheus.md) - Prometheus node_exporter setup with Grafana integration
 - [Linux Monitoring Dashboard](docs/how-to/linux-monitoring-prometheus-node-exporter.md) - Comprehensive system monitoring with Prometheus node_exporter and Grafana dashboard
 - [Node Exporter Setup Script](../scripts/bash/linux_toolkit/monitoring/node-exporter-setup.sh) - Automated installation with --dry-run, --version, and --port options
+- [LDAP Server Setup](docs/how-to/linux-ldap-server.md) - LDAP authentication server setup with OpenLDAP
+- [LDAP Setup Script](../scripts/bash/linux_toolkit/authentication/ldap-server-setup.sh) - Automated LDAP server installation with --dry-run, --domain, and user/group management options
 
 ## Terraform
 - [Terraform Workflow Script](../scripts/bash/terraform_toolkit/terraform-workflow.sh) - init/plan/apply with sensitive value handling and --dry-run support

@@ -22,6 +22,10 @@
 - [linux_container_host](docs/how-to/linux-container-host-docker-security.md) - Container host setup with Docker and security hardening
 - [container_host_hardening](scripts/bash/linux_toolkit/security/container-host-hardening.sh) - Security hardening script for Docker container hosts
 - [backup_script](scripts/bash/linux_toolkit/backup/backup-rsync-retention.sh) - Backup script with dry-run, encryption, and retention support
+- [linux_elk_log_aggregation](docs/how-to/linux-elk-log-aggregation.md) - ELK stack log aggregation system setup guide
+- [elk_setup_script](scripts/bash/linux_toolkit/logging/elk-setup.sh) - Automated ELK stack installation script (Elasticsearch, Logstash, Kibana, Filebeat)
+- [linux_nginx_ssl_proxy](docs/how-to/linux-nginx-reverse-proxy-ssl-tls.md) - Nginx reverse proxy with SSL/TLS termination guide
+- [nginx_reverse_proxy_script](scripts/bash/linux_toolkit/network/nginx-reverse-proxy.sh) - Automated Nginx reverse proxy setup with SSL/TLS
 - [terraform_toolkit](scripts/bash/terraform_toolkit/terraform-workflow.sh) - Terraform workflow scripts (init/plan/apply/destroy with sensitive value handling)
 - [vault_toolkit](docs/how-to/vault_toolkit.md) - Vault security hardening scripts (CVE detection and remediation)
 - [CVE-2025-6037](scripts/bash/vault_toolkit/security/cve-2025-6037.sh) - TLS certificate auth validation bypass detection

@@ -28,6 +28,8 @@
 - [nginx_reverse_proxy_script](scripts/bash/linux_toolkit/network/nginx-reverse-proxy.sh) - Automated Nginx reverse proxy setup with SSL/TLS
 - [linux_mail_server](docs/how-to/linux-mail-server.md) - Mail server setup with Postfix and Dovecot guide
 - [mail_server_script](scripts/bash/linux_toolkit/mail/mail-server-setup.sh) - Automated Postfix and Dovecot mail server installation script
+- [linux_vpn_wireguard](docs/how-to/linux-vpn-wireguard.md) - VPN server setup with WireGuard guide
+- [wireguard_script](scripts/bash/linux_toolkit/vpn/wireguard-server-setup.sh) - Automated WireGuard VPN server installation script
 - [terraform_toolkit](scripts/bash/terraform_toolkit/terraform-workflow.sh) - Terraform workflow scripts (init/plan/apply/destroy with sensitive value handling)
 - [vault_toolkit](docs/how-to/vault_toolkit.md) - Vault security hardening scripts (CVE detection and remediation)
 - [CVE-2025-6037](scripts/bash/vault_toolkit/security/cve-2025-6037.sh) - TLS certificate auth validation bypass detection

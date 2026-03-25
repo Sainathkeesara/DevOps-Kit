@@ -7,6 +7,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added (2026-03-25)
+- lin-015: VPN server setup with WireGuard
+  - Script: scripts/bash/linux_toolkit/vpn/wireguard-server-setup.sh
+  - Doc: docs/how-to/linux-vpn-wireguard.md
 - lin-014: Mail server setup with Postfix and Dovecot
   - Script: scripts/bash/linux_toolkit/mail/mail-server-setup.sh
   - Doc: docs/how-to/linux-mail-server.md

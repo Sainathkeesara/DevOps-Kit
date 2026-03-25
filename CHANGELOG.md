@@ -7,6 +7,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added (2026-03-25)
+- lin-016: DNS server with BIND9
+  - Script: scripts/bash/linux_toolkit/dns/bind9-server-setup.sh
+  - Doc: docs/how-to/linux-dns-bind9.md
 - lin-015: VPN server setup with WireGuard
   - Script: scripts/bash/linux_toolkit/vpn/wireguard-server-setup.sh
   - Doc: docs/how-to/linux-vpn-wireguard.md

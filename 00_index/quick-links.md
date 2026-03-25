@@ -30,6 +30,8 @@
 - [mail_server_script](scripts/bash/linux_toolkit/mail/mail-server-setup.sh) - Automated Postfix and Dovecot mail server installation script
 - [linux_vpn_wireguard](docs/how-to/linux-vpn-wireguard.md) - VPN server setup with WireGuard guide
 - [wireguard_script](scripts/bash/linux_toolkit/vpn/wireguard-server-setup.sh) - Automated WireGuard VPN server installation script
+- [linux_dns_bind9](docs/how-to/linux-dns-bind9.md) - DNS server setup with BIND9 guide
+- [bind9_script](scripts/bash/linux_toolkit/dns/bind9-server-setup.sh) - Automated BIND9 DNS server installation script
 - [terraform_toolkit](scripts/bash/terraform_toolkit/terraform-workflow.sh) - Terraform workflow scripts (init/plan/apply/destroy with sensitive value handling)
 - [vault_toolkit](docs/how-to/vault_toolkit.md) - Vault security hardening scripts (CVE detection and remediation)
 - [CVE-2025-6037](scripts/bash/vault_toolkit/security/cve-2025-6037.sh) - TLS certificate auth validation bypass detection

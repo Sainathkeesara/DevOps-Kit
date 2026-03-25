@@ -4,6 +4,10 @@
 - [README](../README.md) - Repository overview and purpose
 - [CHANGELOG](../CHANGELOG.md) - Version history and updates
 
+## Terraform
+- [terraform_aws_vpc](docs/how-to/terraform-aws-vpc.md) - AWS VPC setup with public/private subnets, NAT Gateway, and routing
+- [vpc_setup_script](scripts/bash/terraform_toolkit/networking/vpc-setup.sh) - Automated Terraform VPC deployment script
+
 ## Tools
 - [k8s_toolkit](docs/how-to/k8s_toolkit.md) - Safe kubectl helper scripts (drain, rollout, restart with dry-run, logs, exec, debug, report)
 - [jenkins_toolkit](docs/how-to/jenkins_toolkit.md) - Jenkins automation scripts (install, plugins, configuration)

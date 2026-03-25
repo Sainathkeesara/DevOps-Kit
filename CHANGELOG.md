@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added (2026-03-25)
 - ter-011: AWS VPC with public/private subnets
+- lin-017: Samba file sharing server setup
   - Script: scripts/bash/terraform_toolkit/networking/vpc-setup.sh
   - Terraform: scripts/bash/terraform_toolkit/networking/terraform/
   - Doc: docs/how-to/terraform-aws-vpc.md

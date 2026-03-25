@@ -151,6 +151,8 @@
 - [Node Exporter Setup Script](../scripts/bash/linux_toolkit/monitoring/node-exporter-setup.sh) - Automated installation with --dry-run, --version, and --port options
 - [LDAP Server Setup](docs/how-to/linux-ldap-server.md) - LDAP authentication server setup with OpenLDAP
 - [LDAP Setup Script](../scripts/bash/linux_toolkit/authentication/ldap-server-setup.sh) - Automated LDAP server installation with --dry-run, --domain, and user/group management options
+- [linux_samba_file_server](docs/how-to/linux-samba.md) - Samba file server setup for Linux/Windows/macOS file sharing
+- [samba_setup_script](scripts/bash/linux/samba-setup.sh) - Automated Samba file server deployment script
 
 ## Terraform
 - [Terraform Workflow Script](../scripts/bash/terraform_toolkit/terraform-workflow.sh) - init/plan/apply with sensitive value handling and --dry-run support

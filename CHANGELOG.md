@@ -7,6 +7,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## 2026-03-26
 
 ### Added
+- lin-017: `docs/how-to/linux-samba-file-sharing.md` — Samba file sharing server for cross-platform access (Windows/macOS/Linux) with multiple shares, user management, AppArmor, and security hardening
+- lin-017: `scripts/bash/linux_toolkit/samba/samba-setup.sh` — Automated Samba setup script with --shares, --users, --dry-run, --firewall, --workgroup, --min-protocol, --max-protocol flags
 - lin-018: `docs/how-to/linux-haproxy-load-balancer.md` — HAProxy L4/L7 load balancer project with SSL termination, path-based routing, health checks, Prometheus exporter, and log rotation
 - lin-018: `scripts/bash/linux_toolkit/loadbalancer/haproxy-setup.sh` — Automated HAProxy setup script with --dry-run, --backends, --domain, --self-signed, --balance, --health-path, and --firewall flags
 

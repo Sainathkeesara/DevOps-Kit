@@ -4,6 +4,12 @@ All notable changes to the DevOps-Kit repository will be documented in this file
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 2026-03-26
+
+### Added
+- lin-018: `docs/how-to/linux-haproxy-load-balancer.md` — HAProxy L4/L7 load balancer project with SSL termination, path-based routing, health checks, Prometheus exporter, and log rotation
+- lin-018: `scripts/bash/linux_toolkit/loadbalancer/haproxy-setup.sh` — Automated HAProxy setup script with --dry-run, --backends, --domain, --self-signed, --balance, --health-path, and --firewall flags
+
 ## [Unreleased]
 
 ### Added (2026-03-25)

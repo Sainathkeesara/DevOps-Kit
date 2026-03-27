@@ -160,6 +160,10 @@
 - [samba_enterprise_file_sharing](lab/mini-projects/samba-enterprise-file-sharing/README.md) - L7 production walkthrough: departmental shares, ACLs, AD integration, backups, monitoring, security hardening
 - [linux_haproxy_load_balancer](docs/how-to/linux-haproxy-load-balancer.md) - HAProxy Layer 4/7 load balancer with SSL termination, health checks, and Prometheus metrics
 - [haproxy_setup_script](../scripts/bash/linux_toolkit/loadbalancer/haproxy-setup.sh) - Automated HAProxy deployment with --dry-run, --backends, --domain, and --self-signed flags
+- [linux_postgresql_database_server](lab/mini-projects/postgresql-database-server/README.md) - L7 production walkthrough: PostgreSQL 16 with replication, PgBouncer, backups, monitoring, security hardening
+- [pg_setup_script](scripts/bash/linux_toolkit/database/pg-setup.sh) - Automated PostgreSQL 16 installation with config backup
+- [pg_backup_script](scripts/bash/linux_toolkit/database/pg-backup.sh) - pg_dump backup with rotation and dry-run support
+- [pg_healthcheck_script](scripts/bash/linux_toolkit/database/pg-healthcheck.sh) - PostgreSQL health check (replication lag, connections, disk, WAL archiver)
 
 ## Terraform
 - [Terraform Workflow Script](../scripts/bash/terraform_toolkit/terraform-workflow.sh) - init/plan/apply with sensitive value handling and --dry-run support

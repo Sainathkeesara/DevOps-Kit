@@ -4,6 +4,11 @@ All notable changes to the DevOps-Kit repository will be documented in this file
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 2026-03-27
+
+### Added
+- lin-017: `lab/mini-projects/samba-enterprise-file-sharing/README.md` — Enterprise Samba file sharing platform L7 project walkthrough: departmental shares, home directories, guest access, ACLs, AD integration, automated backups, monitoring, security hardening
+
 ## 2026-03-26
 
 ### Added

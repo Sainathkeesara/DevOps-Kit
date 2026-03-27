@@ -157,6 +157,7 @@
 - [LDAP Setup Script](../scripts/bash/linux_toolkit/authentication/ldap-server-setup.sh) - Automated LDAP server installation with --dry-run, --domain, and user/group management options
 - [linux_samba_file_server](docs/how-to/linux-samba.md) - Samba file server setup for Linux/Windows/macOS file sharing
 - [samba_setup_script](scripts/bash/linux/samba-setup.sh) - Automated Samba file server deployment script
+- [samba_enterprise_file_sharing](lab/mini-projects/samba-enterprise-file-sharing/README.md) - L7 production walkthrough: departmental shares, ACLs, AD integration, backups, monitoring, security hardening
 - [linux_haproxy_load_balancer](docs/how-to/linux-haproxy-load-balancer.md) - HAProxy Layer 4/7 load balancer with SSL termination, health checks, and Prometheus metrics
 - [haproxy_setup_script](../scripts/bash/linux_toolkit/loadbalancer/haproxy-setup.sh) - Automated HAProxy deployment with --dry-run, --backends, --domain, and --self-signed flags
 

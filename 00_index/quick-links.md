@@ -36,6 +36,10 @@
 - [wireguard_script](scripts/bash/linux_toolkit/vpn/wireguard-server-setup.sh) - Automated WireGuard VPN server installation script
 - [linux_dns_bind9](docs/how-to/linux-dns-bind9.md) - DNS server setup with BIND9 guide
 - [bind9_script](scripts/bash/linux_toolkit/dns/bind9-server-setup.sh) - Automated BIND9 DNS server installation script
+- [linux_haproxy_lb](docs/how-to/linux-haproxy-load-balancer.md) - HAProxy load balancer with SSL termination and Prometheus exporter
+- [haproxy_setup_script](scripts/bash/linux_toolkit/loadbalancer/haproxy-setup.sh) - Automated HAProxy load balancer setup script
+- [linux_samba_sharing](docs/how-to/linux-samba-file-sharing.md) - Samba file sharing server for cross-platform access
+- [samba_setup_script](scripts/bash/linux_toolkit/samba/samba-setup.sh) - Automated Samba file server setup script
 - [terraform_toolkit](scripts/bash/terraform_toolkit/terraform-workflow.sh) - Terraform workflow scripts (init/plan/apply/destroy with sensitive value handling)
 - [vault_toolkit](docs/how-to/vault_toolkit.md) - Vault security hardening scripts (CVE detection and remediation)
 - [CVE-2025-6037](scripts/bash/vault_toolkit/security/cve-2025-6037.sh) - TLS certificate auth validation bypass detection

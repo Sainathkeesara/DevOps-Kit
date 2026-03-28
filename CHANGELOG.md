@@ -4,6 +4,13 @@ All notable changes to the DevOps-Kit repository will be documented in this file
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 2026-03-29
+
+### Added
+- ter-013: `docs/how-to/terraform-rds-read-replicas.md` — RDS PostgreSQL with read replicas: Multi-AZ, encryption, CloudWatch alarms, failover testing
+- ter-013: `templates/terraform/rds-with-replicas/` — Complete Terraform configuration (provider, variables, main, outputs, monitoring)
+- ter-013: `scripts/bash/terraform_toolkit/rds-deploy.sh` — RDS deployment automation (plan/apply/destroy/verify/failover-test)
+
 ## 2026-03-28
 
 ### Added

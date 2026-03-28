@@ -1,0 +1,39 @@
+# terraform.tfvars.example
+# Copy to terraform.tfvars and fill in your values
+# cp terraform.tfvars.example terraform.tfvars
+
+aws_region   = "us-east-1"
+project_name = "myapp"
+environment  = "prod"
+
+# Network
+vpc_id             = "vpc-0123456789abcdef0"
+private_subnet_ids = ["subnet-aaa111", "subnet-bbb222"]
+allowed_cidr_blocks = ["10.0.0.0/16"]
+
+# Database
+db_engine_version = "16.2"
+db_instance_class = "db.r6g.large"
+db_allocated_storage = 100
+db_name  = "appdb"
+db_username = "dbadmin"
+# db_password = "set-via-TF_VAR_db_password"  # NEVER commit passwords
+
+# High Availability
+multi_az             = true
+read_replica_count   = 2
+read_replica_instance_class = "db.r6g.large"
+
+# Backup
+backup_retention_period = 7
+backup_window           = "03:00-04:00"
+maintenance_window      = "sun:05:00-sun:06:00"
+
+# Safety
+deletion_protection = true
+skip_final_snapshot = false
+
+# Monitoring
+performance_insights_enabled = true
+monitoring_interval          = 60
+# alarm_sns_topic_arn = "arn:aws:sns:us-east-1:123456789012:rds-alerts"

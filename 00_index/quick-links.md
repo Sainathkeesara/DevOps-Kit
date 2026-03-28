@@ -181,6 +181,8 @@
 - [Terraform Module Composition and Workspaces](docs/how-to/terraform-module-composition-workspaces.md) - Production-ready project structure with reusable modules and workspace isolation
 - [Terraform Project Starter](lab/mini-projects/terraform-project/) - Complete project with network, compute, and storage modules
 - [Terraform CI/CD with Atlantis and GitOps](docs/how-to/terraform-atlantis-gitops.md) - Automated Terraform plan/apply from Git PRs with GitOps workflow
+- [RDS PostgreSQL with Read Replicas](docs/how-to/terraform-rds-read-replicas.md) - Production RDS deployment with Multi-AZ, read replicas, encryption, and CloudWatch monitoring
+- [RDS Deploy Script](scripts/bash/terraform_toolkit/rds-deploy.sh) - RDS deployment automation with plan/apply/destroy/verify/failover-test actions
 - [Atlantis Setup Script](../scripts/bash/terraform_toolkit/atlantis/setup-atlantis.sh) - Docker-based Atlantis server setup with --dry-run support
 
 ## Ansible

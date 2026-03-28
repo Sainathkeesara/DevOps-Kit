@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## 2026-03-28
 
 ### Added
+- lin-020: `docs/how-to/linux-harbor-registry.md` — Production container registry with Harbor: HTTPS/TLS, LDAP auth, image replication, Trivy vulnerability scanning, automated backup
+- lin-020: `scripts/bash/harbor/harbor-deploy.sh` — Automated Harbor deployment with TLS cert generation, Docker Compose, and Trivy
+- lin-020: `scripts/bash/harbor/harbor-health-check.sh` — Harbor health verification: containers, API, registry API, disk usage, Trivy scanner
+- lin-020: `scripts/bash/harbor/harbor-backup.sh` — Harbor backup: database dump, registry data, config, Redis with retention cleanup
 - ter-012: `docs/how-to/terraform-eks-cluster.md` — EKS cluster with managed node groups, VPC networking, autoscaling configuration, and integration with AWS services
 - ter-012: `scripts/bash/terraform_toolkit/eks/eks-deploy.sh` — Automated EKS deployment script with --dry-run, --init, --plan, --apply, --full, --verify flags
 - ter-012: `scripts/bash/terraform_toolkit/eks/eks-cleanup.sh` — Safe EKS cluster cleanup script with DRY_RUN enabled by default

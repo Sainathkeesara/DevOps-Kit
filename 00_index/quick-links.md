@@ -112,6 +112,10 @@
 - [CVE-2026-27099 Hardening](../scripts/bash/jenkins_toolkit/security/cve-2026-27099.sh) - Jenkins XSS and DoS vulnerability scanner
 
 ## Container Registries
+- [Harbor Registry Setup](docs/how-to/linux-harbor-registry.md) - Production private container registry with Harbor: HTTPS, LDAP auth, replication, Trivy scanning, backup
+- [Harbor Deploy Script](scripts/bash/harbor/harbor-deploy.sh) - Automated Harbor installation with TLS, Docker Compose, and Trivy scanner
+- [Harbor Health Check](scripts/bash/harbor/harbor-health-check.sh) - Verify Harbor containers, API, registry, disk usage, and Trivy scanner
+- [Harbor Backup Script](scripts/bash/harbor/harbor-backup.sh) - Backup Harbor database, registry data, config, and Redis with retention
 - [oci_registry_toolkit Usage](docs/how-to/oci_registry_toolkit.md)
 - [OCI Registry Cheatsheet](../snippets/oci-registry-cheatsheet.md)
 - [List Repositories](../scripts/bash/oci_registry_toolkit/registry/list-repos.sh)

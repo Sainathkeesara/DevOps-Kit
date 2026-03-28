@@ -7,6 +7,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## 2026-03-28
 
 ### Added
+- lin-024: `docs/how-to/linux-ansible-patching.md` — Automated patching system with Ansible: inventory, playbooks, scheduling, reporting, rollback
+- lin-024: `scripts/bash/linux_toolkit/security/ansible-patch-management.sh` — Patch management script with --dry-run, --bundle, --tags, --limit flags
+- lin-024: `scripts/bash/ansible_toolkit/patch-management.yml` — Ansible playbook for automated security patching across Linux servers
 - lin-020: `docs/how-to/linux-harbor-registry.md` — Production container registry with Harbor: HTTPS/TLS, LDAP auth, image replication, Trivy vulnerability scanning, automated backup
 - lin-020: `scripts/bash/harbor/harbor-deploy.sh` — Automated Harbor deployment with TLS cert generation, Docker Compose, and Trivy
 - lin-020: `scripts/bash/harbor/harbor-health-check.sh` — Harbor health verification: containers, API, registry API, disk usage, Trivy scanner

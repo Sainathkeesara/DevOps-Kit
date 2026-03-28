@@ -6,6 +6,10 @@
 
 ## Terraform
 - [terraform_aws_vpc](docs/how-to/terraform-aws-vpc.md) - AWS VPC setup with public/private subnets, NAT Gateway, and routing
+- [terraform_eks_cluster](docs/how-to/terraform-eks-cluster.md) - EKS cluster with managed node groups, autoscaling, and VPC networking
+- [eks_deploy_script](scripts/bash/terraform_toolkit/eks/eks-deploy.sh) - Automated EKS cluster deployment script
+- [eks_health_check](scripts/bash/terraform_toolkit/eks/eks-health-check.sh) - EKS cluster health verification script
+- [eks_cleanup_script](scripts/bash/terraform_toolkit/eks/eks-cleanup.sh) - Safe EKS cluster cleanup with dry-run support
 - [vpc_setup_script](scripts/bash/terraform_toolkit/networking/vpc-setup.sh) - Automated Terraform VPC deployment script
 
 ## Tools

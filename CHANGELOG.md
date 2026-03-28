@@ -4,6 +4,14 @@ All notable changes to the DevOps-Kit repository will be documented in this file
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 2026-03-28
+
+### Added
+- ter-012: `docs/how-to/terraform-eks-cluster.md` — EKS cluster with managed node groups, VPC networking, autoscaling configuration, and integration with AWS services
+- ter-012: `scripts/bash/terraform_toolkit/eks/eks-deploy.sh` — Automated EKS deployment script with --dry-run, --init, --plan, --apply, --full, --verify flags
+- ter-012: `scripts/bash/terraform_toolkit/eks/eks-cleanup.sh` — Safe EKS cluster cleanup script with DRY_RUN enabled by default
+- ter-012: `scripts/bash/terraform_toolkit/eks/eks-health-check.sh` — EKS cluster health verification script for cluster, nodes, addons, and API server
+
 ## 2026-03-27
 
 ### Added

@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 - ter-013: `docs/how-to/terraform-rds-read-replicas.md` — RDS PostgreSQL with read replicas: Multi-AZ, encryption, CloudWatch alarms, failover testing
+- lin-025: `docs/how-to/linux-centralized-logging-syslog-ng-logstash.md` — Centralized logging pipeline with syslog-ng and Logstash
+- lin-025: `scripts/bash/linux_toolkit/setup-centralized-logging.sh` — Automated deployment script for syslog-ng + Logstash + Elasticsearch
+- lin-025: `templates/syslog-ng/syslog-ng.conf` — Production syslog-ng configuration with JSON output, filtering, and disk buffering
+- lin-025: `templates/logstash/logstash.conf` — Logstash pipeline with GeoIP enrichment, SSH auth parsing, and Elasticsearch indexing
 - ter-013: `templates/terraform/rds-with-replicas/` — Complete Terraform configuration (provider, variables, main, outputs, monitoring)
 - ter-013: `scripts/bash/terraform_toolkit/rds-deploy.sh` — RDS deployment automation (plan/apply/destroy/verify/failover-test)
 

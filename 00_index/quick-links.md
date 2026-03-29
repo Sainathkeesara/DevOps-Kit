@@ -174,6 +174,10 @@
 - [pg_setup_script](scripts/bash/linux_toolkit/database/pg-setup.sh) - Automated PostgreSQL 16 installation with config backup
 - [pg_backup_script](scripts/bash/linux_toolkit/database/pg-backup.sh) - pg_dump backup with rotation and dry-run support
 - [pg_healthcheck_script](scripts/bash/linux_toolkit/database/pg-healthcheck.sh) - PostgreSQL health check (replication lag, connections, disk, WAL archiver)
+- [linux_centized_logging_syslog_ng_logstash](docs/how-to/linux-centralized-logging-syslog-ng-logstash.md) - Centralized logging pipeline with syslog-ng and Logstash
+- [centralized_logging_setup_script](scripts/bash/linux_toolkit/setup-centralized-logging.sh) - Automated syslog-ng + Logstash + Elasticsearch deployment
+- [syslog_ng_config_template](templates/syslog-ng/syslog-ng.conf) - Production syslog-ng configuration with JSON output and disk buffering
+- [logstash_pipeline_template](templates/logstash/logstash.conf) - Logstash pipeline with GeoIP enrichment and Elasticsearch output
 
 ## Terraform
 - [Terraform Workflow Script](../scripts/bash/terraform_toolkit/terraform-workflow.sh) - init/plan/apply with sensitive value handling and --dry-run support

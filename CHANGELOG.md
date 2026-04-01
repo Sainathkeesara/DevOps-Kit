@@ -4,6 +4,16 @@ All notable changes to the DevOps-Kit repository will be documented in this file
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 2026-04-01
+
+### Added
+- ter-010: `docs/how-to/terraform-multi-env-gitops.md` — Multi-environment infrastructure with Terraform workspaces and GitOps workflow
+- ter-010: `scripts/bash/terraform_toolkit/multi-env/multi-env-setup.sh` — Automated multi-environment setup (init-backend, create-env, plan, apply, destroy, verify)
+- ter-010: `templates/terraform/multi-env/vpc-module.tf` — Reusable VPC module with public/private subnets, NAT Gateway, security groups
+- ter-010: `environments/dev/` — Development environment configuration with terraform.tfvars
+- ter-010: `environments/staging/` — Staging environment configuration
+- ter-010: `environments/prod/` — Production environment configuration
+
 ## 2026-03-29
 
 ### Added

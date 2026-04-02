@@ -8,6 +8,7 @@
 - [terraform_aws_vpc](docs/how-to/terraform-aws-vpc.md) - AWS VPC setup with public/private subnets, NAT Gateway, and routing
 - [terraform_eks_cluster](docs/how-to/terraform-eks-cluster.md) - EKS cluster with managed node groups, autoscaling, and VPC networking
 - [terraform_multi_env_gitops](docs/how-to/terraform-multi-env-gitops.md) - Multi-environment infrastructure with Terraform workspaces and GitOps workflow
+- [terraform_s3_crr](docs/how-to/terraform-s3-cross-region-replication.md) - S3 bucket with cross-region replication for disaster recovery
 - [multi_env_setup_script](scripts/bash/terraform_toolkit/multi-env/multi-env-setup.sh) - Automated multi-environment Terraform setup with backend initialization
 - [multi_env_vpc_module](templates/terraform/multi-env/vpc-module.tf) - Reusable VPC module for multi-environment deployments
 - [eks_deploy_script](scripts/bash/terraform_toolkit/eks/eks-deploy.sh) - Automated EKS cluster deployment script

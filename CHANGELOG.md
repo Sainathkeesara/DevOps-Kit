@@ -4,6 +4,11 @@ All notable changes to the DevOps-Kit repository will be documented in this file
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 2026-04-03
+
+### Added
+- jen-013: `docs/reference/jenkins-rest-api.md` — Jenkins REST API commands reference for automation (job management, build triggers, queue, agents, plugins)
+
 ## 2026-04-01
 
 ### Added

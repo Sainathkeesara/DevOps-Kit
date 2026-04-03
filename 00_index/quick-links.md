@@ -20,6 +20,7 @@
 - [k8s_toolkit](docs/how-to/k8s_toolkit.md) - Safe kubectl helper scripts (drain, rollout, restart with dry-run, logs, exec, debug, report)
 - [jenkins_toolkit](docs/how-to/jenkins_toolkit.md) - Jenkins automation scripts (install, plugins, configuration)
 - [jenkins_commands](docs/reference/jenkins-commands.md) - Jenkins CLI commands reference (50+ commands for job/build/node management)
+- [jenkins_rest_api](docs/reference/jenkins-rest-api.md) - Jenkins REST API calls for automation (job management, builds, queue, agents, plugins)
 - [ansible_toolkit](docs/how-to/ansible_toolkit.md) - Ansible security audit scripts (sensitive variable exposure, CVE-2025-14010)
 - [CVE-2025-9907](scripts/bash/ansible_toolkit/security/cve-2025-9907-eda-creds.sh) - Ansible Automation Platform EDA credentials exposure scanner
 - [CVE-2026-0598](scripts/bash/ansible_toolkit/security/cve-2026-0598-audit.sh) - Ansible Lightspeed API auth bypass scanner

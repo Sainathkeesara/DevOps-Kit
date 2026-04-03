@@ -151,6 +151,8 @@
 
 ## Linux Administration
 - [linux_toolkit Usage](docs/how-to/linux_toolkit.md)
+- [AIDE File Integrity](docs/how-to/linux-aide-configuration.md) - AIDE file integrity monitoring deployment, configuration, and management
+- [AIDE Deploy Script](../scripts/bash/linux_toolkit/security/aide-deploy.sh) - Automated AIDE deployment with --install, --init, --check, --update flags
 - [Ansible Patch Management](docs/how-to/linux-ansible-patching.md) - Automated patching system with Ansible for Linux servers
 - [Ansible Patch Script](scripts/bash/linux_toolkit/security/ansible-patch-management.sh) - Automated patch deployment with dry-run, scheduling, and reporting
 - [Linux Cheatsheet](../snippets/linux-cheatsheet.md)

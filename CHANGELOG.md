@@ -4,6 +4,12 @@ All notable changes to the DevOps-Kit repository will be documented in this file
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 2026-04-09
+
+### Added
+- vault-005: `scripts/bash/vault/vault-audit-log-analysis.sh` — Vault audit log analysis script for security events and anomalies
+- helm-003: `docs/how-to/helm-commands-reference.md` — Helm CLI commands reference with 80+ examples
+
 ## 2026-04-08
 
 ### Added

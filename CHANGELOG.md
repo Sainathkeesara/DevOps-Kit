@@ -4,6 +4,12 @@ All notable changes to the DevOps-Kit repository will be documented in this file
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 2026-04-08
+
+### Added
+- dok-007: `scripts/bash/docker/security/docker-cve-2026-34040.sh` — Docker authorization plugin bypass detection script for CVE-2026-34040
+- k8s-013: `scripts/bash/k8s/security/k8s-acm-cve-2026-4740.sh` — Kubernetes ACM privilege escalation detection script for CVE-2026-4740
+
 ## 2026-04-03
 
 ### Added

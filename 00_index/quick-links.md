@@ -27,6 +27,8 @@
 - [docker_toolkit](docs/how-to/docker-security-best-practices.md) - Docker security hardening guide (image scanning, runtime security, secrets management)
 - [CVE-2026-2664](scripts/bash/docker_toolkit/security/cve-2026-2664.sh) - Docker Desktop grpcfuse kernel module privilege escalation scanner
 - [CVE-2026-28400](scripts/bash/docker_toolkit/security/cve-2026-28400.sh) - Docker Model Runner privilege escalation scanner
+- [CVE-2026-34040](scripts/bash/docker/security/docker-cve-2026-34040.sh) - Docker authorization plugin bypass scanner
+- [CVE-2026-4740](scripts/bash/k8s/security/k8s-acm-cve-2026-4740.sh) - Kubernetes ACM privilege escalation scanner
 - [oci_registry_toolkit](docs/how-to/oci_registry_toolkit.md) - OCI registry helpers (list repos/tags, find old tags, keepalive plans, auth diagnostics)
 - [ci_cd_toolkit](docs/how-to/ci_cd_toolkit.md) - CI/CD pipeline helpers (workflow linting, health checks, action updates, workflow generation)
 - [observability_toolkit](docs/how-to/observability_toolkit.md) - Prometheus, Grafana, Loki, Jaeger, OTel query and health scripts

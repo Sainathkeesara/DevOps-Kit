@@ -4,6 +4,10 @@
 - [README](../README.md) - Repository overview and purpose
 - [CHANGELOG](../CHANGELOG.md) - Version history and updates
 
+## Git
+- [git_installation](docs/how-to/git-installation.md) - Automated Git installation script for Linux (idempotent, supports Ubuntu/Debian, AlmaLinux/RHEL, Fedora)
+- [git_install_script](scripts/bash/git/git-install.sh) - Automation script with version control, dry-run, source build support
+
 ## Linux
 - [linux_freeipa_identity](docs/how-to/linux-freeipa-identity.md) - FreeIPA identity management: server deployment, client enrollment, user/group/sudo management
 - [freeipa_setup_script](scripts/bash/linux/identity/freeipa-setup.sh) - Automated FreeIPA server deployment and client enrollment script

@@ -11,6 +11,8 @@
 ## Linux
 - [linux_freeipa_identity](docs/how-to/linux-freeipa-identity.md) - FreeIPA identity management: server deployment, client enrollment, user/group/sudo management
 - [freeipa_setup_script](scripts/bash/linux/identity/freeipa-setup.sh) - Automated FreeIPA server deployment and client enrollment script
+- [linux_aide_configuration](docs/how-to/linux-aide-configuration-management.md) - AIDE file integrity monitoring: installation, configuration, baseline management
+- [aide_deploy_script](scripts/bash/linux/aide-deploy.sh) - Automated AIDE deployment and management script with dry-run support
 
 ## Terraform
 - [terraform_aws_vpc](docs/how-to/terraform-aws-vpc.md) - AWS VPC setup with public/private subnets, NAT Gateway, and routing

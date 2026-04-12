@@ -4,6 +4,10 @@
 
 **dry-run**: A mode where operations are simulated without making actual changes. Used for validation and safety before executing potentially destructive actions.
 
+**AIDE (Advanced Intrusion Detection Environment)**: File integrity monitoring tool that detects unauthorized changes to files using cryptographic hashes.
+
+**File integrity monitoring**: Security process that verifies files have not been altered by comparing current checksums against known baseline values.
+
 **guardrails**: Safety checks and constraints built into scripts to prevent unintended modifications or destructive operations.
 
 **kubectl**: Command-line interface for running commands against Kubernetes clusters.

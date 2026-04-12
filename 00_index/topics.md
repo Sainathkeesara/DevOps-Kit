@@ -59,7 +59,10 @@
 - [script] scripts/bash/linux_toolkit/network/net-diag.sh — Network diagnostics
 - [script] scripts/bash/linux_toolkit/process/process-manager.sh — Process management
 - [script] scripts/bash/linux_toolkit/security/security-check.sh — Security audit
+- [script] scripts/bash/linux/aide-config.sh — AIDE configuration management
 - [doc] docs/how-to/linux_toolkit.md — Linux toolkit usage guide
+- [doc] docs/how-to/linux-aide-configuration.md — AIDE setup and usage guide
+- [doc] docs/how-to/linux-aide-configuration-management.md — AIDE configuration management
 - [snippet] snippets/linux-cheatsheet.md — Linux commands reference
 
 ## Observability
@@ -94,6 +97,15 @@
 
 ## Terraform
 - [script] scripts/bash/terraform_toolkit/terraform-workflow.sh — Terraform workflow automation
+- [script] scripts/bash/terraform_toolkit/eks/eks-deploy.sh — EKS cluster deployment
+- [script] scripts/bash/terraform_toolkit/eks/eks-cleanup.sh — EKS cluster cleanup
+- [script] scripts/bash/terraform_toolkit/eks/eks-health-check.sh — EKS health check
+- [script] scripts/bash/terraform_toolkit/multi-env/multi-env-setup.sh — Multi-environment setup
+- [script] scripts/bash/terraform_toolkit/rds-deploy.sh — RDS deployment
+- [script] scripts/bash/terraform_toolkit/atlantis/setup-atlantis.sh — Atlantis setup
+- [doc] docs/how-to/terraform-eks-cluster.md — EKS cluster setup guide
+- [doc] docs/how-to/terraform-multi-env-gitops.md — Multi-environment GitOps
+- [doc] docs/how-to/terraform-rds-read-replicas.md — RDS with read replicas
 
 ## Ansible
 - [script] scripts/bash/ansible_toolkit/security/cve-2025-14010-audit.sh — Sensitive variable exposure scanner

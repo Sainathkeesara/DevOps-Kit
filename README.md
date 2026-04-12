@@ -35,11 +35,11 @@ DevOps-Kit/
 | Kubernetes | 12 | 7 | 1 | 3 |
 | Kafka | 17 | 3 | 1 | 0 |
 | Jenkins | 2 | 3 | 3 | 0 |
-| Linux | 6 | 2 | 1 | 0 |
+| Linux | 25 | 25 | 1 | 0 |
 | Observability | 8 | 1 | 1 | 0 |
 | OCI/Registry | 5 | 1 | 1 | 0 |
 | CI/CD | 5 | 1 | 1 | 0 |
-| Terraform | 1 | 0 | 0 | 0 |
+| Terraform | 8 | 10 | 0 | 0 |
 | Ansible | 6 | 2 | 0 | 0 |
 | Vault | 5 | 3 | 0 | 0 |
 | Docker | 2 | 2 | 0 | 0 |
@@ -47,11 +47,11 @@ DevOps-Kit/
 
 ## Quick links
 
-- [Helm + Terraform Full-Stack](docs/how-to/helm-terraform-fullstack/README.md)
-- [Helm + Terraform Deploy Script](scripts/bash/helm_toolkit/helm-terraform/deploy-helm-terraform.sh)
-- [Docker: Security best practices guide](docs/how-to/docker-security.md)
-- [Jenkins: Commands reference](docs/reference/jenkins-commands.md)
-- [Jenkins: Pipeline Groovy snippets](snippets/jenkins-scripted-pipeline-groovy.md)
+- [AIDE configuration management](docs/how-to/linux-aide-configuration.md) — File integrity monitoring guide (2026-04-11)
+- [AIDE config script](scripts/bash/linux/aide-config.sh) — Automated AIDE setup (2026-04-11)
+- [Vault audit log analysis](scripts/bash/vault/vault-audit-log-analysis.sh) — Security events analysis (2026-04-09)
+- [Helm commands reference](docs/how-to/helm-commands-reference.md) — 80+ Helm CLI examples (2026-04-09)
+- [Docker CVE-2026-34040](scripts/bash/docker/security/docker-cve-2026-34040.sh) — Authorization bypass (2026-04-08)
 
 ## Contributing
 

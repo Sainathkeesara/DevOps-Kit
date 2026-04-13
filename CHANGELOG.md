@@ -4,6 +4,12 @@ All notable changes to the DevOps-Kit repository will be documented in this file
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 2026-04-12
+
+### Added
+- lin-028: `docs/how-to/linux-aide-configuration-management.md` — AIDE file integrity monitoring how-to guide
+- lin-028: `scripts/bash/linux/aide-deploy.sh` — Automated AIDE deployment and management script
+
 ## 2026-04-11
 
 ### Added

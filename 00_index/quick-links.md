@@ -19,6 +19,8 @@
 - [terraform_eks_cluster](docs/how-to/terraform-eks-cluster.md) - EKS cluster with managed node groups, autoscaling, and VPC networking
 - [terraform_multi_env_gitops](docs/how-to/terraform-multi-env-gitops.md) - Multi-environment infrastructure with Terraform workspaces and GitOps workflow
 - [terraform_s3_crr](docs/how-to/terraform-s3-cross-region-replication.md) - S3 bucket with cross-region replication for disaster recovery
+- [terraform_lambda_api](docs/how-to/terraform-lambda-api-gateway.md) - Serverless API with Lambda and API Gateway integration
+- [lambda_deploy_script](scripts/bash/terraform_toolkit/terraform-lambda-deploy.sh) - Automated Lambda/API Gateway deployment script with dry-run
 - [multi_env_setup_script](scripts/bash/terraform_toolkit/multi-env/multi-env-setup.sh) - Automated multi-environment Terraform setup with backend initialization
 - [multi_env_vpc_module](templates/terraform/multi-env/vpc-module.tf) - Reusable VPC module for multi-environment deployments
 - [eks_deploy_script](scripts/bash/terraform_toolkit/eks/eks-deploy.sh) - Automated EKS cluster deployment script

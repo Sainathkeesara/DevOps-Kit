@@ -4,6 +4,15 @@ All notable changes to the DevOps-Kit repository will be documented in this file
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 2026-04-14
+
+### Added
+- ter-016: `docs/how-to/git-installation-macos.md` — Git installation on macOS how-to guide
+- ter-016: `scripts/bash/git/git-install-macos.sh` — Automated Git installation script for macOS
+- git-003: `docs/how-to/git-installation-wsl.md` — Git installation on WSL how-to guide
+- git-003: `scripts/bash/git/git-install-wsl.sh` — Automated Git installation script for WSL
+- git-003: `snippets/git-commands-reference.md` — Git CLI commands reference with 80+ commands
+
 ## 2026-04-13
 
 ### Added

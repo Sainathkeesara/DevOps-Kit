@@ -13,6 +13,8 @@
 - [freeipa_setup_script](scripts/bash/linux/identity/freeipa-setup.sh) - Automated FreeIPA server deployment and client enrollment script
 - [linux_aide_configuration](docs/how-to/linux-aide-configuration-management.md) - AIDE file integrity monitoring: installation, configuration, baseline management
 - [aide_deploy_script](scripts/bash/linux/aide-deploy.sh) - Automated AIDE deployment and management script with dry-run support
+- [linux_wazuh_siem](docs/how-to/linux/linux-wazuh-siem.md) - Wazuh SIEM deployment: server, agent, alerting, integration
+- [wazuh_deploy_script](scripts/bash/linux/wazuh-deploy.sh) - Automated Wazuh SIEM deployment script with dry-run support
 
 ## Terraform
 - [terraform_aws_vpc](docs/how-to/terraform-aws-vpc.md) - AWS VPC setup with public/private subnets, NAT Gateway, and routing

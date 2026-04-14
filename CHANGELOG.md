@@ -4,6 +4,12 @@ All notable changes to the DevOps-Kit repository will be documented in this file
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 2026-04-13
+
+### Added
+- lin-030: `docs/how-to/linux/linux-wazuh-siem.md` — Wazuh SIEM deployment how-to guide
+- lin-030: `scripts/bash/linux/wazuh-deploy.sh` — Automated Wazuh deployment script
+
 ## 2026-04-12
 
 ### Added

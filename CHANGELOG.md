@@ -4,6 +4,13 @@ All notable changes to the DevOps-Kit repository will be documented in this file
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 2026-04-15
+
+### Added
+- ter-003: `docs/how-to/terraform-state-management.md` — Terraform state management best practices
+- ter-004: `docs/how-to/terraform-troubleshooting.md` — Terraform troubleshooting guide for plan/apply failures
+- ter-005: `snippets/terraform-commands.md` — Terraform CLI one-liners reference
+
 ## 2026-04-14
 
 ### Added

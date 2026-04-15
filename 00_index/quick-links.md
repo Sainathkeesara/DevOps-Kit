@@ -28,6 +28,9 @@
 - [terraform_s3_crr](docs/how-to/terraform-s3-cross-region-replication.md) - S3 bucket with cross-region replication for disaster recovery
 - [terraform_lambda_api](docs/how-to/terraform-lambda-api-gateway.md) - Serverless API with Lambda and API Gateway integration
 - [terraform_iam_roles](docs/how-to/terraform-iam-roles.md) - Reusable IAM roles with policy modules, least-privilege access, and cross-account support
+- [terraform_state_management](docs/how-to/terraform-state-management.md) - Terraform state management best practices: backends, locking, encryption, workspaces
+- [terraform_troubleshooting](docs/how-to/terraform-troubleshooting.md) - Terraform troubleshooting guide: plan/apply failures, state issues, provider errors
+- [terraform_cli_one_liners](snippets/terraform-commands.md) - Terraform CLI one-liners for init, plan, apply, state management
 - [lambda_deploy_script](scripts/bash/terraform_toolkit/terraform-lambda-deploy.sh) - Automated Lambda/API Gateway deployment script with dry-run
 - [iam_roles_deploy_script](scripts/bash/terraform/terraform-iam-roles-deploy.sh) - Automated IAM roles and policy deployment script with dry-run
 - [multi_env_setup_script](scripts/bash/terraform_toolkit/multi-env/multi-env-setup.sh) - Automated multi-environment Terraform setup with backend initialization

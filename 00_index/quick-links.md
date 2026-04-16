@@ -22,6 +22,7 @@
 - [wazuh_deploy_script](scripts/bash/linux/wazuh-deploy.sh) - Automated Wazuh SIEM deployment script with dry-run support
 
 ## Terraform
+- [terraform_production_module_template](../templates/terraform/production-module-template.md) - Production Terraform module template with security guardrails
 - [terraform_aws_vpc](docs/how-to/terraform-aws-vpc.md) - AWS VPC setup with public/private subnets, NAT Gateway, and routing
 - [terraform_eks_cluster](docs/how-to/terraform-eks-cluster.md) - EKS cluster with managed node groups, autoscaling, and VPC networking
 - [terraform_multi_env_gitops](docs/how-to/terraform-multi-env-gitops.md) - Multi-environment infrastructure with Terraform workspaces and GitOps workflow
@@ -250,6 +251,7 @@
 
 ## Docker
 - [Docker Security Best Practices](docs/how-to/docker-security.md) - Comprehensive security hardening guide for Docker (image security, runtime security, network security, secrets management)
+- [docker_cli_snippets](../snippets/docker-commands.md) - Docker CLI command snippets for container and image management
 - [CVE-2026-28400 Hardening](../scripts/bash/docker_toolkit/security/cve-2026-28400.sh) - Docker Model Runner privilege escalation vulnerability scanner with --remediate and --dry-run flags
 
 ## Helm

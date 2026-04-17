@@ -4,7 +4,10 @@ All notable changes to the DevOps-Kit repository will be documented in this file
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## 2026-04-15
+## 2026-04-17
+
+### Added
+- vault-009: `scripts/bash/vault/security/vault-go-getter-hardening.sh` — Hardening script for CVE-2026-4660 (go-getter arbitrary file read vulnerability)
 
 ### Added
 - ter-003: `docs/how-to/terraform-state-management.md` — Terraform state management best practices

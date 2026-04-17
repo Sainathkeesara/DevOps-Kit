@@ -32,26 +32,26 @@ DevOps-Kit/
 
 | Tool | Scripts | Docs | Snippets | Templates |
 |------|---------|------|----------|-----------|
-| Kubernetes | 12 | 7 | 1 | 3 |
+| Kubernetes | 12 | 7 | 4 | 3 |
 | Kafka | 17 | 3 | 1 | 0 |
 | Jenkins | 2 | 3 | 3 | 0 |
-| Linux | 25 | 25 | 1 | 0 |
+| Linux | 30 | 24 | 1 | 0 |
 | Observability | 8 | 1 | 1 | 0 |
 | OCI/Registry | 5 | 1 | 1 | 0 |
 | CI/CD | 5 | 1 | 1 | 0 |
-| Terraform | 8 | 10 | 0 | 0 |
+| Terraform | 9 | 12 | 0 | 0 |
 | Ansible | 6 | 2 | 0 | 0 |
-| Vault | 5 | 3 | 0 | 0 |
-| Docker | 2 | 2 | 0 | 0 |
+| Vault | 5 | 4 | 0 | 0 |
+| Docker | 3 | 2 | 0 | 0 |
 | Helm | 3 | 2 | 0 | 0 |
 
 ## Quick links
 
-- [AIDE configuration management](docs/how-to/linux-aide-configuration.md) — File integrity monitoring guide (2026-04-11)
-- [AIDE config script](scripts/bash/linux/aide-config.sh) — Automated AIDE setup (2026-04-11)
-- [Vault audit log analysis](scripts/bash/vault/vault-audit-log-analysis.sh) — Security events analysis (2026-04-09)
-- [Helm commands reference](docs/how-to/helm-commands-reference.md) — 80+ Helm CLI examples (2026-04-09)
-- [Docker CVE-2026-34040](scripts/bash/docker/security/docker-cve-2026-34040.sh) — Authorization bypass (2026-04-08)
+- [Terraform state management](docs/how-to/terraform-state-management.md) — Terraform state best practices (2026-04-15)
+- [Terraform troubleshooting](docs/how-to/terraform-troubleshooting.md) — Plan/apply failures guide (2026-04-15)
+- [Git installation macOS](docs/how-to/git-installation-macos.md) — Git on macOS (2026-04-14)
+- [Git installation WSL](docs/how-to/git-installation-wsl.md) — Git on WSL (2026-04-14)
+- [Terraform IAM roles](docs/how-to/terraform-iam-roles.md) — IAM roles with modules (2026-04-14)
 
 ## Contributing
 

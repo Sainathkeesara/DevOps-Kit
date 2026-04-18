@@ -261,6 +261,7 @@
 - [Docker Security Best Practices](docs/how-to/docker-security.md) - Comprehensive security hardening guide for Docker (image security, runtime security, network security, secrets management)
 - [docker_cli_snippets](../snippets/docker-commands.md) - Docker CLI command snippets for container and image management
 - [CVE-2026-28400 Hardening](../scripts/bash/docker_toolkit/security/cve-2026-28400.sh) - Docker Model Runner privilege escalation vulnerability scanner with --remediate and --dry-run flags
+- [docker_image_cleanup_script](scripts/bash/docker_toolkit/docker-image-cleanup.sh) - Docker image cleanup with dry-run support, age filtering, and space savings calculation
 
 ## Helm
 - [Helm Security Scanning Guide](docs/how-to/helm-security-scanning.md) - Comprehensive security hardening for Helm charts (Trivy, kube-score, Checkov, Kubescape)

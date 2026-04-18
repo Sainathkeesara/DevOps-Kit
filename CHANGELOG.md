@@ -4,6 +4,12 @@ All notable changes to the DevOps-Kit repository will be documented in this file
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 2026-04-18
+
+### Added
+- jen-007: `docs/troubleshooting/jenkins-troubleshooting.md` — Jenkins troubleshooting guide for startup failures, plugin issues, build failures
+- jen-006: `templates/jenkins/Jenkinsfile-maven-gradle-template.md` — Reusable Jenkinsfile template for Maven/Gradle builds
+
 ## 2026-04-17
 
 ### Added

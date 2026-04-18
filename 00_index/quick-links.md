@@ -120,6 +120,10 @@
 - [Kafka Consumer Lag](docs/troubleshooting/kafka-consumer-lag.md)
 - [Vault Seal/Unseal](docs/troubleshooting/vault-seal-unseal.md)
 
+## Jenkins
+- [jenkins_troubleshooting](docs/troubleshooting/jenkins-troubleshooting.md) - Jenkins troubleshooting guide for startup failures, plugin issues, build failures, and agent connectivity
+- [jenkinsfile_maven_gradle_template](../templates/jenkins/Jenkinsfile-maven-gradle-template.md) - Reusable Jenkinsfile template for Maven/Gradle builds with CI/CD pipeline
+
 ## Kubernetes
 - [k8s_toolkit Usage](docs/how-to/k8s_toolkit.md)
 - [EKS Cluster Setup Guide](docs/setup-guides/eks-cluster-setup.md) - Complete guide for creating EKS cluster from scratch on AWS

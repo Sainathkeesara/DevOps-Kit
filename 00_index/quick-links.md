@@ -56,6 +56,7 @@
 
 ## Vault
 - [vault_audit_log_analysis](scripts/bash/vault/vault-audit-log-analysis.sh) - Vault audit log analysis for security events and anomalies
+- [vault_commands_reference](../snippets/vault-commands.md) - Vault CLI commands for authentication, secrets, policies
 
 ## Helm
 - [helm_commands_reference](docs/how-to/helm-commands-reference.md) - Helm CLI commands reference with 80+ examples
@@ -95,6 +96,7 @@
 - [kafka_toolkit Usage](docs/how-to/kafka_toolkit.md) - Prerequisites include [Kafka Cluster Setup Guide](docs/setup-guides/kafka-cluster-setup.md)
 - [Kafka Cluster Setup Guide](docs/setup-guides/kafka-cluster-setup.md) - Single broker setup for local development
 - [Kafka Troubleshooting](docs/troubleshooting/kafka-consumer-lag.md) - Consumer lag and rebalancing issues
+- [Kafka Commands Reference](../snippets/kafka-topics-commands.md) - Kafka topics CLI one-liners for topic management and consumer groups
 - [Kafka Cheatsheet](../snippets/kafka-cheatsheet.md)
 - [Topic Management](../scripts/bash/kafka_toolkit/topics/topic-list.sh)
 - [Consumer Groups](../scripts/bash/kafka_toolkit/consumers/consumer-groups.sh)
@@ -238,6 +240,7 @@
 
 ## Ansible
 - [ansible_toolkit Usage](docs/how-to/ansible_toolkit.md)
+- [ansible_commands_reference](../snippets/ansible-commands.md) - Ansible ad-hoc commands for system administration, file operations, package management
 - [CVE-2026-0598 Guide](docs/how-to/ansible-lightspeed-cve-2026-0598.md)
 - [CVE-2025-14010 Audit](../scripts/bash/ansible_toolkit/security/cve-2025-14010-audit.sh) - Sensitive variable exposure audit with --path, --dry-run, --json-output flags
 - [CVE-2026-0598 Audit](../scripts/bash/ansible_toolkit/security/cve-2026-0598-audit.sh) - Lightspeed auth bypass vulnerability scanner with --host, --token, --dry-run, --json-output flags

@@ -7,6 +7,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## 2026-04-18
 
 ### Added
+- vault-006: `snippets/vault-commands.md` — Vault CLI commands reference for authentication, secrets, policies
+- ansi-006: `snippets/ansible-commands.md` — Ansible ad-hoc commands for system administration
+- kfk-006: `snippets/kafka-topics-commands.md` — Kafka topics CLI one-liners for topic management
 - jen-007: `docs/troubleshooting/jenkins-troubleshooting.md` — Jenkins troubleshooting guide for startup failures, plugin issues, build failures
 - jen-006: `templates/jenkins/Jenkinsfile-maven-gradle-template.md` — Reusable Jenkinsfile template for Maven/Gradle builds
 

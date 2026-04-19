@@ -4,6 +4,13 @@
 - [README](../README.md) - Repository overview and purpose
 - [CHANGELOG](../CHANGELOG.md) - Version history and updates
 
+## Jenkins
+- [jenkins_cli_commands_reference](snippets/jenkins-cli-commands.md) - Jenkins CLI commands reference with 80+ commands for sysadmins
+- [jenkins_scripted_pipeline_groovy](snippets/jenkins-scripted-pipeline-groovy.md) - Jenkins Scripted Pipeline Groovy examples and patterns
+
+## Ansible
+- [ansible_playbook_best_practices](docs/how-to/ansible-playbook-best-practices.md) - Ansible playbook best practices guide for production
+
 ## Git
 - [git_installation](docs/how-to/git-installation.md) - Automated Git installation script for Linux (idempotent, supports Ubuntu/Debian, AlmaLinux/RHEL, Fedora)
 - [git_install_script](scripts/bash/git/git-install.sh) - Automation script with version control, dry-run, source build support

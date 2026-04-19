@@ -4,6 +4,12 @@ All notable changes to the DevOps-Kit repository will be documented in this file
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 2026-04-19
+
+### Added
+- jen-014: `snippets/jenkins-cli-commands.md` — Jenkins CLI commands reference with 80+ commands
+- ansi-004: `docs/how-to/ansible-playbook-best-practices.md` — Ansible playbook best practices guide
+
 ## 2026-04-18
 
 ### Added

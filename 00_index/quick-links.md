@@ -10,6 +10,7 @@
 
 ## Ansible
 - [ansible_playbook_best_practices](docs/how-to/ansible-playbook-best-practices.md) - Ansible playbook best practices guide for production
+- [jenkins_cli_commands](docs/reference/jenkins-commands.md) - Jenkins CLI commands reference with 50+ commands for automation and scripting
 
 ## Git
 - [git_installation](docs/how-to/git-installation.md) - Automated Git installation script for Linux (idempotent, supports Ubuntu/Debian, AlmaLinux/RHEL, Fedora)

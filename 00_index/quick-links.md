@@ -5,6 +5,11 @@
 - [CHANGELOG](../CHANGELOG.md) - Version history and updates
 
 ## Jenkins
+- [jenkins_cli_commands_reference](snippets/jenkins-cli-commands.md) - Jenkins CLI commands reference with 80+ commands for sysadmins
+- [jenkins_scripted_pipeline_groovy](snippets/jenkins-scripted-pipeline-groovy.md) - Jenkins Scripted Pipeline Groovy examples and patterns
+
+## Ansible
+- [ansible_playbook_best_practices](docs/how-to/ansible-playbook-best-practices.md) - Ansible playbook best practices guide for production
 - [jenkins_cli_commands](docs/reference/jenkins-commands.md) - Jenkins CLI commands reference with 50+ commands for automation and scripting
 
 ## Git

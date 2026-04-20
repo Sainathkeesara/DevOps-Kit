@@ -17,6 +17,7 @@
 - [git_commands_reference](snippets/git-commands-reference.md) - Git CLI commands reference with 80+ commands for developers
 
 ## Linux
+- [linux_commands_reference](snippets/linux-commands.md) - Linux commands reference with 30+ bash one-liners for sysadmins
 - [linux_freeipa_identity](docs/how-to/linux-freeipa-identity.md) - FreeIPA identity management: server deployment, client enrollment, user/group/sudo management
 - [freeipa_setup_script](scripts/bash/linux/identity/freeipa-setup.sh) - Automated FreeIPA server deployment and client enrollment script
 - [linux_aide_configuration](docs/how-to/linux-aide-configuration-management.md) - AIDE file integrity monitoring: installation, configuration, baseline management

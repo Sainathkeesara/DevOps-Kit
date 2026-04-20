@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 - jen-014: `docs/reference/jenkins-commands.md` — Jenkins CLI commands reference with 50+ commands for automation and scripting
+- lin-006: `snippets/linux-commands.md` — Linux commands reference with 30+ bash one-liners for sysadmins
 - dok-003: `scripts/bash/docker_toolkit/docker-image-cleanup.sh` — Docker image cleanup script with dry-run, age filtering
 - vault-006: `snippets/vault-commands.md` — Vault CLI commands reference for authentication, secrets, policies
 - ansi-006: `snippets/ansible-commands.md` — Ansible ad-hoc commands for system administration

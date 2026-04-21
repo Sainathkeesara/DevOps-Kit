@@ -19,7 +19,7 @@
 - [git_install_macos_script](scripts/bash/git/git-install-macos.sh) - Automated Git installation script for macOS with dry-run support
 - [git_installation_wsl](docs/how-to/git-installation-wsl.md) - Git installation on Windows Subsystem for Linux (WSL) with PPA and configuration
 - [git_install_wsl_script](scripts/bash/git/git-install-wsl.sh) - Automated Git installation script for WSL with dry-run support
-- [git_commands_reference](snippets/git-commands-reference.md) - Git CLI commands reference with 80+ commands for developers
+- [git_commands_reference](snippets/git-commands.md) - Git CLI commands reference with 80+ commands for developers
 
 ## Linux
 - [linux_commands_reference](snippets/linux-commands.md) - Linux commands reference with 30+ bash one-liners for sysadmins

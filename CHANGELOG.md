@@ -7,6 +7,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## 2026-04-21
 
 ### Added
+- k8s-021: `scripts/bash/kubernetes/mcp-server-kubernetes-hardening.sh` — CVE-2026-39884 hardening script (mcp-server-kubernetes RCE)
+- k8s-021: `docs/troubleshooting/kubernetes-mcp-server-cve-2026-39884.md` — CVE-2026-39884 remediation guide
 - ter-018: `docs/how-to/terraform-secrets-manager.md` — AWS Secrets Manager integration with Terraform walkthrough
 - ter-018: `scripts/bash/terraform_toolkit/secrets/terraform-secrets-deploy.sh` — Deployment script for Secrets Manager with dry-run
 

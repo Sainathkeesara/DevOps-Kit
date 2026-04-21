@@ -4,6 +4,10 @@
 - [README](../README.md) - Repository overview and purpose
 - [CHANGELOG](../CHANGELOG.md) - Version history and updates
 
+## Kubernetes
+- [mcp_server_kubernetes_hardening](scripts/bash/kubernetes/mcp-server-kubernetes-hardening.sh) - CVE-2026-39884 hardening script for mcp-server-kubernetes
+- [kubernetes_mcp_cve_troubleshooting](docs/troubleshooting/kubernetes-mcp-server-cve-2026-39884.md) - CVE-2026-39884 remediation guide
+
 ## Jenkins
 - [jenkins_cli_commands_reference](snippets/jenkins-cli-commands.md) - Jenkins CLI commands reference with 80+ commands for sysadmins
 - [jenkins_scripted_pipeline_groovy](snippets/jenkins-scripted-pipeline-groovy.md) - Jenkins Scripted Pipeline Groovy examples and patterns

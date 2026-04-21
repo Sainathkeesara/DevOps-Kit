@@ -297,3 +297,4 @@
 - [Runbooks](../docs/runbooks/)
 - [Concepts](../docs/concepts/)
 - [Git Version Control Mental Model](../docs/concepts/git-version-control-mental-model.md) - Architecture, repositories, branching, remote operations
+- [Kubernetes cluster-autoscaler CVE-2026-33186 hardening](./docs/troubleshooting/k8s-cluster-autoscaler-cve-2026-33186.md)

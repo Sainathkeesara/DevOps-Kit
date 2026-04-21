@@ -4,6 +4,12 @@ All notable changes to the DevOps-Kit repository will be documented in this file
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 2026-04-21
+
+### Added
+- ter-018: `docs/how-to/terraform-secrets-manager.md` — AWS Secrets Manager integration with Terraform walkthrough
+- ter-018: `scripts/bash/terraform_toolkit/secrets/terraform-secrets-deploy.sh` — Deployment script for Secrets Manager with dry-run
+
 ## 2026-04-19
 
 ### Added

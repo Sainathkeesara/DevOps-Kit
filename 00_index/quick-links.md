@@ -41,6 +41,8 @@
 - [terraform_state_management](docs/how-to/terraform-state-management.md) - Terraform state management best practices: backends, locking, encryption, workspaces
 - [terraform_troubleshooting](docs/how-to/terraform-troubleshooting.md) - Terraform troubleshooting guide: plan/apply failures, state issues, provider errors
 - [terraform_cli_one_liners](snippets/terraform-commands.md) - Terraform CLI one-liners for init, plan, apply, state management
+- [terraform_secrets_manager](docs/how-to/terraform-secrets-manager.md) - AWS Secrets Manager integration with Terraform for secure secrets management
+- [terraform_secrets_deploy_script](scripts/bash/terraform_toolkit/secrets/terraform-secrets-deploy.sh) - Deployment script for Secrets Manager with Terraform
 - [lambda_deploy_script](scripts/bash/terraform_toolkit/terraform-lambda-deploy.sh) - Automated Lambda/API Gateway deployment script with dry-run
 - [iam_roles_deploy_script](scripts/bash/terraform/terraform-iam-roles-deploy.sh) - Automated IAM roles and policy deployment script with dry-run
 - [multi_env_setup_script](scripts/bash/terraform_toolkit/multi-env/multi-env-setup.sh) - Automated multi-environment Terraform setup with backend initialization

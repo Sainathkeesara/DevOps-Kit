@@ -798,3 +798,6 @@ Repository structure created with essential files and first tool implementation 
 - `scripts/bash/linux_toolkit/database/pg-healthcheck.sh` — health check
 - `00_index/quick-links.md` — updated
 Added: k8s-cluster-autoscaler-grpc-hardening.sh and k8s-cluster-autoscaler-cve-2026-33186.md - CVE-2026-33186
+
+---
+lin-066: Linux network traffic analysis project and monitoring script

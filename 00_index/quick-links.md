@@ -298,3 +298,6 @@
 - [Concepts](../docs/concepts/)
 - [Git Version Control Mental Model](../docs/concepts/git-version-control-mental-model.md) - Architecture, repositories, branching, remote operations
 - [Kubernetes cluster-autoscaler CVE-2026-33186 hardening](./docs/troubleshooting/k8s-cluster-autoscaler-cve-2026-33186.md)
+## Network Monitoring
+- [Linux Network Traffic Analysis Project](../docs/how-to/linux-network-traffic-analysis.md)
+- [Linux Network Monitor Script](../scripts/bash/linux/linux-network-monitor.sh)

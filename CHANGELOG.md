@@ -4,6 +4,12 @@ All notable changes to the DevOps-Kit repository will be documented in this file
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 2026-04-22
+
+### Added
+- lin-067: `docs/how-to/linux-container-security-scanning.md` — Container security scanning project with Trivy and Falco
+- lin-067: `scripts/bash/linux/linux-container-security-scan.sh` — Automated container security scanning script
+
 ## 2026-04-21
 
 ### Added

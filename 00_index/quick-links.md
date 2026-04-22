@@ -27,6 +27,8 @@
 
 ## Linux
 - [linux_commands_reference](snippets/linux-commands.md) - Linux commands reference with 30+ bash one-liners for sysadmins
+- [linux_container_security_scanning](docs/how-to/linux-container-security-scanning.md) - Container security scanning with Trivy and Falco for vulnerability detection and runtime monitoring
+- [container_security_scan_script](scripts/bash/linux/linux-container-security-scan.sh) - Automated container security scanning script with Trivy integration
 - [linux_freeipa_identity](docs/how-to/linux-freeipa-identity.md) - FreeIPA identity management: server deployment, client enrollment, user/group/sudo management
 - [freeipa_setup_script](scripts/bash/linux/identity/freeipa-setup.sh) - Automated FreeIPA server deployment and client enrollment script
 - [linux_aide_configuration](docs/how-to/linux-aide-configuration-management.md) - AIDE file integrity monitoring: installation, configuration, baseline management

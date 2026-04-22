@@ -303,3 +303,4 @@
 ## Network Monitoring
 - [Linux Network Traffic Analysis Project](../docs/how-to/linux-network-traffic-analysis.md)
 - [Linux Network Monitor Script](../scripts/bash/linux/linux-network-monitor.sh)
+- [Terraform + AWS Secrets Manager](/docs/how-to/terraform-aws-secrets-manager.md) - Integrate Terraform with AWS Secrets Manager

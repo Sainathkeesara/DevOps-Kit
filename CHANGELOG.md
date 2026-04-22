@@ -807,3 +807,4 @@ Added: k8s-cluster-autoscaler-grpc-hardening.sh and k8s-cluster-autoscaler-cve-2
 
 ---
 lin-066: Linux network traffic analysis project and monitoring script
+ter-018: Terraform AWS Secrets Manager integration — 2026-04-22

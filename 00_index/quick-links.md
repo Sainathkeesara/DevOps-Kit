@@ -37,6 +37,8 @@
 - [wazuh_deploy_script](scripts/bash/linux/wazuh-deploy.sh) - Automated Wazuh SIEM deployment script with dry-run support
 
 ## Terraform
+- [terraform_eventbridge_lambda](docs/how-to/terraform-eventbridge-lambda.md) - EventBridge with Lambda triggers for real-time event processing
+- [eventbridge_lambda_deploy_script](scripts/bash/terraform/ter-019-deploy.sh) - Automated EventBridge Lambda deployment script with plan/apply/destroy
 - [terraform_production_module_template](../templates/terraform/production-module-template.md) - Production Terraform module template with security guardrails
 - [terraform_aws_vpc](docs/how-to/terraform-aws-vpc.md) - AWS VPC setup with public/private subnets, NAT Gateway, and routing
 - [terraform_eks_cluster](docs/how-to/terraform-eks-cluster.md) - EKS cluster with managed node groups, autoscaling, and VPC networking

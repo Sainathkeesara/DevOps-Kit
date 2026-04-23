@@ -5,6 +5,8 @@
 - [CHANGELOG](../CHANGELOG.md) - Version history and updates
 
 ## Kubernetes
+- [aks_privilege_escalation_hardening](scripts/bash/kubernetes/aks-privilege-escalation-hardening.sh) - CVE-2026-33105 AKS privilege escalation hardening script
+- [k8s_aks_cve_2026_33105](docs/how-to/k8s-aks-cve-2026-33105.md) - CVE-2026-33105 AKS privilege escalation remediation guide
 - [mcp_server_kubernetes_hardening](scripts/bash/kubernetes/mcp-server-kubernetes-hardening.sh) - CVE-2026-39884 hardening script for mcp-server-kubernetes
 - [kubernetes_mcp_cve_troubleshooting](docs/troubleshooting/kubernetes-mcp-server-cve-2026-39884.md) - CVE-2026-39884 remediation guide
 

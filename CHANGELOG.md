@@ -4,6 +4,12 @@ All notable changes to the DevOps-Kit repository will be documented in this file
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 2026-04-23
+
+### Added
+- k8s-014: `scripts/bash/kubernetes/aks-privilege-escalation-hardening.sh` — CVE-2026-33105 AKS privilege escalation hardening script
+- k8s-014: `docs/how-to/k8s-aks-cve-2026-33105.md` — CVE-2026-33105 AKS privilege escalation remediation guide
+
 ## 2026-04-22
 
 ### Added

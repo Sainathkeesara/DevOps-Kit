@@ -4,6 +4,11 @@
 - [README](../README.md) - Repository overview and purpose
 - [CHANGELOG](../CHANGELOG.md) - Version history and updates
 
+## Docker
+- [docker_kaniko_cve_2026_28406_hardening](scripts/bash/docker/docker-kaniko-cve-2026-28406-hardening.sh) - CVE-2026-28406 kaniko path traversal hardening script
+- [docker_kaniko_cve_2026_28406](docs/how-to/docker-kaniko-cve-2026-28406.md) - CVE-2026-28406 kaniko path traversal remediation guide
+- [docker_security_best_practices](docs/how-to/docker-security-best-practices.md) - Docker security best practices
+
 ## Kubernetes
 - [aks_privilege_escalation_hardening](scripts/bash/kubernetes/aks-privilege-escalation-hardening.sh) - CVE-2026-33105 AKS privilege escalation hardening script
 - [k8s_aks_cve_2026_33105](docs/how-to/k8s-aks-cve-2026-33105.md) - CVE-2026-33105 AKS privilege escalation remediation guide

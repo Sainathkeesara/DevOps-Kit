@@ -7,8 +7,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## 2026-04-24
 
 ### Added
+
 - k8s-015: `scripts/bash/kubernetes/k8s-eso-cve-2026-34984-hardening.sh` — CVE-2026-34984 hardening script for External Secrets Operator
 - k8s-015: `docs/how-to/k8s-external-secrets-cve-2026-34984.md` — CVE-2026-34984 ESO vulnerability remediation guide
+- k8s-016: `scripts/bash/kubernetes/k8s-ingress-nginx-cve-2026-4342-hardening.sh` — CVE-2026-4342 ingress-nginx comment-based config injection hardening script
+- k8s-016: `docs/how-to/k8s-ingress-nginx-cve-2026-4342.md` — CVE-2026-4342 ingress-nginx RCE vulnerability remediation guide
 
 ## 2026-04-23
 

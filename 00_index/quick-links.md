@@ -9,8 +9,10 @@
 - [k8s_aks_cve_2026_33105](docs/how-to/k8s-aks-cve-2026-33105.md) - CVE-2026-33105 AKS privilege escalation remediation guide
 - [mcp_server_kubernetes_hardening](scripts/bash/kubernetes/mcp-server-kubernetes-hardening.sh) - CVE-2026-39884 hardening script for mcp-server-kubernetes
 - [kubernetes_mcp_cve_troubleshooting](docs/troubleshooting/kubernetes-mcp-server-cve-2026-39884.md) - CVE-2026-39884 remediation guide
-- [k8s_eso_cve_2026_34984_hardening](scripts/bash/kubernetes/k8s-eso-cve-2026-34984-hardening.sh) - CVE-2026-34984 hardening script for External Secrets Operator
+- [k8s_eso_cve_2026_34984_hardening](scripts/bash/kubernetes/k8s-eso-cve-2026-34984-hardening.sh) - CVE-2026-34984 hardening script for External Secrets Operator DNS exfiltration
 - [k8s_external_secrets_cve_2026_34984](docs/how-to/k8s-external-secrets-cve-2026-34984.md) - CVE-2026-34984 ESO vulnerability remediation guide
+- [k8s_ingress_nginx_cve_2026_4342_hardening](scripts/bash/kubernetes/k8s-ingress-nginx-cve-2026-4342-hardening.sh) - CVE-2026-4342 ingress-nginx comment-based config injection hardening script
+- [k8s_ingress_nginx_cve_2026_4342](docs/how-to/k8s-ingress-nginx-cve-2026-4342.md) - CVE-2026-4342 ingress-nginx RCE vulnerability remediation guide
 
 ## Jenkins
 - [jenkins_cli_commands_reference](snippets/jenkins-cli-commands.md) - Jenkins CLI commands reference with 80+ commands for sysadmins

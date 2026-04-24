@@ -13,9 +13,15 @@
 - [script] scripts/bash/k8s_toolkit/context/context-manager.sh — Multi-cluster context switching
 - [script] scripts/bash/k8s_toolkit/rollout-restart.sh — Restart deployments with watch
 - [script] scripts/bash/k8s_toolkit/security/cve-2026-3288-nginx.sh — ingress-nginx RCE vulnerability scanner
+- [script] scripts/bash/kubernetes/aks-privilege-escalation-hardening.sh — AKS privilege escalation hardening
+- [script] scripts/bash/kubernetes/mcp-server-kubernetes-hardening.sh — mcp-server-kubernetes CVE-2026-39884 hardening
+- [script] scripts/bash/k8s/security/k8s-acm-cve-2026-4740.sh — Kubernetes ACM privilege escalation scanner
 - [doc] docs/how-to/k8s_toolkit.md — Complete usage guide for all k8s scripts
 - [doc] docs/how-to/k8s_rbac.md — Role, ClusterRole, RoleBinding guide
+- [doc] docs/how-to/k8s-aks-cve-2026-33105.md — AKS privilege escalation remediation
 - [doc] docs/troubleshooting/k8s-crashloopbackoff.md — CrashLoopBackOff diagnosis and fix
+- [doc] docs/troubleshooting/kubernetes-mcp-server-cve-2026-39884.md — MCP server Kubernetes CVE remediation
+- [doc] docs/troubleshooting/k8s-cluster-autoscaler-cve-2026-33186.md — cluster-autoscaler CVE hardening
 - [doc] docs/setup-guides/eks-cluster-setup.md — EKS cluster setup guide
 - [snippet] snippets/kubectl-cheatsheet.md — Quick kubectl reference
 - [template] templates/k8s/production-deployment.yaml — Deployment with HPA and PDB
@@ -60,9 +66,11 @@
 - [script] scripts/bash/linux_toolkit/process/process-manager.sh — Process management
 - [script] scripts/bash/linux_toolkit/security/security-check.sh — Security audit
 - [script] scripts/bash/linux/aide-config.sh — AIDE configuration management
+- [script] scripts/bash/linux/linux-container-security-scan.sh — Container security scanning with Trivy
 - [doc] docs/how-to/linux_toolkit.md — Linux toolkit usage guide
 - [doc] docs/how-to/linux-aide-configuration.md — AIDE setup and usage guide
 - [doc] docs/how-to/linux-aide-configuration-management.md — AIDE configuration management
+- [doc] docs/how-to/linux-container-security-scanning.md — Container security scanning with Trivy and Falco
 - [snippet] snippets/linux-cheatsheet.md — Linux commands reference
 
 ## Observability
@@ -103,9 +111,11 @@
 - [script] scripts/bash/terraform_toolkit/multi-env/multi-env-setup.sh — Multi-environment setup
 - [script] scripts/bash/terraform_toolkit/rds-deploy.sh — RDS deployment
 - [script] scripts/bash/terraform_toolkit/atlantis/setup-atlantis.sh — Atlantis setup
+- [script] scripts/bash/terraform_toolkit/secrets/terraform-secrets-deploy.sh — AWS Secrets Manager deployment
 - [doc] docs/how-to/terraform-eks-cluster.md — EKS cluster setup guide
 - [doc] docs/how-to/terraform-multi-env-gitops.md — Multi-environment GitOps
 - [doc] docs/how-to/terraform-rds-read-replicas.md — RDS with read replicas
+- [doc] docs/how-to/terraform-secrets-manager.md — AWS Secrets Manager integration
 
 ## Ansible
 - [script] scripts/bash/ansible_toolkit/security/cve-2025-14010-audit.sh — Sensitive variable exposure scanner

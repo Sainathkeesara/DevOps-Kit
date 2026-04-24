@@ -32,26 +32,26 @@ DevOps-Kit/
 
 | Tool | Scripts | Docs | Snippets | Templates |
 |------|---------|------|----------|-----------|
-| Kubernetes | 14 | 7 | 1 | 3 |
+| Kubernetes | 16 | 9 | 1 | 3 |
+| Linux | 32 | 26 | 2 | 0 |
 | Kafka | 17 | 3 | 2 | 0 |
-| Jenkins | 2 | 5 | 4 | 1 |
-| Linux | 24 | 24 | 2 | 0 |
-| Observability | 8 | 1 | 1 | 0 |
-| OCI/Registry | 5 | 1 | 1 | 0 |
-| CI/CD | 5 | 1 | 1 | 0 |
-| Terraform | 9 | 12 | 1 | 14 |
+| Terraform | 12 | 15 | 1 | 14 |
 | Ansible | 7 | 3 | 1 | 0 |
 | Vault | 7 | 3 | 1 | 0 |
+| Observability | 8 | 1 | 1 | 0 |
 | Docker | 4 | 2 | 1 | 0 |
 | Helm | 3 | 3 | 0 | 0 |
+| Jenkins | 2 | 4 | 4 | 1 |
+| OCI/Registry | 5 | 1 | 1 | 0 |
+| CI/CD | 5 | 1 | 1 | 0 |
 
 ## Quick links
 
+- [AKS privilege escalation hardening](scripts/bash/kubernetes/aks-privilege-escalation-hardening.sh) — CVE-2026-33105 hardening script (2026-04-23)
+- [Linux container security scanning](docs/how-to/linux-container-security-scanning.md) — Trivy and Falco integration guide (2026-04-22)
+- [MCP server Kubernetes hardening](scripts/bash/kubernetes/mcp-server-kubernetes-hardening.sh) — CVE-2026-39884 scanner (2026-04-21)
 - [Jenkins CLI commands reference](snippets/jenkins-cli-commands.md) — Jenkins CLI with 80+ commands (2026-04-19)
 - [Ansible playbook best practices](docs/how-to/ansible-playbook-best-practices.md) — Ansible playbook guide (2026-04-19)
-- [Kafka topics commands](snippets/kafka-topics-commands.md) — Kafka topics CLI one-liners (2026-04-18)
-- [Jenkins commands](docs/reference/jenkins-commands.md) — Jenkins CLI 50+ commands (2026-04-18)
-- [Linux commands reference](snippets/linux-commands.md) — Linux bash one-liners (2026-04-18)
 
 ## Contributing
 

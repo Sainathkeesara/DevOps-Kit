@@ -49,6 +49,8 @@
 - [aide_deploy_script](scripts/bash/linux/aide-deploy.sh) - Automated AIDE deployment and management script with dry-run support
 - [linux_wazuh_siem](docs/how-to/linux/linux-wazuh-siem.md) - Wazuh SIEM deployment: server, agent, alerting, integration
 - [wazuh_deploy_script](scripts/bash/linux/wazuh-deploy.sh) - Automated Wazuh SIEM deployment script with dry-run support
+- [linux_log_aggregation_loki_promtail](docs/how-to/linux-log-aggregation-loki-promtail.md) - Log aggregation with Loki and Promtail: centralized logging, querying, and visualization
+- [loki_promtail_deploy_script](scripts/bash/linux/linux-loki-promtail-deploy.sh) - Automated Loki and Promtail deployment script with dry-run support
 
 ## Terraform
 - [terraform_eventbridge_lambda](docs/how-to/terraform-eventbridge-lambda.md) - EventBridge with Lambda triggers for real-time event processing

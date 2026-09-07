@@ -59,9 +59,9 @@
 - **dockerfiles** (1): [multi-stage-sbom.Dockerfile](../syft/dockerfiles/multi-stage-sbom.Dockerfile)
 - **notebooks** (2): [sbom-layer-package-analysis.ipynb](../syft/notebooks/sbom-layer-package-analysis.ipynb), [output-format-comparison.ipynb](../syft/notebooks/output-format-comparison.ipynb)
 
-## trivy  ·  34 files
+## trivy  ·  35 files
 - **primer:** [0000-primer-trivy.md](../trivy/notes/0000-primer-trivy.md)
-- **notes** (5): [2026-07-27-first-container-scan.md](../trivy/notes/2026-07-27-first-container-scan.md), [2026-05-26-trivy-quickstart.md](../trivy/notes/2026-05-26-trivy-quickstart.md), [2026-05-24-install-trivy.md](../trivy/notes/2026-05-24-install-trivy.md) — _…and 2 more under `trivy/notes/`._
+- **notes** (6): [2026-09-05-install-trivy-first-container-scan.md](../trivy/notes/2026-09-05-install-trivy-first-container-scan.md), [2026-07-27-first-container-scan.md](../trivy/notes/2026-07-27-first-container-scan.md), [2026-05-26-trivy-quickstart.md](../trivy/notes/2026-05-26-trivy-quickstart.md) — _…and 3 more under `trivy/notes/`._
 - **docs** (4): [multi-arch-vulnerability-scanning.md](../trivy/docs/multi-arch-vulnerability-scanning.md), [ci-cd-pipeline-recipes.md](../trivy/docs/ci-cd-pipeline-recipes.md), [sbom-scanning-reference-guide.md](../trivy/docs/sbom-scanning-reference-guide.md) — _…and 1 more under `trivy/docs/`._
 - **scripts** (6): [compose-multi-scan.sh](../trivy/scripts/compose-multi-scan.sh), [multi-target-scanner.sh](../trivy/scripts/multi-target-scanner.sh), [container-vuln-scan.sh](../trivy/scripts/container-vuln-scan.sh) — _…and 3 more under `trivy/scripts/`._
 - **configs** (2): [trivy-scan-config.yaml](../trivy/configs/trivy-scan-config.yaml), [.trivy.yaml](../trivy/configs/.trivy.yaml)
@@ -71,9 +71,9 @@
 - **dockerfiles** (1): [custom-policies.Dockerfile](../trivy/dockerfiles/custom-policies.Dockerfile)
 - **notebooks** (2): [trivy-sarif-output-processing.ipynb](../trivy/notebooks/trivy-sarif-output-processing.ipynb), [trivy-scan-mode-comparison.ipynb](../trivy/notebooks/trivy-scan-mode-comparison.ipynb)
 
-## zap  ·  25 files
+## zap  ·  26 files
 - **primer:** [0000-primer-zap.md](../zap/notes/0000-primer-zap.md)
-- **notes** (5): [2026-07-20-install-zap-baseline-scan.md](../zap/notes/2026-07-20-install-zap-baseline-scan.md), [2026-06-13-spider-scan-test-app.md](../zap/notes/2026-06-13-spider-scan-test-app.md), [2026-06-06-install-zap-desktop-ui.md](../zap/notes/2026-06-06-install-zap-desktop-ui.md) — _…and 2 more under `zap/notes/`._
+- **notes** (6): [2026-09-05-install-zap-first-baseline-scan.md](../zap/notes/2026-09-05-install-zap-first-baseline-scan.md), [2026-07-20-install-zap-baseline-scan.md](../zap/notes/2026-07-20-install-zap-baseline-scan.md), [2026-06-13-spider-scan-test-app.md](../zap/notes/2026-06-13-spider-scan-test-app.md) — _…and 3 more under `zap/notes/`._
 - **docs** (3): [zap-integration-patterns.md](../zap/docs/zap-integration-patterns.md), [zap-automation-plan-structure.md](../zap/docs/zap-automation-plan-structure.md), [passive-vs-active-scanning-zap.md](../zap/docs/passive-vs-active-scanning-zap.md)
 - **scripts** (2): [dast-workflow-from-scratch.sh](../zap/scripts/dast-workflow-from-scratch.sh), [zap-dast-sarif-code-scanning.sh](../zap/scripts/zap-dast-sarif-code-scanning.sh)
 - **configs** (2): [ci-dast-automation-framework-plan.yaml](../zap/configs/ci-dast-automation-framework-plan.yaml), [zap-authenticated-scan-context.yaml](../zap/configs/zap-authenticated-scan-context.yaml)

@@ -29,6 +29,8 @@
 - [Tetragon event collection pipeline](../tetragon/scripts/2026-08-05-tetragon-event-collection-pipeline.sh)
 
 ### Get started with vulnerability scanning
+- [Install Trivy and run a first container scan](../trivy/notes/2026-09-05-install-trivy-first-container-scan.md)
+- [Install ZAP and run a baseline scan](../zap/notes/2026-09-05-install-zap-first-baseline-scan.md)
 - [Trivy primer](../trivy/notes/0000-primer-trivy.md)
 - [Trivy scanning performance optimization](../trivy/notes/scanning-performance-optimization.md)
 - [Trivy ignore-rules pipeline](../trivy/scripts/ignore-rules-pipeline.sh)

@@ -12,15 +12,15 @@ A working devops and devsecops engineer's quick-reference: first-contact notes, 
 
 ## What's in here
 
-Notes, scripts, configs, manifests, scaffolds, and how-to guides across the major scanner, secret-detection, SBOM, supply-chain, runtime-security, policy, IaC, and observability tools. Every entry is scenario-grounded and designed to be adapted for real infrastructure work.
+948 files across 32 tool-specific folders plus cross-cutting docs, scripts, snippets, templates, and lab environments. Covers vulnerability scanning, secret detection, SBOMs, supply chain security, runtime security, policy engines, infrastructure automation, and observability. Every entry is scenario-grounded and designed to be adapted for real infrastructure work.
 
 ## Quick links
 
+- [Install Trivy and run a first container scan](trivy/notes/2026-09-05-install-trivy-first-container-scan.md) — First-contact walkthrough of Trivy's image and filesystem scan modes
+- [Install ZAP and run a baseline scan](zap/notes/2026-09-05-install-zap-first-baseline-scan.md) — Getting ZAP's baseline scan running against a local app
 - [AWS secrets engine policy for Vault](vault/configs/2026-09-04-aws-secrets-engine-policy.hcl) — HCL policy wiring Vault's AWS secrets engine with scoped IAM roles
-- [First Vault secret via the CLI](vault/snippets/2026-08-30-first-vault-secret.sh) — Write and read back a secret using the Vault dev server
 - [Syft GHA SBOM OCI push attestation](syft/manifests/syft-gha-sbom-oci-push-attestation.yaml) — GitHub Actions workflow for generating and attesting SBOMs with OCI push
 - [Snyk vulnerability prioritization](snyk/docs/vulnerability-prioritization-reachability-fix-prs-license-compliance.md) — Reachability analysis, Fix PRs, and license compliance for Snyk SCA findings
-- [Snyk multi-language scanning scaffold](snyk/templates/snyk-multilang-scan-scaffold/README.md) — Reusable CI scaffold for scanning polyglot codebases with a shared policy
 
 ## Layout
 
@@ -48,8 +48,8 @@ Trivy, Semgrep, Checkov, Grype, Syft, TruffleHog, GitGuardian, Snyk, Terrascan, 
 | checkov | 4 | 5 | 2 | 3 | 4 | 20 | 3 | 0 | 2 | 1 | 44 | 2026-08-30 |
 | trufflehog | 4 | 2 | 3 | 2 | 2 | 21 | 1 | 1 | 2 | 0 | 38 | — |
 | syft | 4 | 6 | 3 | 1 | 1 | 15 | 2 | 1 | 2 | 0 | 35 | 2026-08-13 |
-| trivy | 5 | 4 | 6 | 2 | 1 | 11 | 2 | 1 | 2 | 0 | 34 | 2026-07-27 |
-| zap | 5 | 3 | 2 | 2 | 4 | 8 | 0 | 1 | 0 | 0 | 25 | 2026-07-20 |
+| trivy | 5 | 4 | 6 | 2 | 1 | 11 | 2 | 1 | 2 | 0 | 35 | 2026-09-05 |
+| zap | 6 | 3 | 2 | 2 | 4 | 8 | 0 | 1 | 0 | 0 | 26 | 2026-09-05 |
 | opa | 3 | 2 | 2 | 1 | 3 | 9 | 4 | 0 | 0 | 0 | 24 | 2026-08-27 |
 | snyk | 4 | 2 | 1 | 2 | 1 | 11 | 1 | 1 | 0 | 0 | 23 | 2026-09-02 |
 | gitguardian | 4 | 2 | 3 | 2 | 2 | 9 | 0 | 0 | 0 | 0 | 22 | 2026-08-21 |
@@ -81,7 +81,7 @@ Trivy, Semgrep, Checkov, Grype, Syft, TruffleHog, GitGuardian, Snyk, Terrascan, 
 
 ## Status
 
-Foundational concept primers and practice exercises are complete across the toolchain, and per-tool quickstarts are being rounded out. Recent work has focused on Vault AWS secrets engine policy, Syft SBOM attestation workflows, Snyk vulnerability prioritization, and multi-language scanning scaffolds. Current focus is finishing the remaining per-tool notes and deepening policy-as-code and supply-chain coverage.
+Foundational concept primers and practice exercises are complete across the toolchain, and per-tool quickstarts are being rounded out. Recent work has focused on Trivy and ZAP first-install walkthroughs, Vault AWS secrets engine policy, and SBOM attestation workflows. Current focus is finishing the remaining per-tool notes and deepening policy-as-code and supply-chain coverage.
 
 ---
-_Last updated: 2026-09-04_
+_Last updated: 2026-09-05_

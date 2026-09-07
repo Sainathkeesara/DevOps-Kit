@@ -84,4 +84,4 @@ Trivy, Semgrep, Checkov, Grype, Syft, TruffleHog, GitGuardian, Snyk, Terrascan, 
 Foundational concept primers and practice exercises are complete across the toolchain, and per-tool quickstarts are being rounded out. Recent work has focused on Trivy and ZAP first-install walkthroughs, Vault AWS secrets engine policy, and SBOM attestation workflows. Current focus is finishing the remaining per-tool notes and deepening policy-as-code and supply-chain coverage.
 
 ---
-_Last updated: 2026-09-05_
+_Last updated: 2026-09-07_

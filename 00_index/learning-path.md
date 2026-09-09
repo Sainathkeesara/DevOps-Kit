@@ -1,6 +1,6 @@
 # Learning Path — DevSecOps
 
-> A suggested progression from beginner to confident practitioner. Each stage builds on the previous one. Every topic listed below has content on disk; follow the links as you go.
+> A suggested progression from beginner to confident practitioner. Each stage builds on the previous one. If a topic is listed but has no content yet, it's marked as ⏳ (coming soon).
 
 ## Stage 1: Foundations
 
@@ -37,7 +37,7 @@ Intermediate tools that add SBOM management, software composition analysis, and 
 
 - **Helm** — Package manager for Kubernetes charts and releases. [Primer](../helm/notes/0000-primer-helm.md) | [Explore charts, releases, values, repos](../helm/notes/2026-07-19-explore-helm-charts-releases-values-repos.md)
 - **Kustomize** — Kubernetes YAML customization without templating. [Primer](../kustomize/notes/0000-primer-kustomize.md) | [First overlay](../kustomize/notes/2026-07-08-install-kustomize-first-overlay.md)
-- **GitHub Actions** — GitHub's built-in CI/CD system. [Primer](../github-actions/notes/0000-primer-github-actions.md) | [Explore](../github-actions/notes/2026-07-14-explore-github-actions.md) | [First workflow](../github-actions/configs/2026-07-14-first-github-actions-workflow.yaml) | [Install the gh CLI](../github-actions/notes/2026-08-26-install-gh-cli-first-command.md) | [Minimal push-triggered workflow](../github-actions/snippets/2026-08-26-first-workflow.yaml) | [Composite action input reuse](../github-actions/snippets/2026-08-26-composite-action-input-reuse.yaml)
+- **GitHub Actions** — GitHub's built-in CI/CD system. [Primer](../github-actions/notes/0000-primer-github-actions.md) | [Explore](../github-actions/notes/2026-08-04-explore-github-actions.md) | [First workflow](../github-actions/configs/2026-07-14-first-github-actions-workflow.yaml) | [Install the gh CLI](../github-actions/notes/2026-08-26-install-gh-cli-first-command.md) | [Minimal push-triggered workflow](../github-actions/snippets/2026-08-26-first-workflow.yaml) | [Composite action input reuse](../github-actions/snippets/2026-08-26-composite-action-input-reuse.yaml)
 - **Syft** — SBOM generation in CycloneDX and SPDX formats. Integrates with Grype for vulnerability correlation. [Primer](../syft/notes/0000-primer-syft.md) | [Output format comparison](../syft/notebooks/output-format-comparison.ipynb) | [SBOM pipeline scaffold](../syft/templates/sbom-pipeline-scaffold/README.md) | [Syft + Trivy K8s scan scaffold](../syft/templates/syft-trivy-k8s-scan-scaffold/README.md)
 - **Grype** — Vulnerability scanner for container images and filesystems. Designed to consume Syft SBOMs. [Primer](../grype/notes/0000-primer-grype.md) | [Vulnerability diff](../grype/scripts/vuln-diff-two-images.sh) | [End-to-end pipeline](../grype/scripts/grype-end-to-end-scan-pipeline.sh) | [SBOM-to-SARIF pipeline](../grype/scripts/grype-scan-pipeline-end-to-end.sh)
 - **CodeQL** — Semantic code analysis with custom QL queries. Supports multiple languages and CI integration. [Primer](../codeql/notes/0000-primer-codeql.md) | [Install and run a first query](../codeql/notes/2026-08-26-install-codeql-first-query.md) | [Datalog gotchas](../codeql/notes/2026-06-14-codeql-datalog-gotchas.md) | [Custom queries in CI](../codeql/docs/wired-custom-queries-into-ci.md)

@@ -7,6 +7,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## 2026-09-10
 
 ### Added
+- nuclei-001: `nuclei/notes/0000-primer-nuclei.md` — Nuclei quick primer (L1 notes(primer))
+- gitleaks-001: `gitleaks/notes/0000-primer-gitleaks.md` — Gitleaks quick primer (L1 notes(primer))
+- tfsec-001: `tfsec/notes/0000-primer-tfsec.md` — tfsec quick primer (L1 notes(primer))
 - github-actions-010: `github-actions/configs/2026-09-10-minimal-ci-workflow.yaml` — Minimal CI workflow with GitHub Actions (L2 config)
 - kubernetes-007: `kubernetes/manifests/2026-09-10-first-pod.yaml` — Deploy my first pod with a Kubernetes manifest (L1 manifest)
 - opentofu-006: `opentofu/configs/2026-09-10-minimal-opentofu-config.hcl` — Minimal OpenTofu configuration for a compute instance with variables and outputs (L2 config)

@@ -1,0 +1,15 @@
+# last_verified: 2026-09-10 · kubectl n/a
+# My very first workload on a cluster: one nginx pod.
+# Apply with: kubectl apply -f first-pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-pod
+  labels:
+    app: hello
+spec:
+  containers:
+    - name: hello
+      image: nginx:1.29
+      ports:
+        - containerPort: 80

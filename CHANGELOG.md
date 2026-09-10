@@ -4,6 +4,13 @@ All notable changes to the DevOps-Kit repository will be documented in this file
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 2026-09-10
+
+### Added
+- github-actions-010: `github-actions/configs/2026-09-10-minimal-ci-workflow.yaml` — Minimal CI workflow with GitHub Actions (L2 config)
+- kubernetes-007: `kubernetes/manifests/2026-09-10-first-pod.yaml` — Deploy my first pod with a Kubernetes manifest (L1 manifest)
+- opentofu-006: `opentofu/configs/2026-09-10-minimal-opentofu-config.hcl` — Minimal OpenTofu configuration for a compute instance with variables and outputs (L2 config)
+
 ## 2026-09-05
 
 ### Added
